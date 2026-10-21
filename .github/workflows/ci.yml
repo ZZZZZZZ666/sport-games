@@ -19,6 +19,7 @@ jobs:
         working-directory: hub
       - run: python -m pytest -q
         working-directory: hub
+      - run: python -m pytest -q tools/tests
   privacy:
     runs-on: ubuntu-latest
     steps:

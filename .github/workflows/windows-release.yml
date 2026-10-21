@@ -1,0 +1,85 @@
+name: Windows package
+
+on:
+  push:
+    branches: [main, dev]
+    tags: ['v*']
+  pull_request:
+    branches: [main, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install packaging dependencies
+        shell: pwsh
+        run: |
+          $version = (Get-Content tools/release_config.json | ConvertFrom-Json).pyinstallerVersion
+          python -m pip install -r hub/requirements.txt "pyinstaller==$version"
+      - name: Verify publication scope
+        run: node tools/publication_audit.mjs --strict
+      - name: Restore pinned upstream assets
+        run: node tools/sync_assets.mjs
+      - name: Verify asset completeness
+        run: node tools/sync_assets.mjs --check
+      - name: Install verified official Godot and export templates
+        run: python tools/download_godot.py --platform windows --templates
+      - name: Build portable game and hub
+        run: python tools/build_windows.py
+      - name: Test frozen network endpoints and exported game
+        run: python tools/smoke_release.py dist/SportGames-Windows-x86_64
+      - name: Package checked files and checksum
+        run: python tools/package_archive.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SportGames-Windows-x86_64
+          path: |
+            dist/SportGames-Windows-x86_64.zip
+            dist/SportGames-Windows-x86_64.zip.sha256
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+
+  publish:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: windows
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Require release commit on main
+        run: git merge-base --is-ancestor "$GITHUB_SHA" origin/main
+      - uses: actions/download-artifact@v4
+        with:
+          name: SportGames-Windows-x86_64
+          path: release
+      - name: Publish verified Windows prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "$GITHUB_REF_NAME"
+          release/SportGames-Windows-x86_64.zip
+          release/SportGames-Windows-x86_64.zip.sha256
+          --repo "$GITHUB_REPOSITORY" --verify-tag
+          --title "Sport Games $GITHUB_REF_NAME" --generate-notes --prerelease
