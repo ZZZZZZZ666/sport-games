@@ -1,4 +1,5 @@
 extends Node
+const TutorialCases := preload("res://tests/tutorial_cases.gd")
 ## Run this scene with an isolated APPDATA directory; it writes actual ConfigFile saves.
 
 var _failures := 0
@@ -101,6 +102,10 @@ func _run() -> void:
 		pages.close()
 	pages.queue_free()
 	_check(load("res://scenes/menu/main_menu.gd") != null, "main menu compiles")
+	TutorialCases.run(_check)
+	await TutorialCases.integration(self, _check)
 	await get_tree().process_frame
+	# Let the audio thread release the pause-menu cue before shutting down the test process.
+	await get_tree().create_timer(0.25).timeout
 	print("RS_SHELL_TESTS: %d failures" % _failures)
 	get_tree().quit(1 if _failures else 0)

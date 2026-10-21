@@ -1,5 +1,6 @@
 class_name RSPartyUi
 extends Control
+const Tutorial := preload("res://core/tutorial.gd")
 ## The panels over a party game's views (part of RSPartyGame): the lobby (how to play, map
 ## card, who is ready, phone QR code), the ranked results, and the pause menu. RSPartyGame runs
 ## the rounds and says what to show; its hooks (_game_name, _how_to_play, _lobby_extra, _maps)
@@ -21,6 +22,10 @@ var _map_desc: Label
 var _results_title: Label
 var _results_hint: Label
 var _results_col: VBoxContainer
+var _tutorial_panel: Control
+var _tutorial_grid: GridContainer
+var _tutorial_cards: Dictionary = {}
+var _tutorial_roster := ""
 
 
 func _init(owner_game: RSPartyGame) -> void:
@@ -33,9 +38,11 @@ func _ready() -> void:
 	# Built once in the tree, so the games' _lobby_extra() hooks see a live panel.
 	_build_lobby()
 	_build_results()
+	_build_tutorials()
 	pause = RSPauseMenu.new(game)
 	pause.restart_requested.connect(game.restart_round)
 	pause.menu_requested.connect(game.go_menu)
+	pause.tutorial_requested.connect(game.review_tutorials)
 	add_child(pause)
 
 
@@ -44,6 +51,7 @@ func _ready() -> void:
 func show_lobby() -> void:
 	lobby_panel.visible = true
 	results_panel.visible = false
+	_tutorial_panel.visible = false
 
 
 func update_lobby() -> void:
@@ -51,6 +59,9 @@ func update_lobby() -> void:
 	var lines := PackedStringArray()
 	for p: RSPartyGame.Player in game.ordered():
 		var state := tr("[color=#22c55e]✓ 已准备[/color]") if p.ready else tr("[color=#9aa3b5]按 A 准备[/color]")
+		var lesson = game.tutorial_for(p)
+		if lesson != null:
+			state = RSProfiles.bbcode(lesson.status())
 		lines.append("[color=#%s][b]P%d[/b][/color]   %s   %s" % [game.color_of(p).to_html(false), p.c.player, RSProfiles.bbcode(game.name_of(p)), state])
 	if lines.is_empty():
 		lines.append(tr("[color=#9aa3b5]还没有手柄。\n先运行 hub/run_hub.bat，然后打开 Regina，或用手机扫右边的二维码。[/color]"))
@@ -61,6 +72,62 @@ func update_lobby() -> void:
 	var text := "\n".join(lines)
 	if _lobby_players.text != text:
 		_lobby_players.text = text
+	_update_tutorials()
+
+
+func _build_tutorials() -> void:
+	var layout := _centered_panel(980)
+	_tutorial_panel = layout[0]
+	_tutorial_panel.visible = false
+	var col: VBoxContainer = layout[1]
+	col.add_child(RSUi.label(tr("新手教学"), 36))
+	col.add_child(RSUi.label(tr("先看手柄示范，再完成提示动作。教学完成后回到舒适握姿，按 A 准备。"), 17, RSUi.TEXT_MUTED))
+	_tutorial_grid = GridContainer.new()
+	_tutorial_grid.columns = 2
+	_tutorial_grid.add_theme_constant_override("h_separation", 14)
+	_tutorial_grid.add_theme_constant_override("v_separation", 14)
+	col.add_child(_tutorial_grid)
+	col.add_child(RSUi.label(tr("C 返回菜单　　D / Esc 暂停　　断线后重连可重新练习"), 15, RSUi.TEXT_MUTED))
+
+
+func _update_tutorials() -> void:
+	var active := game.tutorials_active()
+	_tutorial_panel.visible = active
+	lobby_panel.visible = not active
+	if not active:
+		return
+	var signature := ""
+	for p: RSPartyGame.Player in game.ordered():
+		signature += "%d;" % p.c.id
+	if signature != _tutorial_roster:
+		_tutorial_roster = signature
+		for child in _tutorial_grid.get_children():
+			_tutorial_grid.remove_child(child)
+			child.queue_free()
+		_tutorial_cards.clear()
+		for p: RSPartyGame.Player in game.ordered():
+			var card := PanelContainer.new()
+			card.custom_minimum_size.x = 450
+			card.add_theme_stylebox_override("panel", RSUi.panel_style(14, Color("182334")))
+			_tutorial_grid.add_child(card)
+			var col := VBoxContainer.new()
+			card.add_child(col)
+			var title := RSUi.label("", 22, game.color_of(p))
+			title.clip_text = true
+			col.add_child(title)
+			var cue := Tutorial.Demo.new()
+			col.add_child(cue)
+			var hint := RSUi.label("", 19)
+			hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+			hint.custom_minimum_size = Vector2(410, 58)
+			col.add_child(hint)
+			_tutorial_cards[p.c.id] = {"title": title, "cue": cue, "hint": hint}
+	for p: RSPartyGame.Player in game.ordered():
+		var card: Dictionary = _tutorial_cards[p.c.id]
+		var lesson = game.tutorial_for(p)
+		card["title"].text = "P%d · %s" % [p.c.player, game.name_of(p)]
+		card["cue"].lesson = lesson
+		card["hint"].text = lesson.status() if lesson != null else tr("教学完成，回到舒适握姿后按 A 准备")
 
 
 func set_qr(url: String, rows: PackedStringArray) -> void:
@@ -142,6 +209,10 @@ func _build_lobby() -> void:
 	if game._maps().size() > 1:
 		_build_map_card(col)
 	game._lobby_extra(col)
+	var tutorial := Button.new()
+	tutorial.text = tr("重看教学（T）")
+	tutorial.pressed.connect(game.review_tutorials)
+	col.add_child(tutorial)
 	col.add_child(HSeparator.new())
 	var row := HBoxContainer.new()
 	row.add_theme_constant_override("separation", 20)

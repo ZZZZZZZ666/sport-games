@@ -23,7 +23,17 @@ static func load_once() -> void:
 			"color": clampi(int(cf.get_value(key, "color", slot - 1)), 0, COLORS.size() - 1),
 			"avatar": clampi(int(cf.get_value(key, "avatar", slot - 1)), 0, 3),
 			"phone_name": str(cf.get_value(key, "phone_name", "")),
+			"tutorials": _tutorial_ids(cf.get_value(key, "tutorials", [])),
 		}
+
+
+static func _tutorial_ids(value: Variant) -> Array:
+	var result: Array = []
+	if value is Array or value is PackedStringArray:
+		for item: Variant in value:
+			if item is String and not item in result:
+				result.append(item)
+	return result
 
 
 static func clean_name(value: String, slot: int = 1) -> String:
@@ -37,7 +47,7 @@ static func clean_name(value: String, slot: int = 1) -> String:
 
 static func profile(slot: int) -> Dictionary:
 	load_once()
-	return _slots[clampi(slot, 1, 4)].duplicate()
+	return _slots[clampi(slot, 1, 4)].duplicate(true)
 
 
 static func player_name(slot: int) -> String:
@@ -83,6 +93,23 @@ static func save() -> Error:
 	var err := cf.save(PATH)
 	if err != OK:
 		push_error("RSProfiles: cannot save profiles (%s)" % error_string(err))
+	return err
+
+
+static func tutorial_done(slot: int, game_id: String) -> bool:
+	return game_id in profile(slot)["tutorials"]
+
+
+static func complete_tutorial(slot: int, game_id: String) -> Error:
+	load_once()
+	if slot < 1 or slot > 4 or game_id.is_empty():
+		return ERR_INVALID_PARAMETER
+	if game_id in _slots[slot]["tutorials"]:
+		return OK
+	_slots[slot]["tutorials"].append(game_id)
+	var err := save()
+	if err != OK:
+		_slots[slot]["tutorials"].erase(game_id)
 	return err
 
 

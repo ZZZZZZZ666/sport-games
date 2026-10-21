@@ -22,6 +22,7 @@ enum Phase { LOBBY, COUNTDOWN, PLAY, RESULTS }
 const MENU_SCENE := "res://scenes/menu/main_menu.tscn"
 const COUNTDOWN_TIME := 3.0
 const MENU_TAP_MS := 800         ## D held longer than this is the hub's recenter, not the menu
+const Tutorial := preload("res://core/tutorial.gd")
 
 
 class Player:
@@ -90,6 +91,7 @@ var _smoke_report := ""
 var _smoke_shot := ""
 var _smoke_done := false
 var _tournament_final_shown := false
+var _tutorials: Dictionary = {}  ## controller id -> its active lobby lesson
 
 
 # ---------------------------------------------------------------------- game hooks ----
@@ -258,7 +260,10 @@ func _ready() -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if phase == Phase.LOBBY and event.is_action_pressed("ui_right"):
+	if phase == Phase.LOBBY and event is InputEventKey and event.pressed and not event.echo and event.physical_keycode == KEY_T:
+		review_tutorials()
+		get_viewport().set_input_as_handled()
+	elif phase == Phase.LOBBY and event.is_action_pressed("ui_right"):
 		pick_map(1)
 	elif phase == Phase.LOBBY and event.is_action_pressed("ui_left"):
 		pick_map(-1)
@@ -278,6 +283,7 @@ func go_menu() -> void:
 func open_pause() -> void:
 	if _shots.is_empty():
 		ui.pause.can_restart = phase != Phase.LOBBY and not (RSTournament.active() and RSTournament.round_done)
+		ui.pause.can_tutorial = phase == Phase.LOBBY and not players.is_empty() and demo == 0
 		ui.pause.open()
 
 
@@ -294,6 +300,7 @@ func _process(delta: float) -> void:
 	match phase:
 		Phase.LOBBY:
 			_sync_players()
+			_update_tutorials(delta)
 			if _pending_map >= 0:
 				_pending_t -= delta
 				if _pending_t <= 0.0:
@@ -375,6 +382,43 @@ func can_record(p: Player) -> bool:
 	return not p.fake and p.c.kind != "replay" and demo == 0 and _shots.is_empty() and _records_enabled
 
 
+func tutorial_for(p: Player):
+	return _tutorials.get(p.c.id)
+
+
+func tutorials_active() -> bool:
+	for lesson in _tutorials.values():
+		if lesson.started and not lesson.finished:
+			return true
+	return false
+
+
+func review_tutorials() -> void:
+	if phase != Phase.LOBBY:
+		return
+	for p: Player in players.values():
+		if not p.fake and p.c.kind != "replay":
+			_set_ready(p, false)
+			var lesson := Tutorial.new(game_id())
+			lesson.start(p.c)
+			_tutorials[p.c.id] = lesson
+
+
+func _update_tutorials(delta: float) -> void:
+	for id in _tutorials.keys():
+		var p: Player = players.get(id)
+		if p == null:
+			_tutorials.erase(id)
+			continue
+		var lesson = _tutorials[id]
+		lesson.update(p.c, delta)
+		if lesson.finished:
+			RSProfiles.complete_tutorial(p.c.player, game_id())
+			haptic(p, "hit")
+			_tutorials.erase(id)
+			_oled_lobby(p)
+
+
 func game_id() -> String:
 	return get_script().resource_path.get_base_dir().get_file()
 
@@ -396,6 +440,8 @@ func _add_player(c: RSController, fake: bool) -> Player:
 	views.add(p)
 	players[c.id] = p
 	_player_added(p)
+	if not fake and c.kind != "replay" and not RSProfiles.tutorial_done(c.player, game_id()):
+		_tutorials[c.id] = Tutorial.new(game_id())
 	return p
 
 
@@ -404,6 +450,7 @@ func _remove_player(id: int) -> void:
 	_player_removed(p)
 	views.remove(p)
 	players.erase(id)
+	_tutorials.erase(id)
 
 
 func _sync_players() -> void:
@@ -491,6 +538,8 @@ func finish_round() -> void:
 
 
 func _set_ready(p: Player, value: bool) -> void:
+	if value and _tutorials.has(p.c.id):
+		return
 	p.ready = value
 	_player_ready(p, value)
 	_oled_lobby(p)
@@ -516,6 +565,11 @@ func _on_button(c: RSController, button: int, pressed: bool) -> void:
 		return
 	var p: Player = players.get(c.id)
 	if p == null:
+		return
+	if phase == Phase.LOBBY and _tutorials.has(c.id):
+		_tutorials[c.id].on_button(c, button, pressed)
+		return
+	if phase == Phase.LOBBY and tutorials_active() and button == RSController.BTN_B:
 		return
 	if pressed and button == RSController.BTN_A and phase == Phase.LOBBY:
 		_set_ready(p, not p.ready)
@@ -576,6 +630,9 @@ func toast(p: Player, text: String, ms: int = 700) -> void:
 
 
 func _oled_lobby(p: Player) -> void:
+	if _tutorials.has(p.c.id):
+		send_ui(p, {"clear": true, "title": _oled_name(), "main": "TUTORIAL", "sub": "PRESS A", "legends": ["LEARN", "", "MENU", null]})
+		return
 	send_ui(p, {"clear": true, "title": _oled_name(), "main": "P%d" % p.c.player, "sub": "READY!" if p.ready else "PRESS A",
 		"legends": ["READY", "MAP" if _maps().size() > 1 else "", "MENU", null]})
 

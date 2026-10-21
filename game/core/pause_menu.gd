@@ -12,13 +12,15 @@ extends Control
 
 signal restart_requested
 signal menu_requested
+signal tutorial_requested
 
 var game: Node                  ## a party game, or the main menu's settings host
 var settings_only := false
 var can_restart := true          ## set by the game: restart makes sense right now
+var can_tutorial := false
 
 const PAGES := {
-	"main": ["resume", "restart", "display", "sound", "language", "menu"],
+	"main": ["resume", "restart", "tutorial", "display", "sound", "language", "menu"],
 	"display": ["fps", "quality", "upscale", "window", "hdr", "back"],
 	"sound": ["vol_master", "vol_music", "vol_sfx", "vol_ambience", "back"],
 	"settings": ["display", "sound", "color_safe", "language", "resume"],
@@ -209,6 +211,10 @@ func _choose(i: int) -> void:
 			if can_restart:
 				close()
 				restart_requested.emit()
+		"tutorial":
+			if can_tutorial:
+				close()
+				tutorial_requested.emit()
 		"display", "sound":
 			_show_page(_items()[i], 0)
 			RSSfx.play(self, "beep", -18.0, 1.6)
@@ -266,6 +272,8 @@ func _label(item: String) -> String:
 			return tr("◀ 返回") if settings_only else tr("继续游戏")
 		"restart":
 			return tr("重新开始本局")
+		"tutorial":
+			return tr("新手教学")
 		"display":
 			return tr("画面设置　▸")
 		"sound":
@@ -304,6 +312,8 @@ func _oled_label(item: String) -> Array:
 			return ["RESUME", ""]
 		"restart":
 			return ["RESTART", ""]
+		"tutorial":
+			return ["TUTORIAL", ""]
 		"display":
 			return ["DISPLAY", ">"]
 		"sound":
@@ -338,7 +348,7 @@ func _refresh() -> void:
 	for i in _rows.size():
 		var item: String = _items()[i]
 		_rows[i].text = "  " + _label(item)
-		_rows[i].disabled = item == "restart" and not can_restart
+		_rows[i].disabled = (item == "restart" and not can_restart) or (item == "tutorial" and not can_tutorial)
 	_send_oled()
 
 
