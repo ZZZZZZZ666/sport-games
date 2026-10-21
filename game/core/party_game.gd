@@ -353,6 +353,12 @@ func _complete_smoke() -> void:
 		return
 	report.store_string(JSON.stringify({"game": game_id(), "map": map_index, "players": scores, "phase": "results"}))
 	report.close()
+	# Fixed-fps smoke rounds can finish faster than the audio mixer drains its playbacks.
+	# Stop this scene's audio and give the mixer real time before terminating the process.
+	for audio: AudioStreamPlayer in find_children("*", "AudioStreamPlayer", true, false):
+		audio.stop()
+		audio.stream = null
+	OS.delay_msec(250)
 	print("RS_SMOKE_DONE: " + game_id())
 	get_tree().quit()
 
