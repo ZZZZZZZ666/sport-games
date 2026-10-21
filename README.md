@@ -65,6 +65,16 @@ godot --path game
 
 先进主菜单：手柄 **B / C** 切换、**A** 进入（键盘用方向键和回车）。菜单最后一项是 **语言 Language**，按 A 在中文和 English 之间切换。
 
+主菜单新增：
+
+- **玩家 / 手柄**：编辑 P1–P4 的名字、颜色和现有角色外观，保存在 `user://profiles.cfg`。查看设备电量、分配编号、归零和零偏校准；手机二维码会在 hub 就绪后更新。手机页面的“设置”里可以输入玩家名字，下一次入场时同步到对应档案。
+- **本地排行榜**：按项目和地图保存每位玩家的最佳成绩，位于 `user://records.cfg`；主菜单显示项目最佳，结算显示“新纪录！”。`--demo`、`--shots`、自定义 `--round` / `--frames` 不计正式纪录。
+- **派对大赛**：选择 3–6 项（也可随机选 3 项），连接并分配手柄后开始。每个项目的第 1–4 名分别得 10 / 7 / 5 / 3 分；同分共享名次，例如并列第一后下一名为第三。项目之间按 A 继续，最后按 A 查看总领奖台，再按 A 返回；C 结束大赛。参赛槽固定，中途缺席的玩家需在下个大厅重连后才能开始。
+- **设置**：直接调整画面、四类音量、语言与色弱友好配色。修改会立即保存；角色颜色在下一次进入项目时更新。
+- **致谢与素材**：游戏内来源与许可摘要；完整逐项记录仍见 `docs/THIRD_PARTY.md`。
+
+低功耗或界面调试时可用 `godot --path game -- --static-menu` 关闭主菜单的 3D 背景演示。
+
 **暂停菜单**：游戏里短按手柄 **D**（长按 1 秒是归零，不会打开菜单）或按 **Esc**。里面有继续、重新开始、画面设置、语言和回主菜单。设置保存在 `%APPDATA%\Godot\app_userdata\Regina Sports\settings.cfg`，所有游戏通用：
 
 | 设置 | 选项 | 说明 |
@@ -135,6 +145,16 @@ hub/.venv/Scripts/python tools/i18n_check.py
 ```
 
 它会列出还没有英文的中文文字（`--todo 文件名` 把它们写进一个待翻译文件），以及 en.json 里已经用不到的条目。不需要翻译的行在行尾加 `# no-i18n`。
+
+游戏回归检查（需要先完成素材导入）：
+
+```sh
+python tools/test_game.py --godot /path/to/godot --party
+python tools/smoke_test.py --godot /path/to/godot --players 2
+python tools/smoke_test.py --godot /path/to/godot --players 4 --screenshots --language en
+```
+
+测试会隔离用户数据，避免覆盖真实档案。冒烟测试输出在 `audit-output/smoke/`，每项必须真正进入结算才算通过；截图模式需要图形桌面。Windows 测试进程的原生崩溃会作为失败返回，避免弹出即时调试器。当前验证范围与后续建议见 [改进记录](docs/IMPROVEMENTS.md)。
 
 **手柄调试**：显示每个手柄的 3D 模型、状态卡片、手机二维码、角速度和线加速度曲线、挥动检测记录，还有手柄屏幕的实时预览。
 

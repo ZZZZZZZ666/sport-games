@@ -29,3 +29,30 @@ jobs:
       - run: node --test tools/tests/asset_sync.test.mjs
       # Do not contact upstream asset hosts or download their files on every contribution.
       - run: node tools/publication_audit.mjs --privacy-only
+  game-shell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Shell and procedural-game tests do not need the large art downloads.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/game/assets/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download pinned Godot
+        run: |
+          mkdir -p tools/godot
+          cd tools/godot
+          curl --fail --location --retry 3 -O https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          curl --fail --location --retry 3 -O https://github.com/godotengine/godot/releases/download/4.7.2-stable/SHA512-SUMS.txt
+          sha512sum --ignore-missing -c SHA512-SUMS.txt
+          unzip -q Godot_v4.7.2-stable_linux.x86_64.zip
+          chmod +x Godot_v4.7.2-stable_linux.x86_64
+      - name: Register script classes
+        run: tools/godot/Godot_v4.7.2-stable_linux.x86_64 --headless --path game --editor --import --quit
+      - name: Test saves and complete party flow
+        run: python tools/test_game.py --godot tools/godot/Godot_v4.7.2-stable_linux.x86_64 --party
+      - run: python tools/i18n_check.py

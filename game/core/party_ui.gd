@@ -18,6 +18,9 @@ var _results_text: RichTextLabel
 var _map_title: Label
 var _map_line: Label
 var _map_desc: Label
+var _results_title: Label
+var _results_hint: Label
+var _results_col: VBoxContainer
 
 
 func _init(owner_game: RSPartyGame) -> void:
@@ -48,11 +51,13 @@ func update_lobby() -> void:
 	var lines := PackedStringArray()
 	for p: RSPartyGame.Player in game.ordered():
 		var state := tr("[color=#22c55e]✓ 已准备[/color]") if p.ready else tr("[color=#9aa3b5]按 A 准备[/color]")
-		lines.append("[color=#%s][b]P%d[/b][/color]   %s   %s" % [game.color_of(p).to_html(false), p.c.player, p.c.display_name, state])
+		lines.append("[color=#%s][b]P%d[/b][/color]   %s   %s" % [game.color_of(p).to_html(false), p.c.player, RSProfiles.bbcode(game.name_of(p)), state])
 	if lines.is_empty():
 		lines.append(tr("[color=#9aa3b5]还没有手柄。\n先运行 hub/run_hub.bat，然后打开 Regina，或用手机扫右边的二维码。[/color]"))
 	if not game.demo and not ControllerHub.is_hub_connected():
 		lines.append(tr("[color=#f87171]● 未连接 hub —— 请运行 hub/run_hub.bat[/color]"))
+	if RSTournament.active():
+		lines.append(tr("大赛总积分 · %d / %d") % [RSTournament.index + 1, RSTournament.games.size()])
 	var text := "\n".join(lines)
 	if _lobby_players.text != text:
 		_lobby_players.text = text
@@ -86,6 +91,42 @@ func set_results(lines: PackedStringArray, show_now: bool) -> void:
 func results_on_right(on: bool) -> void:
 	## With a podium framed on the left half, the results move to the right one.
 	results_panel.anchor_left = 0.5 if on else 0.0
+
+
+func show_tournament_podium(rows: Array) -> void:
+	results_on_right(false)
+	_results_title.text = tr("大赛总领奖台")
+	_results_text.visible = false
+	_results_hint.text = tr("A / C 返回主菜单")
+	var podium := HBoxContainer.new()
+	podium.alignment = BoxContainer.ALIGNMENT_CENTER
+	podium.add_theme_constant_override("separation", 14)
+	_results_col.add_child(podium)
+	_results_col.move_child(podium, _results_hint.get_index())
+	for i: int in [1, 0, 2, 3]:
+		if i >= rows.size():
+			continue
+		var row: Dictionary = rows[i]
+		var col := VBoxContainer.new()
+		col.custom_minimum_size = Vector2(160, 300)
+		col.alignment = BoxContainer.ALIGNMENT_END
+		podium.add_child(col)
+		var name_label := RSUi.label(str(row["name"]), 22)
+		name_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		name_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		col.add_child(name_label)
+		var block := PanelContainer.new()
+		block.custom_minimum_size.y = [180, 130, 95, 65][i]
+		block.add_theme_stylebox_override("panel", RSUi.panel_style(12, RSProfiles.player_color(row["slot"]).darkened(0.3)))
+		col.add_child(block)
+		var rank := 1
+		for j in i:
+			if rows[j]["points"] > row["points"]:
+				rank += 1
+		var label := RSUi.label("#%d · P%d\n%d" % [rank, row["slot"], row["points"]], 30)
+		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+		block.add_child(label)
 
 
 # -------------------------------------------------------------------------- build ----
@@ -148,7 +189,9 @@ func _build_results() -> void:
 	var results := _centered_panel(640)
 	results_panel = results[0]
 	var col: VBoxContainer = results[1]
-	col.add_child(RSUi.label(tr("成绩"), 40))
+	_results_col = col
+	_results_title = RSUi.label(tr("成绩"), 40)
+	col.add_child(_results_title)
 	_results_text = RichTextLabel.new()
 	_results_text.bbcode_enabled = true
 	_results_text.fit_content = true
@@ -156,7 +199,8 @@ func _build_results() -> void:
 	_results_text.add_theme_font_size_override("normal_font_size", 18)
 	_results_text.add_theme_constant_override("line_separation", 6)
 	col.add_child(_results_text)
-	col.add_child(RSUi.label(tr("A 再来一局　　C 返回菜单　　D / Esc 暂停菜单"), 15, RSUi.TEXT_MUTED))
+	_results_hint = RSUi.label(tr("A 继续　　C 返回菜单　　D / Esc 暂停菜单") if RSTournament.active() else tr("A 再来一局　　C 返回菜单　　D / Esc 暂停菜单"), 15, RSUi.TEXT_MUTED)
+	col.add_child(_results_hint)
 
 
 func _centered_panel(width: float) -> Array:

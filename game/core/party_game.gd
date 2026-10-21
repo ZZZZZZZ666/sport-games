@@ -84,6 +84,12 @@ var _pending_map := -1
 var _pending_t := 0.0
 var _d_down: Dictionary = {}     ## controller id -> ticks (ms) when D went down
 var _beat := -1        # countdown second last buzzed
+var _records_enabled := true
+var _result_committed := false
+var _smoke_report := ""
+var _smoke_shot := ""
+var _smoke_done := false
+var _tournament_final_shown := false
 
 
 # ---------------------------------------------------------------------- game hooks ----
@@ -204,12 +210,18 @@ func _draw_overlay(_o: Overlay, _k: float) -> void:
 
 func _ready() -> void:
 	for a: String in OS.get_cmdline_user_args():
+		if a.begins_with("--round=") or a.begins_with("--frames="):
+			_records_enabled = false
 		if a.begins_with("--demo"):
 			demo = clampi(int(a.get_slice("=", 1)) if a.contains("=") else 1, 1, 4)
 		elif a.begins_with("--shots="):
 			_shots = a.get_slice("=", 1)
 		elif a.begins_with("--map="):
 			_last_map[get_script().resource_path] = int(a.get_slice("=", 1))
+		elif a.begins_with("--smoke-report="):
+			_smoke_report = a.trim_prefix("--smoke-report=")
+		elif a.begins_with("--smoke-shot="):
+			_smoke_shot = a.trim_prefix("--smoke-shot=")
 		else:
 			_parse_arg(a)
 	font = RSUi.font()
@@ -259,12 +271,13 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func go_menu() -> void:
 	get_tree().paused = false
+	RSTournament.clear()
 	get_tree().change_scene_to_file(MENU_SCENE)
 
 
 func open_pause() -> void:
 	if _shots.is_empty():
-		ui.pause.can_restart = phase != Phase.LOBBY
+		ui.pause.can_restart = phase != Phase.LOBBY and not (RSTournament.active() and RSTournament.round_done)
 		ui.pause.open()
 
 
@@ -287,6 +300,8 @@ func _process(delta: float) -> void:
 					_apply_pending_map()
 			_lobby_process(delta)
 			var all_ready := not players.is_empty()
+			if RSTournament.active():
+				all_ready = players.size() == RSTournament.entrants.size()
 			for p: Player in players.values():
 				if p.fake and not p.ready and phase_time > 0.8:
 					_set_ready(p, true)
@@ -311,7 +326,28 @@ func _process(delta: float) -> void:
 			_results_process(delta)
 			if not ui.results_panel.visible and phase_time >= results_delay:
 				ui.results_panel.visible = true
+			if not _smoke_report.is_empty() and not _smoke_done and phase_time > results_delay + 1.0:
+				_smoke_done = true
+				_complete_smoke()
 	_take_shots()
+
+
+func _complete_smoke() -> void:
+	if not _smoke_shot.is_empty() and DisplayServer.get_name() != "headless":
+		await RenderingServer.frame_post_draw
+		get_viewport().get_texture().get_image().save_png(_smoke_shot)
+	var scores: Array = []
+	for p: Player in ranked_players():
+		scores.append({"slot": p.c.player, "score": p.score})
+	var report := FileAccess.open(_smoke_report, FileAccess.WRITE)
+	if report == null:
+		push_error("Cannot write smoke report")
+		get_tree().quit(1)
+		return
+	report.store_string(JSON.stringify({"game": game_id(), "map": map_index, "players": scores, "phase": "results"}))
+	report.close()
+	print("RS_SMOKE_DONE: " + game_id())
+	get_tree().quit()
 
 
 # ------------------------------------------------------------------------ players ----
@@ -324,13 +360,39 @@ func ordered() -> Array:
 
 
 func color_of(p: Player) -> Color:
-	return RSControllerModel.PLAYER_COLORS[clampi(p.c.player, 0, 4)]
+	return RSProfiles.player_color(p.c.player)
+
+
+func avatar_of(p: Player) -> int:
+	return RSProfiles.avatar(p.c.player)
+
+
+func name_of(p: Player) -> String:
+	return p.c.display_name if p.fake else RSProfiles.player_name(p.c.player)
+
+
+func can_record(p: Player) -> bool:
+	return not p.fake and p.c.kind != "replay" and demo == 0 and _shots.is_empty() and _records_enabled
+
+
+func game_id() -> String:
+	return get_script().resource_path.get_base_dir().get_file()
+
+
+func ranked_players() -> Array:
+	## Unified ranking hook. Future games with different win rules may override this.
+	var list := ordered()
+	list.sort_custom(func(a: Player, b: Player) -> bool:
+		return a.score > b.score if a.score != b.score else a.c.player < b.c.player)
+	return list
 
 
 func _add_player(c: RSController, fake: bool) -> Player:
 	var p := Player.new()
 	p.c = c
 	p.fake = fake
+	if not fake and c.kind == "phone":
+		RSProfiles.import_phone_name(c.player, str(c.info.get("profile_name", "")))
 	views.add(p)
 	players[c.id] = p
 	_player_added(p)
@@ -348,6 +410,8 @@ func _sync_players() -> void:
 	if demo:
 		return   # bots only, keep real controllers out of it
 	for c in ControllerHub.connected_controllers():
+		if RSTournament.active() and not RSTournament.entrants.has(c.player):
+			continue
 		if c.player < 1 or c.player > 4 or players.has(c.id) or players.size() >= 4:
 			continue
 		var taken := false
@@ -375,6 +439,7 @@ func _to_lobby() -> void:
 
 
 func _start_countdown() -> void:
+	_result_committed = false
 	phase = Phase.COUNTDOWN
 	phase_time = 0.0
 	_beat = -1
@@ -391,18 +456,37 @@ func _start_countdown() -> void:
 
 
 func finish_round() -> void:
+	if _result_committed:
+		return
+	_result_committed = true
 	phase = Phase.RESULTS
 	phase_time = 0.0
-	var list := ordered()
-	list.sort_custom(func(a: Player, b: Player) -> bool: return a.score > b.score)
+	var list := ranked_players()
 	var lines := PackedStringArray()
+	var results: Array = []
+	var rank := 1
 	for i in list.size():
 		var p: Player = list[i]
+		if i > 0 and p.score != (list[i - 1] as Player).score:
+			rank = i + 1
+		var fresh := false
+		if can_record(p):
+			fresh = RSRecords.submit(game_id(), map_index, p.c.player, p.score)
 		lines.append(tr("[font_size=30]第 %d 名  [color=#%s]P%d[/color]  %d 分[/font_size]\n[color=#9aa3b5]%s[/color]") % [
-			i + 1, color_of(p).to_html(false), p.c.player, p.score, _result_detail(p)])
-		send_ui(p, {"clear": true, "title": "RESULT", "main": "#%d" % (i + 1), "sub": "%d PTS" % p.score,
-			"legends": ["AGAIN", "", "MENU", null]})
-		haptic(p, "win" if i == 0 else "hit")
+			rank, color_of(p).to_html(false), p.c.player, p.score,
+			RSProfiles.bbcode(name_of(p)) + " · " + _result_detail(p)])
+		if fresh:
+			lines.append("[color=#fbbf24]" + tr("新纪录！") + "[/color]")
+		results.append({"slot": p.c.player, "rank": rank, "score": p.score})
+		send_ui(p, {"clear": true, "title": "RESULT", "main": "#%d" % rank, "sub": "%d PTS" % p.score,
+			"legends": ["NEXT" if RSTournament.active() else "AGAIN", "", "MENU", null]})
+		haptic(p, "win" if rank == 1 else "hit")
+	if RSTournament.active():
+		RSTournament.record(game_id(), results)
+		lines.append("\n" + tr("大赛总积分 · %d / %d") % [RSTournament.index + 1, RSTournament.games.size()])
+		for row: Dictionary in RSTournament.standings():
+			lines.append("P%d · %s · %d" % [row["slot"], RSProfiles.bbcode(row["name"]), row["points"]])
+		lines.append(tr("大赛完成！A 查看总领奖台") if RSTournament.last_round() else tr("A 进入下一个项目"))
 	ui.set_results(lines, results_delay <= 0.0)
 
 
@@ -440,8 +524,20 @@ func _on_button(c: RSController, button: int, pressed: bool) -> void:
 	elif pressed and phase == Phase.LOBBY:
 		_lobby_button(p, button)
 	elif pressed and button == RSController.BTN_A and phase == Phase.RESULTS:
-		if phase_time > 1.0:
-			_to_lobby()
+		if phase_time > maxf(results_delay, 1.0) and ui.results_panel.visible:
+			if RSTournament.active():
+				if RSTournament.last_round():
+					if not _tournament_final_shown:
+						_tournament_final_shown = true
+						ui.show_tournament_podium(RSTournament.standings())
+						for participant: Player in players.values():
+							send_ui(participant, {"clear": true, "title": "PARTY", "main": "FINISHED", "legends": ["MENU", "", "MENU", null]})
+					else:
+						go_menu()
+				else:
+					get_tree().change_scene_to_file(RSTournament.advance())
+			else:
+				_to_lobby()
 	elif phase in [Phase.COUNTDOWN, Phase.PLAY]:
 		_player_button(p, button, pressed)
 
