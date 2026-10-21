@@ -79,7 +79,8 @@ def main() -> None:
     (out / "README.txt").write_text(
         "Sport Games / 体感运动小游戏\n\n解压整个压缩包，双击 SportGames.exe。\n"
         "首次运行时请允许控制器中枢访问你信任的专用局域网。手机和电脑连接同一 Wi-Fi，在游戏大厅扫码。\n"
-        "证书、配置和日志保存在当前用户的 SportGames 数据目录，不包含在发行包中。\n"
+        "中枢证书和日志保存在当前用户的 SportGames 数据目录。中枢配置位于 hub/config.json。\n"
+        "游戏设置保存在 Godot 的用户数据目录。发行包不含本机证书和日志。\n"
         "无需安装 Godot、Python、Node.js 或下载素材。\n\n"
         "Extract the entire archive, then run SportGames.exe. Use the same Wi-Fi for phone controllers.\n"
         "This initial prerelease has automated startup/network checks; controller hardware and GPU performance need real-device testing.\n",

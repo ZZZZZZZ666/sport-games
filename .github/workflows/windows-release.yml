@@ -45,7 +45,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Godot-Windows-game
-          path: build/game/
+          path: |
+            build/game/**/*.exe
+            build/game/**/*.pck
+            build/game/**/*.dll
           if-no-files-found: error
           compression-level: 0
           retention-days: 7

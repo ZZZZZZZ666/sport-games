@@ -26,7 +26,7 @@ def test_incomplete_package_is_rejected(tmp_path):
         validate_package(root)
 
 
-@pytest.mark.parametrize("name", ["data/.certs/private.key", "data/cert.pem", "hub.log", "samples.jsonl", ".git/config"])
+@pytest.mark.parametrize("name", ["data/.certs/private.key", "data/cert.pem", "hub.log", "samples.jsonl", ".git/config", "game/SportGames.pck-leftover"])
 def test_runtime_private_files_are_rejected(tmp_path, name):
     root = package(tmp_path)
     file = root / name
