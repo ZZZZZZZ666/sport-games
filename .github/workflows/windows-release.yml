@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: windows-${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && format('refs/heads/{0}', github.head_ref) || github.ref }}
@@ -21,6 +22,8 @@ jobs:
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -36,15 +39,43 @@ jobs:
       - name: Install verified official Godot and Windows export templates
         run: python tools/download_godot.py --platform linux --templates
       - name: Restore Godot import cache
+        id: imports
         uses: actions/cache@v4
         with:
           path: game/.godot
           key: godot-${{ runner.os }}-${{ hashFiles('tools/release_config.json', 'game/**/*.import', 'game/**/*.glb', 'game/**/*.gltf') }}
+      - name: Find verified dev PR imports for the first main build
+        id: import_artifact
+        if: github.ref == 'refs/heads/main' && steps.imports.outputs.cache-hit != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/find_import_artifact.py
+      - name: Restore verified PR imports
+        if: steps.import_artifact.outputs.run_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: Godot-imports
+          path: game/.godot
+          run-id: ${{ steps.import_artifact.outputs.run_id }}
+          github-token: ${{ github.token }}
       - name: Import, check every map and export Windows game
         run: python tools/build_game.py
       - uses: actions/upload-artifact@v4
         with:
+          name: Godot-imports
+          overwrite: true
+          path: |
+            game/.godot/imported/
+            game/.godot/uid_cache.bin
+            game/.godot/global_script_class_cache.cfg
+          include-hidden-files: true
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
           name: Godot-Windows-game
+          overwrite: true
           path: |
             build/game/**/*.exe
             build/game/**/*.pck
@@ -86,6 +117,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: SportGames-Windows-x86_64
+          overwrite: true
           path: |
             dist/SportGames-Windows-x86_64.zip
             dist/SportGames-Windows-x86_64.zip.sha256
