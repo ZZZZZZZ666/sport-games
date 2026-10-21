@@ -8,8 +8,8 @@
 每次提交到 `main/dev` 或向它们提交 PR，GitHub Actions 的 **Windows package** 都会：
 
 1. 扫描隐私和素材声明，下载并校验锁定的 Poly Haven 文件。
-2. 校验官方 Godot 和导出模板的 SHA-512，用 Windows runner 导出游戏。
-3. 冻结 Python 中枢和启动器，包含手机网页及第三方声明。
+2. 校验官方 Godot 和导出模板的 SHA-512，用 Linux runner 导入并交叉导出 Windows 游戏。
+3. 在 Windows runner 冻结 Python 中枢和启动器，包含手机网页及第三方声明。
 4. 检查 HTTP、HTTPS、WebSocket、启动器、各游戏地图和篮球 1/2/4 人启动。
 5. 打包 ZIP 和 SHA-256，保存为 Actions artifact（7 天）。
 
@@ -35,7 +35,7 @@ git push origin v0.1.0-alpha.2
 
 ## 主分支规则
 
-审阅后的配置位于 `.github/rulesets/main.json`：禁止删除和强推、要求 PR、对话解决以及四项 CI 检查。
+审阅后的配置位于 `.github/rulesets/main.json`：禁止删除和强推、要求 PR、对话解决以及五项 CI 检查。
 GitHub 不会自动应用仓库中的 JSON。维护者使用具有仓库管理权限的 GitHub CLI 登录后运行：
 
 ```sh

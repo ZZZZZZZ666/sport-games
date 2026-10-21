@@ -28,6 +28,7 @@
           {"context": "hub (3.11)"},
           {"context": "hub (3.12)"},
           {"context": "privacy"},
+          {"context": "game"},
           {"context": "windows"}
         ]
       }
