@@ -34,8 +34,11 @@ def smoke_game(executable: Path, project: Path | None = None) -> None:
     cases += [("ski/ski_game", index, 1) for index in range(4)]
     cases += [("basketball/basketball_game", index, players) for index in range(2) for players in [1, 2, 4]]
     for scene, index, players in cases:
-        args = ["--", f"--demo={players}", f"--map={index}"] if players else []
-        checked_run(command + [f"res://scenes/{scene}.tscn"] + args)
+        game_id = scene.split("/", 1)[0]
+        args = ["--", f"--game={game_id}", f"--demo={players}", f"--map={index}"] if players else []
+        output = checked_run(command + args)
+        if players and f"CLI game: {game_id}" not in output:
+            raise RuntimeError("Game menu did not select the requested game: " + game_id)
         print(f"Passed: {scene}, map={index}, players={players or 'menu'}", flush=True)
 
 
