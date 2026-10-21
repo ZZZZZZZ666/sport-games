@@ -12,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: windows-${{ github.ref }}
+  group: windows-${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && format('refs/heads/{0}', github.head_ref) || github.ref }}
   cancel-in-progress: true
 
 jobs:
