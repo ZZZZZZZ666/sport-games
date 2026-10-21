@@ -1,0 +1,101 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { installAsset, request, resolveFile, safePath, sha256, validateUrl } from '../sync_assets.mjs';
+import { sanitizeJpegProcessingHistory } from '../asset_metadata.mjs';
+
+const remote = { url: 'https://dl.polyhaven.com/file/ph-assets/fixture.bin' };
+const fixture = () => fs.mkdtempSync(path.join(os.tmpdir(), 'regina-assets-'));
+function item(bytes) {
+  return { path: 'game/assets/polyhaven/fixture.bin', bytes: bytes.length,
+    sha256: sha256(bytes), downloadSha256: sha256(bytes) };
+}
+const response = bytes => new Response(bytes);
+
+test('verified local files need no network request', async () => {
+  const root = fixture(), bytes = Buffer.from('known asset'), entry = item(bytes), dest = safePath(root, entry.path);
+  fs.mkdirSync(path.dirname(dest), { recursive: true }); fs.writeFileSync(dest, bytes);
+  const result = await installAsset(entry, root, () => { throw new Error('Network should not be used'); });
+  assert.equal(result, 'verified');
+});
+
+test('a download is installed only after its size and SHA-256 match', async () => {
+  const root = fixture(), bytes = Buffer.from('known asset'), entry = item(bytes);
+  assert.equal(await installAsset(entry, root, () => remote, { fetcher: async () => response(bytes) }), 'downloaded');
+  assert.deepEqual(fs.readFileSync(safePath(root, entry.path)), bytes);
+});
+
+test('wrong content leaves a changed local file intact and removes temporary files', async () => {
+  const root = fixture(), bytes = Buffer.from('known asset'), entry = item(bytes), dest = safePath(root, entry.path);
+  fs.mkdirSync(path.dirname(dest), { recursive: true }); fs.writeFileSync(dest, 'custom art');
+  await assert.rejects(installAsset(entry, root, () => remote), /Local file differs/);
+  await assert.rejects(installAsset(entry, root, () => remote,
+    { force: true, fetcher: async () => response(Buffer.from('wrong asset')) }), /pinned/);
+  assert.equal(fs.readFileSync(dest, 'utf8'), 'custom art');
+  assert.deepEqual(fs.readdirSync(path.dirname(dest)), ['fixture.bin']);
+});
+
+test('oversized and interrupted responses never install partial data', async () => {
+  for (const fetcher of [async () => response('too much data'), async () => new Response(new ReadableStream({
+    start(controller) { controller.enqueue(Buffer.from('a')); controller.error(new Error('interrupted')); }
+  }))]) {
+    const root = fixture(), entry = item(Buffer.from('ok'));
+    await assert.rejects(installAsset(entry, root, () => remote, { fetcher }));
+    assert.equal(fs.existsSync(safePath(root, entry.path)), false);
+    assert.deepEqual(fs.readdirSync(path.dirname(safePath(root, entry.path))), []);
+  }
+});
+
+test('paths and redirects cannot escape approved destinations', async () => {
+  const root = fixture();
+  for (const p of ['../elsewhere', '/absolute', 'folder/../escape', 'folder\\escape'])
+    assert.throws(() => safePath(root, p));
+  const credentialUrl = new URL(remote.url);
+  credentialUrl.username = 'fixture-user'; credentialUrl.password = 'fixture-password';
+  for (const url of ['http://dl.polyhaven.com/file', 'https://polyhaven.com.example.org/file',
+    'https://example.org/file', credentialUrl.href]) assert.throws(() => validateUrl(url));
+  let calls = 0;
+  await assert.rejects(request(remote.url, { fetcher: async () => {
+    calls++; return new Response(null, { status: 302, headers: { location: 'https://example.org/file' } });
+  } }), /approved/);
+  assert.equal(calls, 1);
+});
+
+test('API selectors include the exact requested model dependency', () => {
+  const info = { gltf: { '2k': { gltf: { include: { 'textures/fixture.jpg': remote } } } } };
+  assert.equal(resolveFile(info, ['gltf', '2k', 'gltf', 'include', 'textures/fixture.jpg']), remote);
+  assert.throws(() => resolveFile(info, ['gltf', '4k', 'gltf']), /no longer listed/);
+});
+
+function historyJpeg() {
+  const history = Buffer.from(['C:', 'Users', 'Fixture', 'processing-command-'.repeat(5)].join('/') + '\0');
+  const copyright = Buffer.from('Example creator; CC0\0');
+  const start = 8 + 2 + 2 * 12 + 4, tiff = Buffer.alloc(start + history.length + copyright.length);
+  tiff.write('II'); tiff.writeUInt16LE(42, 2); tiff.writeUInt32LE(8, 4); tiff.writeUInt16LE(2, 8);
+  for (const [i, tag, value, offset] of [[0, 0x0131, history, start], [1, 0x8298, copyright, start + history.length]]) {
+    const p = 10 + i * 12; tiff.writeUInt16LE(tag, p); tiff.writeUInt16LE(2, p + 2);
+    tiff.writeUInt32LE(value.length, p + 4); tiff.writeUInt32LE(offset, p + 8); value.copy(tiff, offset);
+  }
+  const exif = Buffer.concat([Buffer.from('Exif\0\0'), tiff]), length = Buffer.alloc(2);
+  length.writeUInt16BE(exif.length + 2);
+  const pixels = Buffer.from([255, 218, 0, 2, 2, 4, 6, 8, 255, 217]);
+  return { jpeg: Buffer.concat([Buffer.from([255, 216, 255, 225]), length, exif, pixels]), pixels, copyright };
+}
+
+test('processing-history cleanup preserves copyright and compressed pixel bytes', () => {
+  const { jpeg, pixels, copyright } = historyJpeg(), cleaned = sanitizeJpegProcessingHistory(jpeg);
+  assert.equal(cleaned.length, jpeg.length);
+  assert.ok(cleaned.subarray(-pixels.length).equals(pixels));
+  assert.ok(cleaned.includes(copyright));
+  assert.ok(!cleaned.includes(Buffer.from('processing-command-')));
+  assert.ok(jpeg.includes(Buffer.from('processing-command-'))); // Input is not mutated.
+});
+
+test('sanitized downloads must match the final hash before installation', async () => {
+  const root = fixture(), { jpeg } = historyJpeg(), cleaned = sanitizeJpegProcessingHistory(jpeg);
+  const entry = { ...item(cleaned), downloadSha256: sha256(jpeg), transform: 'jpeg-processing-history-v1' };
+  assert.equal(await installAsset(entry, root, () => remote, { fetcher: async () => response(jpeg) }), 'downloaded');
+  assert.deepEqual(fs.readFileSync(safePath(root, entry.path)), cleaned);
+});

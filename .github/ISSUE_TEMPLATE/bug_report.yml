@@ -1,0 +1,20 @@
+name: Bug report
+description: Report a reproducible problem in the game, hub or firmware.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and reproduction steps
+      description: Include what you expected and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Setup
+      description: OS, Godot version, game/map, number of players, phone or Regina. Do not include device addresses or other personal details.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence
+      description: Relevant errors or screenshots. Remove usernames, local paths, IP/MAC addresses, tokens and private content first.

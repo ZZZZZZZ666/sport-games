@@ -1,0 +1,57 @@
+# Local editors, credentials and device data
+.vscode/
+.idea/
+.claude/
+.codex/
+.env
+.env.*
+!.env.example
+/hub/config.local.json
+**/.certs/
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jsonl
+
+# Generated environments, imports and builds. Keep .import and .uid sidecars:
+# they contain portable Godot import settings and resource identities.
+**/.godot/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/node_modules/
+**/build/
+**/dist/
+*.pyc
+*.log
+*.tmp
+*.part
+firmware/sdkconfig
+firmware/sdkconfig.old
+
+# Downloaded tools, source material, private Blender profiles and dependencies
+/tools/_dl/
+/tools/blender_user/
+/tools/godot/
+/tools/regina_sports.ico
+/third_party/
+/publication-preview/
+/audit-output/
+
+# Upstream Poly Haven binaries: restore with node tools/sync_assets.mjs.
+# Keep credits, glTF descriptors and Godot import settings in Git.
+/game/assets/polyhaven/**/*.bin
+/game/assets/polyhaven/**/*.hdr
+/game/assets/polyhaven/**/*.jpg
+/game/assets/polyhaven/**/*.jpeg
+/game/assets/polyhaven/**/*.png
+# Locally generated LOD geometry/textures have no upstream download equivalent.
+!/game/assets/polyhaven/**/*_lod.bin
+!/game/assets/polyhaven/**/textures_lod/*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

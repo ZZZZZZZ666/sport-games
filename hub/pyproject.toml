@@ -1,0 +1,18 @@
+[project]
+name = "regina-hub"
+version = "0.1.0"
+description = "Regina Sports controller hub: Regina BLE / phone / simulator -> Godot"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.9",
+    "bleak>=0.22",
+    "cryptography>=42",
+    "qrcode>=7.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

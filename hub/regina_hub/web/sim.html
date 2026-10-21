@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regina 模拟手柄</title>
+<link rel="stylesheet" href="/static/common.css">
+<style>
+  body { min-height: 100vh; }
+  .wrap { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr); gap: 16px; padding: 0 16px 16px; }
+  @media (max-width: 860px) { .wrap { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+  .card h3 { margin: 0 0 10px; font-size: 14px; color: var(--muted); font-weight: 600; letter-spacing: .06em; }
+  canvas { width: 100%; height: 360px; display: block; border-radius: 14px; background: radial-gradient(100% 100% at 50% 30%, #1b2333, #0d1017); cursor: grab; touch-action: none; }
+  canvas:active { cursor: grabbing; }
+  .keys { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .keys .btn { height: 76px; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+  .help { font-size: 13px; color: var(--muted); line-height: 1.8; }
+  kbd { background: var(--panel-2); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; padding: 0 6px; font-family: inherit; font-size: 12px; color: var(--text); }
+  .screen { margin: 0; }
+  /* The phone's vibration, shown: the screen shakes while a pulse plays. */
+  .screen.buzz { animation: buzz 50ms linear infinite; }
+  @keyframes buzz { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(-2px, 1px); } 75% { transform: translate(2px, -1px); } }
+  .meter { flex: 1; height: 10px; border-radius: 5px; background: var(--panel-2); overflow: hidden; }
+  .meter > div { height: 100%; width: 0; background: var(--player); }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="badge" id="badge">--</div>
+    <div class="name">模拟手柄 <span class="muted">（键盘 + 鼠标代替 Regina）</span></div>
+    <span class="muted" id="info"></span>
+    <button class="small-btn" id="langBtn"></button>
+    <div class="dot" id="dot"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="card">
+      <h3>姿态（拖动旋转，滚轮横滚）</h3>
+      <canvas id="view"></canvas>
+      <div class="row">
+        <button class="small-btn" data-swing="forehand">正手挥拍 <kbd>1</kbd></button>
+        <button class="small-btn" data-swing="backhand">反手挥拍 <kbd>2</kbd></button>
+        <button class="small-btn" data-swing="smash">过头下挥 <kbd>3</kbd></button>
+        <button class="small-btn" data-swing="punch">出拳 <kbd>4</kbd></button>
+        <button class="small-btn" data-swing="toss">向上甩 <kbd>5</kbd></button>
+        <button class="small-btn" id="home">回到零姿态 <kbd>H</kbd></button>
+      </div>
+      <div class="row">
+        <span class="muted">油门 <kbd>W</kbd>/<kbd>S</kbd></span>
+        <div class="meter"><div id="analogBar"></div></div>
+        <span class="muted" id="dialInfo"></span>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="screen" id="screen">
+        <div class="ui-title"></div>
+        <div class="ui-main"></div>
+        <div class="ui-sub"></div>
+        <div class="ui-bar" hidden><div class="ui-bar-track"><div class="ui-bar-fill"></div></div><div class="ui-bar-label"></div></div>
+        <div class="ui-toast"></div>
+      </div>
+      <div class="card">
+        <h3>按键</h3>
+        <div class="keys">
+          <button class="btn" data-bit="1"><span class="key">A</span><span class="legend" data-legend="0" data-default="Space / J"></span></button>
+          <button class="btn" data-bit="2"><span class="key">B</span><span class="legend" data-legend="1" data-default="K"></span></button>
+          <button class="btn" data-bit="4"><span class="key">C</span><span class="legend" data-legend="2" data-default="L"></span></button>
+          <button class="btn" data-bit="8"><span class="key">D</span><span class="legend" data-legend="3" data-default="R 长按归零"></span></button>
+        </div>
+        <div class="help" style="margin-top:12px">
+          <kbd>Space</kbd>/<kbd>J</kbd> A　<kbd>K</kbd> B　<kbd>L</kbd> C　<kbd>R</kbd> D（长按 1 秒归零）<br>
+          <kbd>[</kbd> <kbd>]</kbd> 小旋钮　<kbd>-</kbd> <kbd>=</kbd> 大旋钮　<kbd>Q</kbd> <kbd>E</kbd> 横滚<br>
+          模拟数据带有轻微噪声和固定零偏，用来检验 hub 的自动校准。
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="/static/common.js"></script>
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+RS.translatePage();
+$("langBtn").textContent = RS.lang() === "en" ? "中文" : "English";
+$("langBtn").addEventListener("click", () => RS.setLang(RS.lang() === "en" ? "zh" : "en"));
+const ui = new RS.UiView($("screen"));
+const G = 9.80665;
+
+// ---------------------------------------------------------------- quat math ----
+// Quaternions are [w, x, y, z]; q maps body -> world (canonical frame, Y up, -Z forward).
+const qmul = (a, b) => [
+  a[0]*b[0] - a[1]*b[1] - a[2]*b[2] - a[3]*b[3],
+  a[0]*b[1] + a[1]*b[0] + a[2]*b[3] - a[3]*b[2],
+  a[0]*b[2] - a[1]*b[3] + a[2]*b[0] + a[3]*b[1],
+  a[0]*b[3] + a[1]*b[2] - a[2]*b[1] + a[3]*b[0],
+];
+const qconj = (q) => [q[0], -q[1], -q[2], -q[3]];
+const qnorm = (q) => { const n = Math.hypot(...q) || 1; return q.map((v) => v / n); };
+const qaxis = (ax, ay, az, ang) => { const s = Math.sin(ang / 2); return [Math.cos(ang / 2), ax * s, ay * s, az * s]; };
+const qexp = (r) => { const a = Math.hypot(r[0], r[1], r[2]); if (a < 1e-9) return qnorm([1, r[0]/2, r[1]/2, r[2]/2]); const s = Math.sin(a/2) / a; return [Math.cos(a/2), r[0]*s, r[1]*s, r[2]*s]; };
+const qlog = (q) => { // rotation vector of unit quaternion (shortest)
+  if (q[0] < 0) q = q.map((v) => -v);
+  const s = Math.hypot(q[1], q[2], q[3]);
+  if (s < 1e-9) return [2*q[1], 2*q[2], 2*q[3]];
+  const ang = 2 * Math.atan2(s, q[0]);
+  return [q[1] / s * ang, q[2] / s * ang, q[3] / s * ang];
+};
+const rot = (q, v) => { const p = qmul(qmul(q, [0, ...v]), qconj(q)); return [p[1], p[2], p[3]]; };
+const gauss = () => { let u = 0, v = 0; while (!u) u = Math.random(); while (!v) v = Math.random(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+
+// ---------------------------------------------------------------- sim state ----
+let q = [1, 0, 0, 0];
+let dYawWorld = 0, dPitchBody = 0, dRollBody = 0;
+let script = null;            // {omega(t)->[x,y,z] body, lin(t)->[x,y,z] body, dur, t}
+const BIAS = [0.012, -0.008, 0.006];
+let buttons = 0, dials = [0, 0], analog = 0;
+const held = new Set();
+let pending = [];
+let simT = performance.now();   // virtual sample clock: advances exactly DT per step
+
+const SWINGS = {
+  forehand: { dur: 0.32, omega: (t, T) => [0, 13 * Math.sin(Math.PI * t / T), 0] },
+  backhand: { dur: 0.32, omega: (t, T) => [0, -13 * Math.sin(Math.PI * t / T), 0] },
+  smash:    { dur: 0.28, omega: (t, T) => [-15 * Math.sin(Math.PI * t / T), 0, 0] },
+  toss:     { dur: 0.30, omega: (t, T) => [10 * Math.sin(Math.PI * t / T), 0, 0] },
+  punch:    { dur: 0.22, omega: () => [0, 0, 0], lin: (t, T) => [0, 0, t < T / 2 ? -45 * Math.sin(2 * Math.PI * t / T) : 30 * Math.sin(2 * Math.PI * (t - T / 2) / T)] },
+};
+
+function startSwing(name) {
+  const s = SWINGS[name];
+  if (s) script = { ...s, t: 0 };
+}
+function goHome() {
+  const T = 0.4;
+  const r = qlog(qconj(q)); // body-frame rotation vector that brings q back to identity
+  script = { dur: T, t: 0, omega: () => [r[0] / T, r[1] / T, r[2] / T] };
+}
+
+const DT = 0.01;
+function step() {
+  // keyboard roll / throttle
+  if (held.has("q")) dRollBody += 1.8 * DT;
+  if (held.has("e")) dRollBody -= 1.8 * DT;
+  if (held.has("w")) analog = Math.min(1, analog + 1.2 * DT);
+  if (held.has("s")) analog = Math.max(0, analog - 1.2 * DT);
+
+  let omegaScript = [0, 0, 0], lin = [0, 0, 0];
+  if (script) {
+    omegaScript = script.omega(script.t, script.dur);
+    if (script.lin) lin = script.lin(script.t, script.dur);
+    script.t += DT;
+    if (script.t >= script.dur) script = null;
+  }
+  const qWorld = qaxis(0, 1, 0, dYawWorld);
+  const qBody = qmul(qaxis(1, 0, 0, dPitchBody), qaxis(0, 0, 1, dRollBody));
+  dYawWorld = dPitchBody = dRollBody = 0;
+  const qNew = qnorm(qmul(qmul(qmul(qWorld, q), qBody), qexp(omegaScript.map((v) => v * DT))));
+  const w = qlog(qmul(qconj(q), qNew)).map((v) => v / DT);   // true body angular velocity
+  q = qNew;
+
+  const g = rot(qconj(q), [0, G, 0]);                          // specific force of gravity, body frame
+  const gyro = w.map((v, i) => v + BIAS[i] + 0.004 * gauss());
+  const acc = g.map((v, i) => v + lin[i] + 0.02 * gauss());
+  simT += DT * 1000;
+  if (Math.abs(performance.now() - simT) > 200) simT = performance.now(); // tab was throttled
+  pending.push([simT, ...gyro, ...acc]);
+  if (pending.length >= 2) {
+    hub.send({ t: "m", frame: "canonical", s: pending });
+    pending = [];
+  }
+}
+
+// ------------------------------------------------------------------- input ----
+const view = $("view");
+let dragging = false, lx = 0, ly = 0;
+view.addEventListener("pointerdown", (e) => { dragging = true; lx = e.clientX; ly = e.clientY; view.setPointerCapture(e.pointerId); RS.unlockAudio(); });
+view.addEventListener("pointerup", () => { dragging = false; });
+view.addEventListener("pointermove", (e) => {
+  if (!dragging) return;
+  dYawWorld += -(e.clientX - lx) * 0.006;
+  dPitchBody += -(e.clientY - ly) * 0.006;
+  lx = e.clientX; ly = e.clientY;
+});
+view.addEventListener("wheel", (e) => { e.preventDefault(); dRollBody += -Math.sign(e.deltaY) * 0.08; }, { passive: false });
+
+function sendInput() {
+  hub.send({ t: "in", b: buttons, d: dials, an: [analog, 0] });
+  document.querySelectorAll(".btn[data-bit]").forEach((el) => el.classList.toggle("down", !!(buttons & Number(el.dataset.bit))));
+  $("dialInfo").textContent = `${RS.t("小旋钮")} ${dials[0]} · ${RS.t("大旋钮")} ${dials[1]}`;
+}
+const KEY_BITS = { " ": 1, j: 1, k: 2, l: 4, r: 8 };
+window.addEventListener("keydown", (e) => {
+  const k = e.key.toLowerCase();
+  RS.unlockAudio();
+  if (e.repeat) return;
+  held.add(k);
+  if (k in KEY_BITS) { e.preventDefault(); buttons |= KEY_BITS[k]; sendInput(); }
+  else if (k === "[") { dials[0]--; sendInput(); }
+  else if (k === "]") { dials[0]++; sendInput(); }
+  else if (k === "-") { dials[1]--; sendInput(); }
+  else if (k === "=") { dials[1]++; sendInput(); }
+  else if (k === "h") goHome();
+  else if ("12345".includes(k)) startSwing(["forehand", "backhand", "smash", "punch", "toss"][Number(k) - 1]);
+});
+window.addEventListener("keyup", (e) => {
+  const k = e.key.toLowerCase();
+  held.delete(k);
+  if (k in KEY_BITS) { buttons &= ~KEY_BITS[k]; sendInput(); }
+});
+window.addEventListener("blur", () => { held.clear(); buttons = 0; sendInput(); });
+document.querySelectorAll(".btn[data-bit]").forEach((el) => {
+  const bit = Number(el.dataset.bit);
+  el.addEventListener("pointerdown", () => { buttons |= bit; sendInput(); });
+  el.addEventListener("pointerup", () => { buttons &= ~bit; sendInput(); });
+  el.addEventListener("pointerleave", () => { if (buttons & bit) { buttons &= ~bit; sendInput(); } });
+});
+document.querySelectorAll("[data-swing]").forEach((el) => el.addEventListener("click", () => startSwing(el.dataset.swing)));
+$("home").addEventListener("click", goHome);
+
+// ------------------------------------------------------------------ render ----
+// A rounded "Regina" slab: 6 cm wide, 1.6 cm thick, 11 cm long, screen on top.
+const BOX = { hw: 0.03, hh: 0.008, hl: 0.055 };
+function draw() {
+  const dpr = window.devicePixelRatio || 1;
+  const W = view.clientWidth, H = view.clientHeight;
+  if (view.width !== W * dpr) { view.width = W * dpr; view.height = H * dpr; }
+  const ctx = view.getContext("2d");
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+  // camera behind and above the player, looking toward -Z
+  const cam = [0, 0.06, 0.22];
+  const proj = (p) => {
+    const x = p[0] - cam[0], y = p[1] - cam[1], z = p[2] - cam[2];
+    const f = Math.min(W, H) * 1.1 / -z;
+    return [W / 2 + x * f, H / 2 - y * f];
+  };
+  // floor grid
+  ctx.strokeStyle = "rgba(255,255,255,0.06)";
+  ctx.lineWidth = 1;
+  for (let i = -5; i <= 5; i++) {
+    let a = proj([i * 0.04, -0.06, 0.1]), b = proj([i * 0.04, -0.06, -0.4]);
+    ctx.beginPath(); ctx.moveTo(...a); ctx.lineTo(...b); ctx.stroke();
+    a = proj([-0.2, -0.06, 0.1 - (i + 5) * 0.05]); b = proj([0.2, -0.06, 0.1 - (i + 5) * 0.05]);
+    ctx.beginPath(); ctx.moveTo(...a); ctx.lineTo(...b); ctx.stroke();
+  }
+  const { hw, hh, hl } = BOX;
+  const corners = [];
+  for (const sx of [-1, 1]) for (const sy of [-1, 1]) for (const sz of [-1, 1]) corners.push(rot(q, [sx * hw, sy * hh, sz * hl]));
+  const P = corners.map(proj);
+  const faces = [[0, 1, 3, 2], [4, 5, 7, 6], [0, 1, 5, 4], [2, 3, 7, 6], [0, 2, 6, 4], [1, 3, 7, 5]];
+  const isTop = (f) => f.every((i) => (i & 2) !== 0);
+  const depth = (f) => f.reduce((s, i) => s + corners[i][2], 0);
+  const player = getComputedStyle(document.documentElement).getPropertyValue("--player").trim() || "#8b93a7";
+  faces.sort((a, b) => depth(a) - depth(b)).forEach((f) => {
+    ctx.beginPath();
+    f.forEach((i, n) => (n ? ctx.lineTo(...P[i]) : ctx.moveTo(...P[i])));
+    ctx.closePath();
+    ctx.fillStyle = isTop(f) ? "#111827" : player;
+    ctx.globalAlpha = isTop(f) ? 0.95 : 0.85;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = "rgba(255,255,255,0.35)";
+    ctx.stroke();
+  });
+  // tip arrow (-Z)
+  const tip0 = proj(rot(q, [0, hh, -hl])), tip1 = proj(rot(q, [0, hh, -hl - 0.03]));
+  ctx.strokeStyle = "#fff"; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(...tip0); ctx.lineTo(...tip1); ctx.stroke();
+  $("analogBar").style.width = Math.round(analog * 100) + "%";
+  requestAnimationFrame(draw);
+}
+
+let buzzTimers = [];
+function buzz(pattern) {
+  // Play a [on, off, on, ...] ms pattern as shaking.
+  buzzTimers.forEach(clearTimeout);
+  buzzTimers = [];
+  const el = $("screen");
+  let t = 0;
+  pattern.forEach((ms, i) => {
+    buzzTimers.push(setTimeout(() => el.classList.toggle("buzz", i % 2 === 0), t));
+    t += ms;
+  });
+  buzzTimers.push(setTimeout(() => el.classList.remove("buzz"), t));
+}
+
+const hub = new RS.HubConnection({
+  kind: "sim",
+  name: "Simulator",
+  onWelcome: (m) => { RS.setPlayer($("badge"), m.player); $("info").textContent = RS.t("手柄 #") + m.id; sendInput(); },
+  onState: (s) => { $("dot").className = "dot " + s; },
+  onMessage: (m) => {
+    if (m.t === "ui") ui.apply(m);
+    else if (m.t === "player") RS.setPlayer($("badge"), m.player);
+    else if (m.t === "beep") RS.beep(m.freq, m.ms);
+    else if (m.t === "vibrate") buzz(m.pattern || [m.ms]);
+  },
+});
+
+setInterval(step, DT * 1000);
+requestAnimationFrame(draw);
+sendInput();
+</script>
+</body>
+</html>

@@ -1,0 +1,2039 @@
+[
+  {
+    "path": "game/assets/characters/baller0.glb",
+    "bytes": 17348232,
+    "sha256": "591ee635959a787df7c1174c2d69de568b66704e0eaf8620eca75ba6a59c74d5",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_darkbrown_eye.png",
+    "bytes": 791948,
+    "sha256": "c363d083f8becaf512a983292925f727e510af5aebae87fbc24f3d22a2252eae",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_eyebrow002.png",
+    "bytes": 96277,
+    "sha256": "1de4e4cb69b3f4324390219ffbeb17a0b2555104d3211d1ac667655b69b64038",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_male_casualsuit04_diffuse.png",
+    "bytes": 2742499,
+    "sha256": "eb33337f43b006159773ab2fdff1293f51f72c3d0d24c132c2272b4deff9bcbe",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_male_casualsuit04_normal.png",
+    "bytes": 6112410,
+    "sha256": "006c0c0dfecaeda1a749f737ac15bfc228ebb76dbbcbf9871993e267a545ca69",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_shoes02_diffuse.png",
+    "bytes": 1282057,
+    "sha256": "efef94ea34b0e0c2283095cb47a9e0389b55449c61a4f4972d0ad4d2bf06b4f0",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_short04_diffuse.png",
+    "bytes": 2308132,
+    "sha256": "0bef7fc0e403db5a40fabb2111ebfa6f7e8158e204c6e56b8da98e9ef527846e",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller0_young_darkskinned_male_diffuse.png",
+    "bytes": 2976491,
+    "sha256": "e3f0dbb634e4c68561338f0087f7a122444e84ec56df102212f1222aa12e4d50",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1.glb",
+    "bytes": 19999668,
+    "sha256": "2ddc2ce9b90223c9dc34bf6725c51ad7f4e2efffe032d7c87eae01cedcc537f7",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_brownlight_eye.png",
+    "bytes": 680577,
+    "sha256": "3f43a4de70e446186dac1760cfa01dfe36d530ed7564208455395b0ebcdf788a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_eyebrow010.png",
+    "bytes": 72383,
+    "sha256": "d0aca671c7d51008177a2a607dc8eba3d3e84935375c6fcac2f85841563e44f3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_female_casualsuit01_diffuse.png",
+    "bytes": 3019656,
+    "sha256": "414d46afa55fba09ad0913484d57df2ba6b597dc8193595a13a12436137dc21b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_female_casualsuit01_normal.png",
+    "bytes": 5744103,
+    "sha256": "7bff7afbbc3f068e06f69abcddc8c2c9ce667ec181e0f2a918f8af78eba12610",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_ponytail01_diffuse.png",
+    "bytes": 3910782,
+    "sha256": "dcb364300cac06ce8bef91b2f7c0970baf310898bbdd06b0c6b884ee9306eb97",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_shoes06_diffuse.png",
+    "bytes": 1463398,
+    "sha256": "0be0432efcd3be47c8e6f0015acd7f685735190be6bb8533ceca60b56cc269d1",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller1_young_lightskinned_female_diffuse3.png",
+    "bytes": 3884420,
+    "sha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2.glb",
+    "bytes": 14643092,
+    "sha256": "51ae1bd06c8e020dda3d6be531c7a01f0d10c73bf1898a36a4ab5663376f1b9c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_eyebrow001.png",
+    "bytes": 89619,
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_green_eye.png",
+    "bytes": 662241,
+    "sha256": "b9864ac4f4fa484b24e18f6aba030d70dbc8820cbbacfbe63a974c76772c2009",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_male_casualsuit06_diffuse.png",
+    "bytes": 1923464,
+    "sha256": "e9a581e0d4eb64c7a031886f2faf109a4703a3046a5fcc97ea9ce9112e99a344",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_male_casualsuit06_normal.png",
+    "bytes": 2235477,
+    "sha256": "ccdbf48a86eb922f5ccf38a7d3dc9de8828a6460c687eb84dacf8315d079a343",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_shoes05_diffuse.png",
+    "bytes": 1291907,
+    "sha256": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_short02_diffuse.png",
+    "bytes": 3553543,
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller2_young_lightskinned_male_diffuse.png",
+    "bytes": 3693828,
+    "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3.glb",
+    "bytes": 18213244,
+    "sha256": "45ec27b18dafc8a412d8f4e168f2848bcbc40ab09a85a32d4fec3e2d89ce9763",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_bob01_diffuse.png",
+    "bytes": 4243598,
+    "sha256": "2b38bc7a028e06e8e633accb7fe2dd1b2bacbb9d32463df73f39f82e63ef9009",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_brown_eye.png",
+    "bytes": 610817,
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_eyebrow009.png",
+    "bytes": 230800,
+    "sha256": "4d33c85718ca5accf44625652daf0ae6e8cc007ed8138280e4d95601717910c3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_female_casualsuit02_diffuse.png",
+    "bytes": 4340869,
+    "sha256": "23bd3c8e4df3993fe3bdb849daba7a4dd0476f3a28fd8402cd28abbb26666f49",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_female_casualsuit02_normal.png",
+    "bytes": 1646961,
+    "sha256": "37143dabd78647ca37689f0b65d969c958a962d728dffd94e60c9beacf76a3df",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_shoes05_diffuse.png",
+    "bytes": 1291907,
+    "sha256": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/baller3_young_darkskinned_female_diffuse.png",
+    "bytes": 4427634,
+    "sha256": "96aa4a96b247fc90d371587bb88e6ae3bfc77e83f5126f17e6bbb713aa200470",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0.glb",
+    "bytes": 16989800,
+    "sha256": "48d6f6407077ed70546e3f5390647613a6f725f5220a0875aa87e91afe5e1fed",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_blue_eye.png",
+    "bytes": 666029,
+    "sha256": "572ddc93ab3e177100619ec7c00b2574540cfb382805afc2e450788117f6140c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_eyebrow006.png",
+    "bytes": 19381,
+    "sha256": "1f6d34d722ef18e73494e62f2c7f1a933ff58ce75d01fd34de21d178d5afe4d8",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_male_casualsuit04_diffuse.png",
+    "bytes": 2742499,
+    "sha256": "eb33337f43b006159773ab2fdff1293f51f72c3d0d24c132c2272b4deff9bcbe",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_male_casualsuit04_normal.png",
+    "bytes": 6112410,
+    "sha256": "006c0c0dfecaeda1a749f737ac15bfc228ebb76dbbcbf9871993e267a545ca69",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_middleage_lightskinned_male_diffuse.png",
+    "bytes": 3668589,
+    "sha256": "3f94f3f6a5cab92dedf5cce392a87332312fc435f1cb44c6e7b897daef9a5fbb",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_shoes03_diffuse.png",
+    "bytes": 309009,
+    "sha256": "fe8216fbd0c34ecd3ac0e1a01970a4ccf844417be5fd1d72c527c9209256db93",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer0_short03_diffuse.png",
+    "bytes": 2392930,
+    "sha256": "fe6ed0bb14498a48a2e8fc07e80e2a6f62c8b67686fcd0a7a570d345faec97da",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1.glb",
+    "bytes": 17332988,
+    "sha256": "b885281e881ea09a728ce1db655a76a540bc2d2a5d89819e43b8ec27f0e83981",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_brownlight_eye.png",
+    "bytes": 680577,
+    "sha256": "3f43a4de70e446186dac1760cfa01dfe36d530ed7564208455395b0ebcdf788a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_eyebrow010.png",
+    "bytes": 72383,
+    "sha256": "d0aca671c7d51008177a2a607dc8eba3d3e84935375c6fcac2f85841563e44f3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_female_casualsuit02_diffuse.png",
+    "bytes": 4340869,
+    "sha256": "23bd3c8e4df3993fe3bdb849daba7a4dd0476f3a28fd8402cd28abbb26666f49",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_female_casualsuit02_normal.png",
+    "bytes": 1646961,
+    "sha256": "37143dabd78647ca37689f0b65d969c958a962d728dffd94e60c9beacf76a3df",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_ponytail01_diffuse.png",
+    "bytes": 3910782,
+    "sha256": "dcb364300cac06ce8bef91b2f7c0970baf310898bbdd06b0c6b884ee9306eb97",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_shoes06_diffuse.png",
+    "bytes": 1463398,
+    "sha256": "0be0432efcd3be47c8e6f0015acd7f685735190be6bb8533ceca60b56cc269d1",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer1_young_lightskinned_female_diffuse3.png",
+    "bytes": 3884420,
+    "sha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2.glb",
+    "bytes": 13009268,
+    "sha256": "90e3396748b6631bb50fb676c8fd6ae4a43be2d7af537be27195ad74484ad9d6",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_darkbrown_eye.png",
+    "bytes": 791948,
+    "sha256": "c363d083f8becaf512a983292925f727e510af5aebae87fbc24f3d22a2252eae",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_eyebrow002.png",
+    "bytes": 96277,
+    "sha256": "1de4e4cb69b3f4324390219ffbeb17a0b2555104d3211d1ac667655b69b64038",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_male_casualsuit06_diffuse.png",
+    "bytes": 1923464,
+    "sha256": "e9a581e0d4eb64c7a031886f2faf109a4703a3046a5fcc97ea9ce9112e99a344",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_male_casualsuit06_normal.png",
+    "bytes": 2235477,
+    "sha256": "ccdbf48a86eb922f5ccf38a7d3dc9de8828a6460c687eb84dacf8315d079a343",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_middleage_darkskinned_male_diffuse.png",
+    "bytes": 3046762,
+    "sha256": "ced478cfdd2b86391f0f92a4408b287ad70adb0dd0e9271ba606d0b028b47c6b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_shoes02_diffuse.png",
+    "bytes": 1282057,
+    "sha256": "efef94ea34b0e0c2283095cb47a9e0389b55449c61a4f4972d0ad4d2bf06b4f0",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer2_short01_diffuse.png",
+    "bytes": 2354146,
+    "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3.glb",
+    "bytes": 18365568,
+    "sha256": "c5c2ed444b4c360924191b39e210e79bed1eb0545d40d25ddb03b8e17a0cf2eb",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_braid01_diffuse.png",
+    "bytes": 2615248,
+    "sha256": "24c0d2a639f04704734c3e38af97d110777c1b203e5a10c66a5c89563643a018",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_eyebrow011.png",
+    "bytes": 42634,
+    "sha256": "df767b406c6b04388e3bd4dd3ed627307948f5df3dff4e92d860e6b800a1ad07",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_female_casualsuit01_diffuse.png",
+    "bytes": 3019656,
+    "sha256": "414d46afa55fba09ad0913484d57df2ba6b597dc8193595a13a12436137dc21b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_female_casualsuit01_normal.png",
+    "bytes": 5744103,
+    "sha256": "7bff7afbbc3f068e06f69abcddc8c2c9ce667ec181e0f2a918f8af78eba12610",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_green_eye.png",
+    "bytes": 662241,
+    "sha256": "b9864ac4f4fa484b24e18f6aba030d70dbc8820cbbacfbe63a974c76772c2009",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_shoes05_diffuse.png",
+    "bytes": 1291907,
+    "sha256": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/golfer3_young_lightskinned_female_diffuse2.png",
+    "bytes": 3724137,
+    "sha256": "8d1fb3ceedf142fad32a3504eca1feb4539aecca6de66acde1514b9a61fc7ba0",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0.glb",
+    "bytes": 14790500,
+    "sha256": "356c809eacc3e79627bec45ee711066a8f4b453805ebc2a85d27376d5cea990a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_brown_eye.png",
+    "bytes": 610817,
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_darkbrown_eye.png",
+    "bytes": 791948,
+    "sha256": "c363d083f8becaf512a983292925f727e510af5aebae87fbc24f3d22a2252eae",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_eyebrow001.png",
+    "bytes": 89619,
+    "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_male_casualsuit06_diffuse.png",
+    "bytes": 1923464,
+    "sha256": "e9a581e0d4eb64c7a031886f2faf109a4703a3046a5fcc97ea9ce9112e99a344",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_male_casualsuit06_normal.png",
+    "bytes": 2235477,
+    "sha256": "ccdbf48a86eb922f5ccf38a7d3dc9de8828a6460c687eb84dacf8315d079a343",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_shoes05_diffuse.png",
+    "bytes": 1291907,
+    "sha256": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_short02_diffuse.png",
+    "bytes": 3553543,
+    "sha256": "47fe33831a3929567c733356dd66243116e05df2ace1f884ddca0080b728229f",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider0_young_lightskinned_male_diffuse.png",
+    "bytes": 3693828,
+    "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1.glb",
+    "bytes": 19999116,
+    "sha256": "2f9fe262a2c1a1620f2ea2cb9f30b9edb7242c5170d7d79f35917129269b63f0",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_brown_eye.png",
+    "bytes": 610817,
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_brownlight_eye.png",
+    "bytes": 680577,
+    "sha256": "3f43a4de70e446186dac1760cfa01dfe36d530ed7564208455395b0ebcdf788a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_eyebrow010.png",
+    "bytes": 72383,
+    "sha256": "d0aca671c7d51008177a2a607dc8eba3d3e84935375c6fcac2f85841563e44f3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_female_casualsuit01_diffuse.png",
+    "bytes": 3019656,
+    "sha256": "414d46afa55fba09ad0913484d57df2ba6b597dc8193595a13a12436137dc21b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_female_casualsuit01_normal.png",
+    "bytes": 5744103,
+    "sha256": "7bff7afbbc3f068e06f69abcddc8c2c9ce667ec181e0f2a918f8af78eba12610",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_ponytail01_diffuse.png",
+    "bytes": 3910782,
+    "sha256": "dcb364300cac06ce8bef91b2f7c0970baf310898bbdd06b0c6b884ee9306eb97",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_shoes06_diffuse.png",
+    "bytes": 1463398,
+    "sha256": "0be0432efcd3be47c8e6f0015acd7f685735190be6bb8533ceca60b56cc269d1",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider1_young_lightskinned_female_diffuse3.png",
+    "bytes": 3884420,
+    "sha256": "1d82f782b7d2da732229633bd2d14754d873fff53cdb1d088977bcf67ae19dde",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2.glb",
+    "bytes": 21173776,
+    "sha256": "86d9c980bf663a4c6414840a1dc2d256116d6a35c8a9177096a3988332c46647",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_brown_eye.png",
+    "bytes": 610817,
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_darkbrown_eye.png",
+    "bytes": 791948,
+    "sha256": "c363d083f8becaf512a983292925f727e510af5aebae87fbc24f3d22a2252eae",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_eyebrow002.png",
+    "bytes": 96277,
+    "sha256": "1de4e4cb69b3f4324390219ffbeb17a0b2555104d3211d1ac667655b69b64038",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_male_casualsuit05_diffuse.png",
+    "bytes": 3345738,
+    "sha256": "d4345efe9332c23e9302f5a3bca8c895004be841b5ebea593c96189870e3852a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_male_casualsuit05_normal.png",
+    "bytes": 9295328,
+    "sha256": "aec19a8fa1988aa178e7ead9f9c0b290fc441ed62ce47d5c4dd611a0037a796c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_shoes02_diffuse.png",
+    "bytes": 1282057,
+    "sha256": "efef94ea34b0e0c2283095cb47a9e0389b55449c61a4f4972d0ad4d2bf06b4f0",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_short04_diffuse.png",
+    "bytes": 2308132,
+    "sha256": "0bef7fc0e403db5a40fabb2111ebfa6f7e8158e204c6e56b8da98e9ef527846e",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider2_young_darkskinned_male_diffuse.png",
+    "bytes": 2976491,
+    "sha256": "e3f0dbb634e4c68561338f0087f7a122444e84ec56df102212f1222aa12e4d50",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3.glb",
+    "bytes": 13714464,
+    "sha256": "a622433a4e30fe5a9de81900c09c80e691a00ecf017cd42b59d4d4029e6e68dc",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_bluegreen_eye.png",
+    "bytes": 697879,
+    "sha256": "653b3154e67f67e118c22acd19c472aa7543e0c229209f687c3f7f669f191fd9",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_bob01_diffuse.png",
+    "bytes": 4243598,
+    "sha256": "2b38bc7a028e06e8e633accb7fe2dd1b2bacbb9d32463df73f39f82e63ef9009",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_bob02_diffuse.png",
+    "bytes": 3373723,
+    "sha256": "38c88e6f71631356591f09b1f17a1bb5a99c3bb095b1a29003f1dc3d3e839b0d",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_brown_eye.png",
+    "bytes": 610817,
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_eyebrow012.png",
+    "bytes": 94186,
+    "sha256": "d352e9b3d6ccb9499be5e6cb5c0d462e8d7341539e1e28a003a29c83e5ca1b0f",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_female_sportsuit01_diffuse.png",
+    "bytes": 1396429,
+    "sha256": "00910e3e85b3dcf48d1aa827b4c075cdc77689989423ff4f75bc67f2e86cc588",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_female_sportsuit01_normal.png",
+    "bytes": 250945,
+    "sha256": "2bc78509fc4e74b2346dbb54f7f627644125a41573ee458d624246e337f1d28f",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_shoes05_diffuse.png",
+    "bytes": 1291907,
+    "sha256": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/rider3_young_lightskinned_female_diffuse.png",
+    "bytes": 4391156,
+    "sha256": "b2a6ac8cd4f9febdb447368e29c76cd68410bb66e46d9dcfa2d5f75126eea8fc",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0.glb",
+    "bytes": 21030896,
+    "sha256": "cb14f0b9d19390e45321441dfcbaf0fbfe528587cf03f09bcd0c089938f88310",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_darkbrown_eye.png",
+    "bytes": 791948,
+    "sha256": "c363d083f8becaf512a983292925f727e510af5aebae87fbc24f3d22a2252eae",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_eyebrow004.png",
+    "bytes": 88931,
+    "sha256": "899b2ae3d6d46bef093b8da0fa2e2c21f07f7565b5e13c57139d1288a3a8e27e",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_male_casualsuit05_diffuse.png",
+    "bytes": 3345738,
+    "sha256": "d4345efe9332c23e9302f5a3bca8c895004be841b5ebea593c96189870e3852a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_male_casualsuit05_normal.png",
+    "bytes": 9295328,
+    "sha256": "aec19a8fa1988aa178e7ead9f9c0b290fc441ed62ce47d5c4dd611a0037a796c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_shoes03_diffuse.png",
+    "bytes": 309009,
+    "sha256": "fe8216fbd0c34ecd3ac0e1a01970a4ccf844417be5fd1d72c527c9209256db93",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_short01_diffuse.png",
+    "bytes": 2354146,
+    "sha256": "f34a0957184e3d1e911ed59245f874f8d4843f61ee44ff49f43edb4be0196949",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier0_young_lightskinned_male_diffuse3.png",
+    "bytes": 3593099,
+    "sha256": "f50016a5507fc687dc8df06599c8ea48de950cd185de33a71cafc1319ddab4d5",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1.glb",
+    "bytes": 23377336,
+    "sha256": "2c9313702a37b7ff40f946f26cdb7cd45362a6004edd809dae3735d784c8bba2",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_eyebrow011.png",
+    "bytes": 42634,
+    "sha256": "df767b406c6b04388e3bd4dd3ed627307948f5df3dff4e92d860e6b800a1ad07",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_lightblue_eye.png",
+    "bytes": 701486,
+    "sha256": "687c8f6d95a8550bcd4a34158f415d6bb376c0bb32e67d127bbb51e5fa469eef",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_long01_diffuse.png",
+    "bytes": 2915253,
+    "sha256": "e8dc25d90f8f62467e8630420e1240a400d070054fb7c3f1d3f7bf3e457d6c2c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_male_casualsuit05_diffuse.png",
+    "bytes": 3345738,
+    "sha256": "d4345efe9332c23e9302f5a3bca8c895004be841b5ebea593c96189870e3852a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_male_casualsuit05_normal.png",
+    "bytes": 9295328,
+    "sha256": "aec19a8fa1988aa178e7ead9f9c0b290fc441ed62ce47d5c4dd611a0037a796c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_shoes06_diffuse.png",
+    "bytes": 1463398,
+    "sha256": "0be0432efcd3be47c8e6f0015acd7f685735190be6bb8533ceca60b56cc269d1",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier1_young_lightskinned_female_diffuse.png",
+    "bytes": 4391156,
+    "sha256": "b2a6ac8cd4f9febdb447368e29c76cd68410bb66e46d9dcfa2d5f75126eea8fc",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2.glb",
+    "bytes": 22144712,
+    "sha256": "26785eb67a570de2c9000461beb596b9606ebdc598f42e6f30506df67492ce6d",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_eyebrow006.png",
+    "bytes": 19381,
+    "sha256": "1f6d34d722ef18e73494e62f2c7f1a933ff58ce75d01fd34de21d178d5afe4d8",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_green_eye.png",
+    "bytes": 662241,
+    "sha256": "b9864ac4f4fa484b24e18f6aba030d70dbc8820cbbacfbe63a974c76772c2009",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_male_casualsuit03_diffuse.png",
+    "bytes": 3439064,
+    "sha256": "d9079ed2e52d23e1ccce53ddc3d4397e48883729f9324c97c2737f4f79af5153",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_male_casualsuit03_normal.png",
+    "bytes": 9610278,
+    "sha256": "412c4610d3b2ea1cb04aa3c0715e747a7c9f61d865133b7d69f70eaa738cf99b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_shoes02_diffuse.png",
+    "bytes": 1282057,
+    "sha256": "efef94ea34b0e0c2283095cb47a9e0389b55449c61a4f4972d0ad4d2bf06b4f0",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_short03_diffuse.png",
+    "bytes": 2392930,
+    "sha256": "fe6ed0bb14498a48a2e8fc07e80e2a6f62c8b67686fcd0a7a570d345faec97da",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier2_young_lightskinned_male_diffuse.png",
+    "bytes": 3693828,
+    "sha256": "862a26e335e958b70534cb5f0d7c47ef30ab148a56c42b3e9da969cf76f12963",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3.glb",
+    "bytes": 19534604,
+    "sha256": "46a57a765c92149a3fc381ff96b1babd831b2c62a2cc8b35bd318b97448842f4",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_braid01_diffuse.png",
+    "bytes": 2615248,
+    "sha256": "24c0d2a639f04704734c3e38af97d110777c1b203e5a10c66a5c89563643a018",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_brown_eye.png",
+    "bytes": 610817,
+    "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_eyebrow009.png",
+    "bytes": 230800,
+    "sha256": "4d33c85718ca5accf44625652daf0ae6e8cc007ed8138280e4d95601717910c3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_eyelashes01.png",
+    "bytes": 91600,
+    "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_male_casualsuit02_diffuse.png",
+    "bytes": 3094130,
+    "sha256": "8e1e63c471a8eb6ea8be48f2d540c15c81d2e7744ff80c8fdac86a6e6fde3179",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_male_casualsuit02_normal.png",
+    "bytes": 6036834,
+    "sha256": "1c31a7a5fbbef1ee40176114295038703f370d163a3cf040f55b60c85369d12c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_shoes05_diffuse.png",
+    "bytes": 1291907,
+    "sha256": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/characters/skier3_young_darkskinned_female_diffuse.png",
+    "bytes": 4427634,
+    "sha256": "96aa4a96b247fc90d371587bb88e6ae3bfc77e83f5126f17e6bbb713aa200470",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+  },
+  {
+    "path": "game/assets/decals/graffiti_0.png",
+    "bytes": 1847134,
+    "sha256": "3dc163796e7bfe291993341c9973ea8bf0545837d3a64091e263512d4c7729ee",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/decals/graffiti_1.png",
+    "bytes": 1119995,
+    "sha256": "3f45944e405d3024a893ccc28ecfa06d8163a80a8dfb45af25c39d81b819bbf6",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/decals/graffiti_2.png",
+    "bytes": 939066,
+    "sha256": "3707065b63046cff462617a30866eea206745b19346de40ecd978837464bbb6d",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/golf/trees/fir_a_albedo.png",
+    "bytes": 9323853,
+    "sha256": "2a8717626797a4f4b7a670b5282643f6f1e51e2a7994161ba1780f7b38669007",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/fir_a_normal.png",
+    "bytes": 11515714,
+    "sha256": "5a9280c8f185e2eb46a5cf53ab74f550c831c9bb39472a4420160f1e642a8ccf",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/fir_b_albedo.png",
+    "bytes": 7613543,
+    "sha256": "11e2e0663cdfde9c0ac61598e3fe5460408141b6e337e7ce7aebc5d504036dd6",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/fir_b_normal.png",
+    "bytes": 9412457,
+    "sha256": "4f039a85e0b0f0daa465328cd0996009f200ad6a8f6838a11e5bbda9a35b5b57",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/fir_c_albedo.png",
+    "bytes": 8832687,
+    "sha256": "c70bb9ce6b336d7ad265d94d89bbcb5c67f7ad34677eb77e7bacf9beac7e2e79",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/fir_c_normal.png",
+    "bytes": 10860298,
+    "sha256": "71fa57056b52d07da20a778cb2cab673e9e0c5573ed5492a19454ff7b94e2fd1",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/island01_albedo.png",
+    "bytes": 11699008,
+    "sha256": "862c158406fa48b3ddd996ac79b09e8dd8de72ea2be209725d2ce9defc7418d4",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/island01_normal.png",
+    "bytes": 13548224,
+    "sha256": "50c80e738fc78f60a9bc469df83b9cd1ad73f057da1faaaa5b7b8b3c92b52683",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/island02_albedo.png",
+    "bytes": 9563668,
+    "sha256": "97dc08b462502a18fb61883240feb4d9f74709754d0fba0592b22105dee48b91",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/island02_normal.png",
+    "bytes": 11037727,
+    "sha256": "5918b675ed19b516f7e50afd8262d66237a3f1bdf528d71153c989e1d8cf1d5a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/jacaranda_albedo.png",
+    "bytes": 10887513,
+    "sha256": "aafb52cd9743b2135934ea25c4ff83ecd7a3cbff22888649c7aa2aceb0add34e",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/golf/trees/jacaranda_normal.png",
+    "bytes": 13394548,
+    "sha256": "c9344e8e9c2e2d1bc4da7793c9b6943554a2a218fe182be375669b4f1aebd2ea",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+  },
+  {
+    "path": "game/assets/models/regina.glb",
+    "bytes": 4272144,
+    "sha256": "9b36b3019e6999da96dad62e8518134a4149738ada145ad88e3365a0e37893ef",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/polyhaven/models/boulder_01/boulder_01_lod.bin",
+    "bytes": 1981684,
+    "sha256": "e74d11a310605467bdfb841c24a5ae9615f7f13f44c7f390855d285bd1e8dd26",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/boulder_01/textures_lod/boulder_01_arm_2k.jpg",
+    "bytes": 2273068,
+    "sha256": "ab52859dde519b4822111aa60916b6d21f8a6966c67b6cec44d1cd0775b8a86a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/boulder_01/textures_lod/boulder_01_diff_2k.jpg",
+    "bytes": 3672483,
+    "sha256": "90bbaa17c1fe0254d2b0b6e5148264fa834953a72724d566f14af029eebe3ca3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/boulder_01/textures_lod/boulder_01_nor_gl_2k.jpg",
+    "bytes": 4649207,
+    "sha256": "5174b318712ac7725cbcb55d422607f9c66d7f8d035c5412ab897b5939e2db6b",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/concrete_road_barrier/concrete_road_barrier_lod.bin",
+    "bytes": 146816,
+    "sha256": "8a381895b104b6303979a52ecf4b04023c17319e4c2f62a2d6485ab5f463998d",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/concrete_road_barrier/textures_lod/concrete_road_barrier_arm_2k.jpg",
+    "bytes": 2515448,
+    "sha256": "8c17f77897138a5ee0f80d0b5d194fd00554371e33b9f62f6d7b6a4e640094d6",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/concrete_road_barrier/textures_lod/concrete_road_barrier_diff_2k.jpg",
+    "bytes": 3189621,
+    "sha256": "51832691e0769a04246b61222e5df1ce7dc22e9c7162f786a314409ac76d643c",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/concrete_road_barrier/textures_lod/concrete_road_barrier_nor_gl_2k.jpg",
+    "bytes": 3888469,
+    "sha256": "8e48a287ae58a53030635c585d57a2da72660531a907a8e6cd04836bc60bf3a3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/fire_hydrant/fire_hydrant_lod.bin",
+    "bytes": 268908,
+    "sha256": "a5e2ad2163eb043242f19f6e4b2d2700044f10ec9c612e68a52b8cd2fdcfca0e",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/fire_hydrant/textures_lod/fire_hydrant_aged_arm_2k.jpg",
+    "bytes": 2268350,
+    "sha256": "edcc286284098e20d6f29215f05efb11658a71d7ed5664c8680a747c3721f329",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/fire_hydrant/textures_lod/fire_hydrant_aged_diff_2k.jpg",
+    "bytes": 2191944,
+    "sha256": "02cc548f6c88a7c0c2062cb201ba542fa33e9f836c602bac69405e848ff232c3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/fire_hydrant/textures_lod/fire_hydrant_aged_nor_gl_2k.jpg",
+    "bytes": 2097229,
+    "sha256": "b27858fb50356fd5bd1b76350a1ea689b5e570c5f04a641bab7b25d16ce695cf",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/fire_hydrant/textures_lod/fire_hydrant_arm_2k.jpg",
+    "bytes": 2322663,
+    "sha256": "9422e07195a865958594ba65d9446f284a5032b07cfc4fe766486d3a69f934d3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/fire_hydrant/textures_lod/fire_hydrant_diff_2k.jpg",
+    "bytes": 2012585,
+    "sha256": "d7d3181b80ccf18e60614b21104e39218e8483d2c999c7d96867deba2f13bb38",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/fire_hydrant/textures_lod/fire_hydrant_nor_gl_2k.jpg",
+    "bytes": 1847102,
+    "sha256": "2edf5b7ac369f5657db079bf6913e1b971136e8218bd1c7ace12a3d77263896d",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/potted_plant_01/potted_plant_01_lod.bin",
+    "bytes": 638132,
+    "sha256": "7fe2f093f12d9ee5c66982c1c3a4ca5636435eabc76e284f4c1327e1117ade07",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_leaves_diff_2k.png",
+    "bytes": 3413480,
+    "sha256": "1e40cf053b8a7a39e199a6f0c30521199dae8bc2a539cdc51cce1089eafb27aa",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_leaves_nor_gl_2k.jpg",
+    "bytes": 764246,
+    "sha256": "8cde55f644e9092bcaa7976b005c6df1b452714f1e1c57ede8abb8b7c8bb4a1a",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_leaves_rough_2k.jpg",
+    "bytes": 348164,
+    "sha256": "77c990375720dcdfd801592c9f0546bc5a2ec99a825879945225080ba291d694",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_pot_diff_2k.jpg",
+    "bytes": 745276,
+    "sha256": "5c85fa6020e1b5a84ea1e6da84261e4fb6f0a94bf48cd6d56fa603de234336fa",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_pot_nor_gl_2k.jpg",
+    "bytes": 827724,
+    "sha256": "22792283d310a057553e7428739be073720a492c2a288440ab690124462de1e3",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/polyhaven/models/potted_plant_01/textures_lod/potted_plant_01_pot_rough_2k.jpg",
+    "bytes": 610864,
+    "sha256": "95154a5693f70802d36691cc284e378e173c56d416506c187725c08a96260503",
+    "materialized": true,
+    "status": "documented-source",
+    "license": "CC0-1.0",
+    "evidence": "game/assets/polyhaven/CREDITS.md"
+  },
+  {
+    "path": "game/assets/sfx/applause.wav",
+    "bytes": 1455344,
+    "sha256": "ef65a1de5f8ea423ae1282e76cb1937e38419e5125698610aa9f7d11082c79da",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/bail_0.wav",
+    "bytes": 135518,
+    "sha256": "94c39045a010fc6e4d04a3f85b581c6fa6d46f2f82c88805f59218ef8d361aa3",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/bail_1.wav",
+    "bytes": 135518,
+    "sha256": "4ead6594e2dddf69273eaf58557d18f5b35a8c311d03e791626da1be894a79fd",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/bail_2.wav",
+    "bytes": 180676,
+    "sha256": "ae3e6c31aa997046c84d6b2aafd6e3a62982700fd6e261ea0bb3a162cf77ee79",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/board_0.wav",
+    "bytes": 53782,
+    "sha256": "52d7ec7ae5d90afec794412fc5b77b8efd25d7e24af2e49bb69c27b657c15c74",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/board_1.wav",
+    "bytes": 45488,
+    "sha256": "b70c455723185f282f5fea3e4e09b7a751a5d67ff14c92bc6e64edeb925b5f64",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/bounce_0.wav",
+    "bytes": 35324,
+    "sha256": "aa82453e4df22e466b45211e5d15fca6444c17acf0fe8707417f04ba2946da1f",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/bounce_1.wav",
+    "bytes": 35324,
+    "sha256": "8c83a17c87a55ee04a1edafa879311905f5de90bedfd1263c2cd71b7ece51f58",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/bounce_2.wav",
+    "bytes": 35324,
+    "sha256": "ee96f13b4b0835d4d17a0728cfd75842f78ff691f29f30dd326b3b747baa1e3f",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/bounce_3.wav",
+    "bytes": 30914,
+    "sha256": "1978a9bd62b73e9c6673ebc34ec4e4f9e95f0e99f9b109b16a2d849b873c01ab",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/carve.wav",
+    "bytes": 264644,
+    "sha256": "d1a4b256c21a1745edc2fa13d5f434fe13b6c86899ed162a2ee487bb1d9a03fa",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/city_amb.wav",
+    "bytes": 1631744,
+    "sha256": "2e73c963e3bb78ab2910c4343c4f19e71517387bb9f10b59929ec14aae0b3837",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/land_0.wav",
+    "bytes": 46614,
+    "sha256": "7da241e2c695532982efc8842a30e9b1bee74058718e9ddb94b1774a3202a6b9",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/land_1.wav",
+    "bytes": 49878,
+    "sha256": "5398d18f3144eadd57c0909876313900791889847a3c193dc5d56b4e77870d72",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/land_2.wav",
+    "bytes": 60020,
+    "sha256": "ed4f067159e410acc70160c9b8141c2fede2a49712dacc88bebb57e1a6b848b9",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/pole_0.wav",
+    "bytes": 17684,
+    "sha256": "909dc269d3bd57f94531802ae3b2cacf3c41a2f2b3ed9de9b978818f1db326f6",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/pole_1.wav",
+    "bytes": 15920,
+    "sha256": "7c1e3043ae8cf84d1dc2cc3ccbe53e64b9c422fd95a70771ad0e6508867ed114",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/pop_0.wav",
+    "bytes": 16362,
+    "sha256": "336f26befefdbed1db4c7191a09e08f5737ed0ccd866e1b4570feba9ba3e1499",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/pop_1.wav",
+    "bytes": 17244,
+    "sha256": "d9ab0149ef869ef34eac418a03d6def64fef70a0e1075bcb560bf430e6486bac",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/push_0.wav",
+    "bytes": 8864,
+    "sha256": "66425065169d0cda30f2c0ae625659123bd59b4c699679e5345fb543b3cf4756",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/push_1.wav",
+    "bytes": 8864,
+    "sha256": "69921e9a14de4fd78eda489c4dc82f0bbf5c8261f3e30a7f9399ae74180a63aa",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/push_2.wav",
+    "bytes": 9736,
+    "sha256": "f40c153808de30f4f91105a4bbcb4e7e19a439469699b696002fa227227aa50d",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/push_3.wav",
+    "bytes": 9534,
+    "sha256": "657c18cb519f5db0a84973957e8b99d130f709b58e5262bc370efa4e12411bbd",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/rim_0.wav",
+    "bytes": 32678,
+    "sha256": "da51e3c5e4f981e3cc1b533353e5eee5d0473cfa4d1cbaca44095356d85ecd2b",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/rim_1.wav",
+    "bytes": 20330,
+    "sha256": "44c603fcfe9de2f911c5dc93745880a978355ad5786b2e1156300248dcff403a",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/rim_2.wav",
+    "bytes": 12392,
+    "sha256": "9232ba215f6c5db7a7b083dce2656223e62603e06690aa91f95186a69d3f0b41",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/roll.wav",
+    "bytes": 194084,
+    "sha256": "27cbc7fab9ba86445f1d43804b48c7efc7e7b57ce20fb84a975361afe2751a26",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/skid.wav",
+    "bytes": 220542,
+    "sha256": "c84ce498774e0371ed58867bbf09fb36c25c72d002d481a0c392f8621a73a767",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/snowland_0.wav",
+    "bytes": 48554,
+    "sha256": "58cce1c3ba56f719eb505066755d05871cb56082854c4b455558aa0ec0fbc7a5",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/snowland_1.wav",
+    "bytes": 46790,
+    "sha256": "ff9c3cef704cca8a9373d05f73d69df5f1bb9d08f37874790602fd15947dd917",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/snowland_2.wav",
+    "bytes": 48554,
+    "sha256": "ee81bfccb11440db4f485777a3b022d3e76cd173800e8e7b4193dbcfe43a0cf9",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/step_0.wav",
+    "bytes": 8864,
+    "sha256": "aef1ffa67135954fc519a77f16d1ab948107dc8ea8ef9d98375990991cd11110",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/step_1.wav",
+    "bytes": 9736,
+    "sha256": "f8e183a32b13fdd455b0aaf2e1b57950c4087ad35e68d1a456707b9b92386c3c",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/step_2.wav",
+    "bytes": 9746,
+    "sha256": "1030e705b52a7ac1f3be050b3ec8ed127dd6b18605c84892a20373b1e4d30baa",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  },
+  {
+    "path": "game/assets/sfx/wind_amb.wav",
+    "bytes": 1631744,
+    "sha256": "571e2a74a5f8b7105742b7c60f97f221ad903affc454e4a41b9329a523d2cf57",
+    "materialized": true,
+    "status": "maintainer-declared-original",
+    "license": "MIT",
+    "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+    "basis": "maintainer-declaration"
+  }
+]

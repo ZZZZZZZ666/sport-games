@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/debug/controller_debug.gd" id="1_debug"]
+
+[node name="ControllerDebug" type="Node3D"]
+script = ExtResource("1_debug")

@@ -1,0 +1,48 @@
+{
+  "scope": "This repository only; never include the parent Regina workspace.",
+  "pending": [
+    {
+      "prefix": "tools/regina_sports.ico",
+      "reason": "Desktop icon generation/source record has not yet been established.",
+      "source": null
+    }
+  ],
+  "documented": [
+    {
+      "prefix": "game/assets/polyhaven/",
+      "license": "CC0-1.0",
+      "evidence": "game/assets/polyhaven/CREDITS.md"
+    },
+    {
+      "prefix": "game/assets/characters/",
+      "license": "CC0-1.0",
+      "evidence": "docs/THIRD_PARTY.md#makehuman-characters"
+    },
+    {
+      "prefix": "game/assets/golf/trees/",
+      "license": "CC0-1.0",
+      "evidence": "docs/THIRD_PARTY.md#tree-impostors"
+    },
+    {
+      "prefix": "game/assets/models/regina.glb",
+      "license": "MIT",
+      "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+      "basis": "maintainer-declaration"
+    },
+    {
+      "prefix": "game/assets/decals/graffiti_",
+      "license": "MIT",
+      "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+      "basis": "maintainer-declaration"
+    },
+    {
+      "prefix": "game/assets/sfx/",
+      "license": "MIT",
+      "evidence": "docs/ASSET_PROVENANCE.md#maintainer-declared-ai-originals",
+      "basis": "maintainer-declaration",
+      "extensions": [
+        ".wav"
+      ]
+    }
+  ]
+}

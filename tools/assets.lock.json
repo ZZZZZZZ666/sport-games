@@ -1,0 +1,3403 @@
+{
+  "version": 1,
+  "provider": "Poly Haven",
+  "api": "https://api.polyhaven.com",
+  "credits": "game/assets/polyhaven/CREDITS.md",
+  "terms": "https://github.com/Poly-Haven/Public-API/blob/master/ToS.md",
+  "note": "Exact local source versions are pinned. Live endpoint connectivity still needs verification in a network-enabled environment.",
+  "files": [
+    {
+      "path": "game/assets/polyhaven/hdris/belfast_sunset_puresky/belfast_sunset_puresky_4k.hdr",
+      "asset": "belfast_sunset_puresky",
+      "sourcePage": "https://polyhaven.com/a/belfast_sunset_puresky",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 17420114,
+      "sha256": "cafc52b99ce15d84bd039826a0333f5ab0259d8c1f4feb2f7faf5fafa039108a",
+      "downloadSha256": "cafc52b99ce15d84bd039826a0333f5ab0259d8c1f4feb2f7faf5fafa039108a"
+    },
+    {
+      "path": "game/assets/polyhaven/hdris/kloofendal_43d_clear_puresky/kloofendal_43d_clear_puresky_4k.hdr",
+      "asset": "kloofendal_43d_clear_puresky",
+      "sourcePage": "https://polyhaven.com/a/kloofendal_43d_clear_puresky",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 18429221,
+      "sha256": "1f92cbf17e46659ff37c9770d065280da226896b0f56091c4c1fca071da7fbeb",
+      "downloadSha256": "1f92cbf17e46659ff37c9770d065280da226896b0f56091c4c1fca071da7fbeb"
+    },
+    {
+      "path": "game/assets/polyhaven/hdris/kloofendal_48d_partly_cloudy_puresky/kloofendal_48d_partly_cloudy_puresky_4k.hdr",
+      "asset": "kloofendal_48d_partly_cloudy_puresky",
+      "sourcePage": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 20674857,
+      "sha256": "3061c00a16ecae748e84fd6c44c04804f539c118bb66325db858bad87b11bf88",
+      "downloadSha256": "3061c00a16ecae748e84fd6c44c04804f539c118bb66325db858bad87b11bf88"
+    },
+    {
+      "path": "game/assets/polyhaven/hdris/kloppenheim_02_puresky/kloppenheim_02_puresky_4k.hdr",
+      "asset": "kloppenheim_02_puresky",
+      "sourcePage": "https://polyhaven.com/a/kloppenheim_02_puresky",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 21972975,
+      "sha256": "b394c19453ac25d1e55af9320c70bcf0a8bd91e041305f471f6f1dfdbd2507df",
+      "downloadSha256": "b394c19453ac25d1e55af9320c70bcf0a8bd91e041305f471f6f1dfdbd2507df"
+    },
+    {
+      "path": "game/assets/polyhaven/hdris/kloppenheim_06_puresky/kloppenheim_06_puresky_4k.hdr",
+      "asset": "kloppenheim_06_puresky",
+      "sourcePage": "https://polyhaven.com/a/kloppenheim_06_puresky",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 17385661,
+      "sha256": "1bebd7cbbfb5c48a642f03d93bffbabb2c42d0b109061f37a72259d1cbdb3053",
+      "downloadSha256": "1bebd7cbbfb5c48a642f03d93bffbabb2c42d0b109061f37a72259d1cbdb3053"
+    },
+    {
+      "path": "game/assets/polyhaven/hdris/rooftop_night/rooftop_night_4k.hdr",
+      "asset": "rooftop_night",
+      "sourcePage": "https://polyhaven.com/a/rooftop_night",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 25900304,
+      "sha256": "06a2e4950fd74501d342e54a233c940ba5f7806536e33fe965c97a1dda53920a",
+      "downloadSha256": "06a2e4950fd74501d342e54a233c940ba5f7806536e33fe965c97a1dda53920a"
+    },
+    {
+      "path": "game/assets/polyhaven/hdris/snow_field_puresky/snow_field_puresky_4k.hdr",
+      "asset": "snow_field_puresky",
+      "sourcePage": "https://polyhaven.com/a/snow_field_puresky",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 16283255,
+      "sha256": "1fe8509f26ce13b846e4f7f754ea3c30ac07e904ab2055531a8f456c06e19e26",
+      "downloadSha256": "1fe8509f26ce13b846e4f7f754ea3c30ac07e904ab2055531a8f456c06e19e26"
+    },
+    {
+      "path": "game/assets/polyhaven/hdris/sunset_jhbcentral/sunset_jhbcentral_4k.hdr",
+      "asset": "sunset_jhbcentral",
+      "sourcePage": "https://polyhaven.com/a/sunset_jhbcentral",
+      "license": "CC0-1.0",
+      "selector": [
+        "hdri",
+        "4k",
+        "hdr"
+      ],
+      "bytes": 23911312,
+      "sha256": "eb388d9816eaf79db2f3e8bd391117ae24f10437ea9e00d1a9a24e083150cf97",
+      "downloadSha256": "eb388d9816eaf79db2f3e8bd391117ae24f10437ea9e00d1a9a24e083150cf97"
+    },
+    {
+      "path": "game/assets/polyhaven/models/Barrel_01/Barrel_01.bin",
+      "asset": "Barrel_01",
+      "sourcePage": "https://polyhaven.com/a/Barrel_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "Barrel_01.bin"
+      ],
+      "bytes": 81756,
+      "sha256": "fe8369c1ac796059b62a091c0db7367dc420aa2cee212672e48f991f4208da98",
+      "downloadSha256": "fe8369c1ac796059b62a091c0db7367dc420aa2cee212672e48f991f4208da98"
+    },
+    {
+      "path": "game/assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_arm_2k.jpg",
+      "asset": "Barrel_01",
+      "sourcePage": "https://polyhaven.com/a/Barrel_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/Barrel_01_explosive_arm_2k.jpg"
+      ],
+      "bytes": 814101,
+      "sha256": "3f6fdb68391e4369e551d90f8577b0899c30589b532ebd416e996170279cd852",
+      "downloadSha256": "3f6fdb68391e4369e551d90f8577b0899c30589b532ebd416e996170279cd852"
+    },
+    {
+      "path": "game/assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_diff_2k.jpg",
+      "asset": "Barrel_01",
+      "sourcePage": "https://polyhaven.com/a/Barrel_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/Barrel_01_explosive_diff_2k.jpg"
+      ],
+      "bytes": 613078,
+      "sha256": "09da9d519d87d34c0318da3bb293296071ce2e09c78415befe1157949a644b8b",
+      "downloadSha256": "09da9d519d87d34c0318da3bb293296071ce2e09c78415befe1157949a644b8b"
+    },
+    {
+      "path": "game/assets/polyhaven/models/Barrel_01/textures/Barrel_01_explosive_nor_gl_2k.jpg",
+      "asset": "Barrel_01",
+      "sourcePage": "https://polyhaven.com/a/Barrel_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/Barrel_01_explosive_nor_gl_2k.jpg"
+      ],
+      "bytes": 875565,
+      "sha256": "050d5dfcf86b37172708637d1c1939010dd1837ed503b7e5561b5b1e67cb0379",
+      "downloadSha256": "050d5dfcf86b37172708637d1c1939010dd1837ed503b7e5561b5b1e67cb0379"
+    },
+    {
+      "path": "game/assets/polyhaven/models/WetFloorSign_01/WetFloorSign_01.bin",
+      "asset": "WetFloorSign_01",
+      "sourcePage": "https://polyhaven.com/a/WetFloorSign_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "WetFloorSign_01.bin"
+      ],
+      "bytes": 9496,
+      "sha256": "d23cdec8975ac452d64ae97b08f1eecd22e38f052bd5d588d352dbc0f0373af0",
+      "downloadSha256": "d23cdec8975ac452d64ae97b08f1eecd22e38f052bd5d588d352dbc0f0373af0"
+    },
+    {
+      "path": "game/assets/polyhaven/models/WetFloorSign_01/textures/WetFloorSign_01_arm_2k.jpg",
+      "asset": "WetFloorSign_01",
+      "sourcePage": "https://polyhaven.com/a/WetFloorSign_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/WetFloorSign_01_arm_2k.jpg"
+      ],
+      "bytes": 408113,
+      "sha256": "dfe8b7eaa199845ba5e0049d73407c5fae8567803c7c22bdd7cf6c16c05e750d",
+      "downloadSha256": "dfe8b7eaa199845ba5e0049d73407c5fae8567803c7c22bdd7cf6c16c05e750d"
+    },
+    {
+      "path": "game/assets/polyhaven/models/WetFloorSign_01/textures/WetFloorSign_01_diff_2k.jpg",
+      "asset": "WetFloorSign_01",
+      "sourcePage": "https://polyhaven.com/a/WetFloorSign_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/WetFloorSign_01_diff_2k.jpg"
+      ],
+      "bytes": 115837,
+      "sha256": "f2cc0de3faa39fa922c878ecdb84935f444a0d9276afe7e993e7e59e28f75b49",
+      "downloadSha256": "f2cc0de3faa39fa922c878ecdb84935f444a0d9276afe7e993e7e59e28f75b49"
+    },
+    {
+      "path": "game/assets/polyhaven/models/WetFloorSign_01/textures/WetFloorSign_01_nor_gl_2k.jpg",
+      "asset": "WetFloorSign_01",
+      "sourcePage": "https://polyhaven.com/a/WetFloorSign_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/WetFloorSign_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 234546,
+      "sha256": "9f1d068237273aae2a76b4b1cfb9fc79269b0b8c265ce0859e8daff21e22440f",
+      "downloadSha256": "9f1d068237273aae2a76b4b1cfb9fc79269b0b8c265ce0859e8daff21e22440f"
+    },
+    {
+      "path": "game/assets/polyhaven/models/barrel_03/barrel_03.bin",
+      "asset": "barrel_03",
+      "sourcePage": "https://polyhaven.com/a/barrel_03",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "barrel_03.bin"
+      ],
+      "bytes": 44872,
+      "sha256": "10f3202e9ac9acf8dd896f1562c64db58311ffef89efb402d8433e03ad486427",
+      "downloadSha256": "10f3202e9ac9acf8dd896f1562c64db58311ffef89efb402d8433e03ad486427"
+    },
+    {
+      "path": "game/assets/polyhaven/models/barrel_03/textures/barrel_03_arm_2k.jpg",
+      "asset": "barrel_03",
+      "sourcePage": "https://polyhaven.com/a/barrel_03",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/barrel_03_arm_2k.jpg"
+      ],
+      "bytes": 955198,
+      "sha256": "15faef31ea4afdf74864848244a9f48da0cc0843c7b42d4ee3d1bfb1f6c39d6c",
+      "downloadSha256": "15faef31ea4afdf74864848244a9f48da0cc0843c7b42d4ee3d1bfb1f6c39d6c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/barrel_03/textures/barrel_03_diff_2k.jpg",
+      "asset": "barrel_03",
+      "sourcePage": "https://polyhaven.com/a/barrel_03",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/barrel_03_diff_2k.jpg"
+      ],
+      "bytes": 581642,
+      "sha256": "7fdd72264cfbf3e21d8caa0aca4ae4942c2004192cea89b84e88dfd49567f6c5",
+      "downloadSha256": "7fdd72264cfbf3e21d8caa0aca4ae4942c2004192cea89b84e88dfd49567f6c5"
+    },
+    {
+      "path": "game/assets/polyhaven/models/barrel_03/textures/barrel_03_nor_gl_2k.jpg",
+      "asset": "barrel_03",
+      "sourcePage": "https://polyhaven.com/a/barrel_03",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/barrel_03_nor_gl_2k.jpg"
+      ],
+      "bytes": 496907,
+      "sha256": "6d639b6203b68a123d0dddd136fdbb6dc06fbc6c36898bd4f35c15a742a78ecc",
+      "downloadSha256": "6d639b6203b68a123d0dddd136fdbb6dc06fbc6c36898bd4f35c15a742a78ecc"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boombox/boombox.bin",
+      "asset": "boombox",
+      "sourcePage": "https://polyhaven.com/a/boombox",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "boombox.bin"
+      ],
+      "bytes": 328752,
+      "sha256": "2579a18ff22b3c3466cd557ce3e4bbe517091bb7158172bdf9371ca993f9c49f",
+      "downloadSha256": "2579a18ff22b3c3466cd557ce3e4bbe517091bb7158172bdf9371ca993f9c49f"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boombox/textures/boombox_arm_2k.jpg",
+      "asset": "boombox",
+      "sourcePage": "https://polyhaven.com/a/boombox",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boombox_arm_2k.jpg"
+      ],
+      "bytes": 1191344,
+      "sha256": "a2f9e5232d51c40998f218d5a9054eda730bbaf5dc0ad41877d5274f7ca6642a",
+      "downloadSha256": "a2f9e5232d51c40998f218d5a9054eda730bbaf5dc0ad41877d5274f7ca6642a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boombox/textures/boombox_diff_2k.jpg",
+      "asset": "boombox",
+      "sourcePage": "https://polyhaven.com/a/boombox",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boombox_diff_2k.jpg"
+      ],
+      "bytes": 1703290,
+      "sha256": "f66a641d3083fb84b48eca8f7b33d44c69f8814da458a0c3d174e0192342cf56",
+      "downloadSha256": "f66a641d3083fb84b48eca8f7b33d44c69f8814da458a0c3d174e0192342cf56"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boombox/textures/boombox_nor_gl_2k.jpg",
+      "asset": "boombox",
+      "sourcePage": "https://polyhaven.com/a/boombox",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boombox_nor_gl_2k.jpg"
+      ],
+      "bytes": 1838529,
+      "sha256": "61bfa6f1b8611ab897a8bd555f3bcbca1e5d35ffd2cdb44d2684818061840a4d",
+      "downloadSha256": "61bfa6f1b8611ab897a8bd555f3bcbca1e5d35ffd2cdb44d2684818061840a4d"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boombox/textures/boombox_speakers_arm_2k.jpg",
+      "asset": "boombox",
+      "sourcePage": "https://polyhaven.com/a/boombox",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boombox_speakers_arm_2k.jpg"
+      ],
+      "bytes": 2238879,
+      "sha256": "fa46f505c76524892b0d043872fa24b5379db27f3133806093fdfd54d9040552",
+      "downloadSha256": "fa46f505c76524892b0d043872fa24b5379db27f3133806093fdfd54d9040552"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boombox/textures/boombox_speakers_diff_2k.jpg",
+      "asset": "boombox",
+      "sourcePage": "https://polyhaven.com/a/boombox",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boombox_speakers_diff_2k.jpg"
+      ],
+      "bytes": 1774792,
+      "sha256": "f3d2b73b5a9275498b1df4c4f7aefc5b936049f097eab47612d67542d2e53eae",
+      "downloadSha256": "f3d2b73b5a9275498b1df4c4f7aefc5b936049f097eab47612d67542d2e53eae"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boulder_01/boulder_01.bin",
+      "asset": "boulder_01",
+      "sourcePage": "https://polyhaven.com/a/boulder_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "boulder_01.bin"
+      ],
+      "bytes": 2938808,
+      "sha256": "7f5b06503d62bd95bfe9c6b8a354a5cc8ff04a4d271a8cf87a3e3125db4232d7",
+      "downloadSha256": "7f5b06503d62bd95bfe9c6b8a354a5cc8ff04a4d271a8cf87a3e3125db4232d7"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boulder_01/textures/boulder_01_arm_2k.jpg",
+      "asset": "boulder_01",
+      "sourcePage": "https://polyhaven.com/a/boulder_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boulder_01_arm_2k.jpg"
+      ],
+      "bytes": 2273068,
+      "sha256": "ab52859dde519b4822111aa60916b6d21f8a6966c67b6cec44d1cd0775b8a86a",
+      "downloadSha256": "ab52859dde519b4822111aa60916b6d21f8a6966c67b6cec44d1cd0775b8a86a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boulder_01/textures/boulder_01_diff_2k.jpg",
+      "asset": "boulder_01",
+      "sourcePage": "https://polyhaven.com/a/boulder_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boulder_01_diff_2k.jpg"
+      ],
+      "bytes": 3672483,
+      "sha256": "90bbaa17c1fe0254d2b0b6e5148264fa834953a72724d566f14af029eebe3ca3",
+      "downloadSha256": "90bbaa17c1fe0254d2b0b6e5148264fa834953a72724d566f14af029eebe3ca3"
+    },
+    {
+      "path": "game/assets/polyhaven/models/boulder_01/textures/boulder_01_nor_gl_2k.jpg",
+      "asset": "boulder_01",
+      "sourcePage": "https://polyhaven.com/a/boulder_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/boulder_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 4649207,
+      "sha256": "5174b318712ac7725cbcb55d422607f9c66d7f8d035c5412ab897b5939e2db6b",
+      "downloadSha256": "5174b318712ac7725cbcb55d422607f9c66d7f8d035c5412ab897b5939e2db6b"
+    },
+    {
+      "path": "game/assets/polyhaven/models/bronze_whale_statue/bronze_whale_statue.bin",
+      "asset": "bronze_whale_statue",
+      "sourcePage": "https://polyhaven.com/a/bronze_whale_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "bronze_whale_statue.bin"
+      ],
+      "bytes": 102352,
+      "sha256": "675ec5711b4d7653a1bdfd4c25a7ca33652eb173eae1869de8e4759090a1fa21",
+      "downloadSha256": "675ec5711b4d7653a1bdfd4c25a7ca33652eb173eae1869de8e4759090a1fa21"
+    },
+    {
+      "path": "game/assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_arm_2k.jpg",
+      "asset": "bronze_whale_statue",
+      "sourcePage": "https://polyhaven.com/a/bronze_whale_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/bronze_whale_statue_arm_2k.jpg"
+      ],
+      "bytes": 3310465,
+      "sha256": "4102b24e07ed7fe01ddf706247953427d3fcc54e9adb1ff5d96cbefa49e5b0d5",
+      "downloadSha256": "4102b24e07ed7fe01ddf706247953427d3fcc54e9adb1ff5d96cbefa49e5b0d5"
+    },
+    {
+      "path": "game/assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_diff_2k.jpg",
+      "asset": "bronze_whale_statue",
+      "sourcePage": "https://polyhaven.com/a/bronze_whale_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/bronze_whale_statue_diff_2k.jpg"
+      ],
+      "bytes": 1864773,
+      "sha256": "1fabb1dedc14d73868c427611c0b71235b3f746f0fd0799533685158bc9e5eb1",
+      "downloadSha256": "1fabb1dedc14d73868c427611c0b71235b3f746f0fd0799533685158bc9e5eb1"
+    },
+    {
+      "path": "game/assets/polyhaven/models/bronze_whale_statue/textures/bronze_whale_statue_nor_gl_2k.jpg",
+      "asset": "bronze_whale_statue",
+      "sourcePage": "https://polyhaven.com/a/bronze_whale_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/bronze_whale_statue_nor_gl_2k.jpg"
+      ],
+      "bytes": 2800419,
+      "sha256": "7f8eb6eebf091dcd3d3551b0927730fb5e4d48cc160e7e9b2f88ee1480b1db27",
+      "downloadSha256": "7f8eb6eebf091dcd3d3551b0927730fb5e4d48cc160e7e9b2f88ee1480b1db27"
+    },
+    {
+      "path": "game/assets/polyhaven/models/cardboard_box_01/cardboard_box_01.bin",
+      "asset": "cardboard_box_01",
+      "sourcePage": "https://polyhaven.com/a/cardboard_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "cardboard_box_01.bin"
+      ],
+      "bytes": 381936,
+      "sha256": "7212d43b4cb56459e46d31ab34dc7c310fcfbe170f4a588416dea07ae5628a4b",
+      "downloadSha256": "7212d43b4cb56459e46d31ab34dc7c310fcfbe170f4a588416dea07ae5628a4b"
+    },
+    {
+      "path": "game/assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_arm_2k.jpg",
+      "asset": "cardboard_box_01",
+      "sourcePage": "https://polyhaven.com/a/cardboard_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/cardboard_box_01_arm_2k.jpg"
+      ],
+      "bytes": 1309578,
+      "sha256": "fefb333764dbf17a6679ecd0e04fbe45ae5eb312813796bdb373cb12eb1ffcdd",
+      "downloadSha256": "fefb333764dbf17a6679ecd0e04fbe45ae5eb312813796bdb373cb12eb1ffcdd"
+    },
+    {
+      "path": "game/assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_diff_2k.jpg",
+      "asset": "cardboard_box_01",
+      "sourcePage": "https://polyhaven.com/a/cardboard_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/cardboard_box_01_diff_2k.jpg"
+      ],
+      "bytes": 1987615,
+      "sha256": "5cdf1f747ba3f2fe656ed3258c2b74086f5ad727cbce58a821f34d0940c08053",
+      "downloadSha256": "5cdf1f747ba3f2fe656ed3258c2b74086f5ad727cbce58a821f34d0940c08053"
+    },
+    {
+      "path": "game/assets/polyhaven/models/cardboard_box_01/textures/cardboard_box_01_nor_gl_2k.jpg",
+      "asset": "cardboard_box_01",
+      "sourcePage": "https://polyhaven.com/a/cardboard_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/cardboard_box_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 3005768,
+      "sha256": "b3d77c012e93be72547b9476ef83341b8f617e2c9b5ea9c82c9e8ea1132ea8a2",
+      "downloadSha256": "b3d77c012e93be72547b9476ef83341b8f617e2c9b5ea9c82c9e8ea1132ea8a2"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_cat_statue/concrete_cat_statue.bin",
+      "asset": "concrete_cat_statue",
+      "sourcePage": "https://polyhaven.com/a/concrete_cat_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "concrete_cat_statue.bin"
+      ],
+      "bytes": 291316,
+      "sha256": "489d9c3b5d8c3b8a606865f7fef002ac8535f883393696b448c1bd78a5a6a612",
+      "downloadSha256": "489d9c3b5d8c3b8a606865f7fef002ac8535f883393696b448c1bd78a5a6a612"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_cat_statue/textures/concrete_cat_statue_arm_2k.jpg",
+      "asset": "concrete_cat_statue",
+      "sourcePage": "https://polyhaven.com/a/concrete_cat_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/concrete_cat_statue_arm_2k.jpg"
+      ],
+      "bytes": 2797145,
+      "sha256": "2ea5a454bbf1667e774b19c802ea4ca676b8337a08d76b815f34a45c477e5689",
+      "downloadSha256": "2ea5a454bbf1667e774b19c802ea4ca676b8337a08d76b815f34a45c477e5689"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_cat_statue/textures/concrete_cat_statue_diff_2k.jpg",
+      "asset": "concrete_cat_statue",
+      "sourcePage": "https://polyhaven.com/a/concrete_cat_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/concrete_cat_statue_diff_2k.jpg"
+      ],
+      "bytes": 3368899,
+      "sha256": "b02aea8ff84f3e234507800c1e3c941a5672b451e857242093a939fe11a43a72",
+      "downloadSha256": "b02aea8ff84f3e234507800c1e3c941a5672b451e857242093a939fe11a43a72"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_cat_statue/textures/concrete_cat_statue_nor_gl_2k.jpg",
+      "asset": "concrete_cat_statue",
+      "sourcePage": "https://polyhaven.com/a/concrete_cat_statue",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/concrete_cat_statue_nor_gl_2k.jpg"
+      ],
+      "bytes": 4492782,
+      "sha256": "fc883c77dce3a98159dcc6e286b0191ae05ada0c0034c7851685975d9d976a3d",
+      "downloadSha256": "fc883c77dce3a98159dcc6e286b0191ae05ada0c0034c7851685975d9d976a3d"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_road_barrier/concrete_road_barrier.bin",
+      "asset": "concrete_road_barrier",
+      "sourcePage": "https://polyhaven.com/a/concrete_road_barrier",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "concrete_road_barrier.bin"
+      ],
+      "bytes": 1374016,
+      "sha256": "64a4f9bc6e4af64d714a252c3c13428c430a60569deba3d52ca6b7dd3aa70d8c",
+      "downloadSha256": "64a4f9bc6e4af64d714a252c3c13428c430a60569deba3d52ca6b7dd3aa70d8c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_arm_2k.jpg",
+      "asset": "concrete_road_barrier",
+      "sourcePage": "https://polyhaven.com/a/concrete_road_barrier",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/concrete_road_barrier_arm_2k.jpg"
+      ],
+      "bytes": 2515448,
+      "sha256": "8c17f77897138a5ee0f80d0b5d194fd00554371e33b9f62f6d7b6a4e640094d6",
+      "downloadSha256": "8c17f77897138a5ee0f80d0b5d194fd00554371e33b9f62f6d7b6a4e640094d6"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_diff_2k.jpg",
+      "asset": "concrete_road_barrier",
+      "sourcePage": "https://polyhaven.com/a/concrete_road_barrier",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/concrete_road_barrier_diff_2k.jpg"
+      ],
+      "bytes": 3189621,
+      "sha256": "51832691e0769a04246b61222e5df1ce7dc22e9c7162f786a314409ac76d643c",
+      "downloadSha256": "51832691e0769a04246b61222e5df1ce7dc22e9c7162f786a314409ac76d643c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/concrete_road_barrier/textures/concrete_road_barrier_nor_gl_2k.jpg",
+      "asset": "concrete_road_barrier",
+      "sourcePage": "https://polyhaven.com/a/concrete_road_barrier",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/concrete_road_barrier_nor_gl_2k.jpg"
+      ],
+      "bytes": 3888469,
+      "sha256": "8e48a287ae58a53030635c585d57a2da72660531a907a8e6cd04836bc60bf3a3",
+      "downloadSha256": "8e48a287ae58a53030635c585d57a2da72660531a907a8e6cd04836bc60bf3a3"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/exterior_aircon_unit.bin",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "exterior_aircon_unit.bin"
+      ],
+      "bytes": 494784,
+      "sha256": "b4b9ad082bdaa8f8b437bc14d9981caeaf318334499d4bf65d616fb2ec0c5ca8",
+      "downloadSha256": "b4b9ad082bdaa8f8b437bc14d9981caeaf318334499d4bf65d616fb2ec0c5ca8"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_arm_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_01_arm_2k.jpg"
+      ],
+      "bytes": 2266943,
+      "sha256": "1a146357454fc143ed7e3b1443abc901d675d3dbef6b8c5afc9705d53be681a9",
+      "downloadSha256": "1a146357454fc143ed7e3b1443abc901d675d3dbef6b8c5afc9705d53be681a9"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_diff_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_01_diff_2k.jpg"
+      ],
+      "bytes": 1668804,
+      "sha256": "a346d5f9f6e5c130e051529811443b61af8dfd7f2391b4358931ecef29c403b8",
+      "downloadSha256": "a346d5f9f6e5c130e051529811443b61af8dfd7f2391b4358931ecef29c403b8"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_nor_gl_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 1625796,
+      "sha256": "f0d04099be28fe83a0c2dd9454c82838b3980520b244d25e912e5ffe56958837",
+      "downloadSha256": "f0d04099be28fe83a0c2dd9454c82838b3980520b244d25e912e5ffe56958837"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_01_opacity_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_01_opacity_2k.jpg"
+      ],
+      "bytes": 919689,
+      "sha256": "38247caa9353b1875ba983702e13417732381e25cf0d9ef2945baabb938bd184",
+      "downloadSha256": "38247caa9353b1875ba983702e13417732381e25cf0d9ef2945baabb938bd184"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_arm_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_02_arm_2k.jpg"
+      ],
+      "bytes": 1693105,
+      "sha256": "4817491a80bbe44a63d88d6191fe4771128b2e1bc9f772851ce61bcf1d673d49",
+      "downloadSha256": "4817491a80bbe44a63d88d6191fe4771128b2e1bc9f772851ce61bcf1d673d49"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_02_nor_gl_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_02_nor_gl_2k.jpg"
+      ],
+      "bytes": 3561963,
+      "sha256": "64276d1799429842b823881c557dbf0efffa784096dafd1f69be719866acc39a",
+      "downloadSha256": "64276d1799429842b823881c557dbf0efffa784096dafd1f69be719866acc39a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_arm_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_rusted_01_arm_2k.jpg"
+      ],
+      "bytes": 2328077,
+      "sha256": "41763f49cc6f9dfe4ddcb1ef93a3c6340d1fba10c3f81af0c3d80bb00779b580",
+      "downloadSha256": "41763f49cc6f9dfe4ddcb1ef93a3c6340d1fba10c3f81af0c3d80bb00779b580"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_diff_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_rusted_01_diff_2k.jpg"
+      ],
+      "bytes": 1990502,
+      "sha256": "e459cf5f606567e7fe11ec486d57fe02b462b7546b324458a0039aa38ed6fc39",
+      "downloadSha256": "e459cf5f606567e7fe11ec486d57fe02b462b7546b324458a0039aa38ed6fc39"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_rusted_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 2059209,
+      "sha256": "3a2bae0c5e700e6fd96ea46644e967d739531771ea59330f87ecbff96c6defe5",
+      "downloadSha256": "3a2bae0c5e700e6fd96ea46644e967d739531771ea59330f87ecbff96c6defe5"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_arm_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_rusted_02_arm_2k.jpg"
+      ],
+      "bytes": 2195033,
+      "sha256": "d4c48ab4b811eb514fa78caecd265c672142d326e23edf917da0e8cecb718747",
+      "downloadSha256": "d4c48ab4b811eb514fa78caecd265c672142d326e23edf917da0e8cecb718747"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_rusted_02_nor_gl_2k.jpg"
+      ],
+      "bytes": 3624562,
+      "sha256": "d9bed2084f46db041ccbcff6000a88c5177041e2f418071812c899b0e60b37e2",
+      "downloadSha256": "d9bed2084f46db041ccbcff6000a88c5177041e2f418071812c899b0e60b37e2"
+    },
+    {
+      "path": "game/assets/polyhaven/models/exterior_aircon_unit/textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg",
+      "asset": "exterior_aircon_unit",
+      "sourcePage": "https://polyhaven.com/a/exterior_aircon_unit",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/exterior_aircon_unit_rusted_02_opacity_2k.jpg"
+      ],
+      "bytes": 998108,
+      "sha256": "24c395f621ba1f4b8251a02afef7a58038b82c78e6cadf758d059e3d93edd8db",
+      "downloadSha256": "24c395f621ba1f4b8251a02afef7a58038b82c78e6cadf758d059e3d93edd8db"
+    },
+    {
+      "path": "game/assets/polyhaven/models/fire_hydrant/fire_hydrant.bin",
+      "asset": "fire_hydrant",
+      "sourcePage": "https://polyhaven.com/a/fire_hydrant",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "fire_hydrant.bin"
+      ],
+      "bytes": 1928772,
+      "sha256": "a3c7ed023bc4aff190902764326e7f83ae1a108f6bac2a1b637c38a8e03eb516",
+      "downloadSha256": "a3c7ed023bc4aff190902764326e7f83ae1a108f6bac2a1b637c38a8e03eb516"
+    },
+    {
+      "path": "game/assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_arm_2k.jpg",
+      "asset": "fire_hydrant",
+      "sourcePage": "https://polyhaven.com/a/fire_hydrant",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/fire_hydrant_aged_arm_2k.jpg"
+      ],
+      "bytes": 2268350,
+      "sha256": "edcc286284098e20d6f29215f05efb11658a71d7ed5664c8680a747c3721f329",
+      "downloadSha256": "edcc286284098e20d6f29215f05efb11658a71d7ed5664c8680a747c3721f329"
+    },
+    {
+      "path": "game/assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_diff_2k.jpg",
+      "asset": "fire_hydrant",
+      "sourcePage": "https://polyhaven.com/a/fire_hydrant",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/fire_hydrant_aged_diff_2k.jpg"
+      ],
+      "bytes": 2191944,
+      "sha256": "02cc548f6c88a7c0c2062cb201ba542fa33e9f836c602bac69405e848ff232c3",
+      "downloadSha256": "02cc548f6c88a7c0c2062cb201ba542fa33e9f836c602bac69405e848ff232c3"
+    },
+    {
+      "path": "game/assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_aged_nor_gl_2k.jpg",
+      "asset": "fire_hydrant",
+      "sourcePage": "https://polyhaven.com/a/fire_hydrant",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/fire_hydrant_aged_nor_gl_2k.jpg"
+      ],
+      "bytes": 2097229,
+      "sha256": "b27858fb50356fd5bd1b76350a1ea689b5e570c5f04a641bab7b25d16ce695cf",
+      "downloadSha256": "b27858fb50356fd5bd1b76350a1ea689b5e570c5f04a641bab7b25d16ce695cf"
+    },
+    {
+      "path": "game/assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_arm_2k.jpg",
+      "asset": "fire_hydrant",
+      "sourcePage": "https://polyhaven.com/a/fire_hydrant",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/fire_hydrant_arm_2k.jpg"
+      ],
+      "bytes": 2322663,
+      "sha256": "9422e07195a865958594ba65d9446f284a5032b07cfc4fe766486d3a69f934d3",
+      "downloadSha256": "9422e07195a865958594ba65d9446f284a5032b07cfc4fe766486d3a69f934d3"
+    },
+    {
+      "path": "game/assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_diff_2k.jpg",
+      "asset": "fire_hydrant",
+      "sourcePage": "https://polyhaven.com/a/fire_hydrant",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/fire_hydrant_diff_2k.jpg"
+      ],
+      "bytes": 2012585,
+      "sha256": "d7d3181b80ccf18e60614b21104e39218e8483d2c999c7d96867deba2f13bb38",
+      "downloadSha256": "d7d3181b80ccf18e60614b21104e39218e8483d2c999c7d96867deba2f13bb38"
+    },
+    {
+      "path": "game/assets/polyhaven/models/fire_hydrant/textures/fire_hydrant_nor_gl_2k.jpg",
+      "asset": "fire_hydrant",
+      "sourcePage": "https://polyhaven.com/a/fire_hydrant",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/fire_hydrant_nor_gl_2k.jpg"
+      ],
+      "bytes": 1847102,
+      "sha256": "2edf5b7ac369f5657db079bf6913e1b971136e8218bd1c7ace12a3d77263896d",
+      "downloadSha256": "2edf5b7ac369f5657db079bf6913e1b971136e8218bd1c7ace12a3d77263896d"
+    },
+    {
+      "path": "game/assets/polyhaven/models/lifebuoy/lifebuoy.bin",
+      "asset": "lifebuoy",
+      "sourcePage": "https://polyhaven.com/a/lifebuoy",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "lifebuoy.bin"
+      ],
+      "bytes": 255280,
+      "sha256": "aa45c8d43ee11e12a4ab9f46bfb06d1baa6c687d61776ad9b06ea6b5664c0bc2",
+      "downloadSha256": "aa45c8d43ee11e12a4ab9f46bfb06d1baa6c687d61776ad9b06ea6b5664c0bc2"
+    },
+    {
+      "path": "game/assets/polyhaven/models/lifebuoy/textures/lifebuoy_arm_2k.jpg",
+      "asset": "lifebuoy",
+      "sourcePage": "https://polyhaven.com/a/lifebuoy",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/lifebuoy_arm_2k.jpg"
+      ],
+      "bytes": 2179742,
+      "sha256": "f02693d30945ef5608b05a9061ef0b54559fc82df77a7517efbc8881a02ac8c9",
+      "downloadSha256": "f02693d30945ef5608b05a9061ef0b54559fc82df77a7517efbc8881a02ac8c9"
+    },
+    {
+      "path": "game/assets/polyhaven/models/lifebuoy/textures/lifebuoy_diff_2k.jpg",
+      "asset": "lifebuoy",
+      "sourcePage": "https://polyhaven.com/a/lifebuoy",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/lifebuoy_diff_2k.jpg"
+      ],
+      "bytes": 3140458,
+      "sha256": "9d88b28be88331614a5a81c3967e9c703e18ceaa05cf9a39a8dd5d71d3ac7d4f",
+      "downloadSha256": "9d88b28be88331614a5a81c3967e9c703e18ceaa05cf9a39a8dd5d71d3ac7d4f"
+    },
+    {
+      "path": "game/assets/polyhaven/models/lifebuoy/textures/lifebuoy_nor_gl_2k.jpg",
+      "asset": "lifebuoy",
+      "sourcePage": "https://polyhaven.com/a/lifebuoy",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/lifebuoy_nor_gl_2k.jpg"
+      ],
+      "bytes": 3668177,
+      "sha256": "dc892cca7ea1cb879ade9f97f39af27095915ea3e73953ec82699feab3ac5593",
+      "downloadSha256": "dc892cca7ea1cb879ade9f97f39af27095915ea3e73953ec82699feab3ac5593"
+    },
+    {
+      "path": "game/assets/polyhaven/models/metal_trash_can/metal_trash_can.bin",
+      "asset": "metal_trash_can",
+      "sourcePage": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "metal_trash_can.bin"
+      ],
+      "bytes": 378288,
+      "sha256": "a9b9f526b655bef865933335f2cfc8c8f0bd1a35fda05b290a93e3061f2b6c8a",
+      "downloadSha256": "a9b9f526b655bef865933335f2cfc8c8f0bd1a35fda05b290a93e3061f2b6c8a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_arm_2k.jpg",
+      "asset": "metal_trash_can",
+      "sourcePage": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/metal_trash_can_arm_2k.jpg"
+      ],
+      "bytes": 2756651,
+      "sha256": "168c3143575152a64c4d5b205a53e0748d76eeb6ea8376e14914b41c9f6fd6a2",
+      "downloadSha256": "168c3143575152a64c4d5b205a53e0748d76eeb6ea8376e14914b41c9f6fd6a2"
+    },
+    {
+      "path": "game/assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_diff_2k.jpg",
+      "asset": "metal_trash_can",
+      "sourcePage": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/metal_trash_can_diff_2k.jpg"
+      ],
+      "bytes": 2073937,
+      "sha256": "2f2cec31a3d8cd2117eb0358e253e53f78181310975441b9e6e45b580d0079e7",
+      "downloadSha256": "2f2cec31a3d8cd2117eb0358e253e53f78181310975441b9e6e45b580d0079e7"
+    },
+    {
+      "path": "game/assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_nor_gl_2k.jpg",
+      "asset": "metal_trash_can",
+      "sourcePage": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/metal_trash_can_nor_gl_2k.jpg"
+      ],
+      "bytes": 3034809,
+      "sha256": "7bb12839b501bdb605be02a8ba86c3f283197ec35bbcb5be5a85e8cdfdb7f953",
+      "downloadSha256": "7bb12839b501bdb605be02a8ba86c3f283197ec35bbcb5be5a85e8cdfdb7f953"
+    },
+    {
+      "path": "game/assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_arm_2k.jpg",
+      "asset": "metal_trash_can",
+      "sourcePage": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/metal_trash_can_rust_arm_2k.jpg"
+      ],
+      "bytes": 2270609,
+      "sha256": "410d2508ed6ef2525f2126979f5a55f0f3d273bcb4ab5231f1a624c47f300488",
+      "downloadSha256": "410d2508ed6ef2525f2126979f5a55f0f3d273bcb4ab5231f1a624c47f300488"
+    },
+    {
+      "path": "game/assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_diff_2k.jpg",
+      "asset": "metal_trash_can",
+      "sourcePage": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/metal_trash_can_rust_diff_2k.jpg"
+      ],
+      "bytes": 2716140,
+      "sha256": "b927a4eeb7be65eb8f0bb1fd8d4ae19647bf7a86759c09c0de43cdc8256a45d6",
+      "downloadSha256": "b927a4eeb7be65eb8f0bb1fd8d4ae19647bf7a86759c09c0de43cdc8256a45d6"
+    },
+    {
+      "path": "game/assets/polyhaven/models/metal_trash_can/textures/metal_trash_can_rust_nor_gl_2k.jpg",
+      "asset": "metal_trash_can",
+      "sourcePage": "https://polyhaven.com/a/metal_trash_can",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/metal_trash_can_rust_nor_gl_2k.jpg"
+      ],
+      "bytes": 4229931,
+      "sha256": "48c901b6acd1fa161fc9d0de0f4b6945629315133819f2d5ad5957a67686722c",
+      "downloadSha256": "48c901b6acd1fa161fc9d0de0f4b6945629315133819f2d5ad5957a67686722c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/modular_street_seating.bin",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "modular_street_seating.bin"
+      ],
+      "bytes": 977224,
+      "sha256": "968558aa808b6cf74783b375d32a346a4de2ce9c118c0f17fba24c6999f03547",
+      "downloadSha256": "968558aa808b6cf74783b375d32a346a4de2ce9c118c0f17fba24c6999f03547"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_arm_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_armrests_arm_2k.jpg"
+      ],
+      "bytes": 2348093,
+      "sha256": "0353d72a88894fde9d981364fb9cc22a5f37fecf7c0553f16cdc9195cc49acc6",
+      "downloadSha256": "0353d72a88894fde9d981364fb9cc22a5f37fecf7c0553f16cdc9195cc49acc6"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_diff_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_armrests_diff_2k.jpg"
+      ],
+      "bytes": 2299594,
+      "sha256": "108e03dceeec52949a6b1c3dd0275d526360e5b7e228f1a874c51ba6ec44c627",
+      "downloadSha256": "108e03dceeec52949a6b1c3dd0275d526360e5b7e228f1a874c51ba6ec44c627"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_armrests_nor_gl_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_armrests_nor_gl_2k.jpg"
+      ],
+      "bytes": 1165480,
+      "sha256": "195c3891efcb73dd6df05841db0d16568dd23583a7d729aa9f3b7d73b4fbe905",
+      "downloadSha256": "195c3891efcb73dd6df05841db0d16568dd23583a7d729aa9f3b7d73b4fbe905"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_arm_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_connectors_arm_2k.jpg"
+      ],
+      "bytes": 2108273,
+      "sha256": "d13e865491c9be16a49c4945dbceaebe8af6d1fd9e5292160093ea2176d568b9",
+      "downloadSha256": "d13e865491c9be16a49c4945dbceaebe8af6d1fd9e5292160093ea2176d568b9"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_diff_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_connectors_diff_2k.jpg"
+      ],
+      "bytes": 758472,
+      "sha256": "643d9bfd835cdfd074371ebb3b9e094ed00040e8c96aacce68588ac4b76cf7ac",
+      "downloadSha256": "643d9bfd835cdfd074371ebb3b9e094ed00040e8c96aacce68588ac4b76cf7ac"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_connectors_nor_gl_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_connectors_nor_gl_2k.jpg"
+      ],
+      "bytes": 1821216,
+      "sha256": "13a8c1d9804c8ec9107444cea7df2698b951f0750f7af5401774438f34243ec4",
+      "downloadSha256": "13a8c1d9804c8ec9107444cea7df2698b951f0750f7af5401774438f34243ec4"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_arm_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_supports_arm_2k.jpg"
+      ],
+      "bytes": 2624832,
+      "sha256": "1141eba656fc493c378a54332cfd827fea8425c3680d168bdc808a346e6f8e16",
+      "downloadSha256": "1141eba656fc493c378a54332cfd827fea8425c3680d168bdc808a346e6f8e16"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_diff_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_supports_diff_2k.jpg"
+      ],
+      "bytes": 2552643,
+      "sha256": "005542d67891932d799b48dc010a1c96886e68366aa146d1dfcf7b0415ee0642",
+      "downloadSha256": "005542d67891932d799b48dc010a1c96886e68366aa146d1dfcf7b0415ee0642"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_supports_nor_gl_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_supports_nor_gl_2k.jpg"
+      ],
+      "bytes": 1733497,
+      "sha256": "9e8e772bb7482f3ff6aaf20092500a15176ec185d99ceb09e3c2a3f44aaad3ae",
+      "downloadSha256": "9e8e772bb7482f3ff6aaf20092500a15176ec185d99ceb09e3c2a3f44aaad3ae"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_arm_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_timber_arm_2k.jpg"
+      ],
+      "bytes": 3013735,
+      "sha256": "ffe4fa8e6be4309cd26053ee9723dc66288f62ba62d78bc95aa17734d2deea45",
+      "downloadSha256": "ffe4fa8e6be4309cd26053ee9723dc66288f62ba62d78bc95aa17734d2deea45"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_diff_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_timber_diff_2k.jpg"
+      ],
+      "bytes": 2400500,
+      "sha256": "4571cee6a7c43caf39135bc84af124396b945935080bfc88ecee6c8456f201be",
+      "downloadSha256": "4571cee6a7c43caf39135bc84af124396b945935080bfc88ecee6c8456f201be"
+    },
+    {
+      "path": "game/assets/polyhaven/models/modular_street_seating/textures/modular_street_seating_timber_nor_gl_2k.jpg",
+      "asset": "modular_street_seating",
+      "sourcePage": "https://polyhaven.com/a/modular_street_seating",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/modular_street_seating_timber_nor_gl_2k.jpg"
+      ],
+      "bytes": 2592455,
+      "sha256": "a14540e6c86144cc36cf02d34721fa135efc1865b6cc798992b736700c2d7b53",
+      "downloadSha256": "a14540e6c86144cc36cf02d34721fa135efc1865b6cc798992b736700c2d7b53"
+    },
+    {
+      "path": "game/assets/polyhaven/models/old_tyre/old_tyre.bin",
+      "asset": "old_tyre",
+      "sourcePage": "https://polyhaven.com/a/old_tyre",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "old_tyre.bin"
+      ],
+      "bytes": 84160,
+      "sha256": "659e7982c2de92ca1d13194c97bf112b6dec22d91daecc88e3912d37ce1b7252",
+      "downloadSha256": "659e7982c2de92ca1d13194c97bf112b6dec22d91daecc88e3912d37ce1b7252"
+    },
+    {
+      "path": "game/assets/polyhaven/models/old_tyre/textures/old_tyre_arm_2k.jpg",
+      "asset": "old_tyre",
+      "sourcePage": "https://polyhaven.com/a/old_tyre",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/old_tyre_arm_2k.jpg"
+      ],
+      "bytes": 3056768,
+      "sha256": "2a5bcb0b7a9f447de60bbf6f492dc01059dcbbfe94cf67eee8c5e1b2892ff5eb",
+      "downloadSha256": "2a5bcb0b7a9f447de60bbf6f492dc01059dcbbfe94cf67eee8c5e1b2892ff5eb"
+    },
+    {
+      "path": "game/assets/polyhaven/models/old_tyre/textures/old_tyre_diff_2k.jpg",
+      "asset": "old_tyre",
+      "sourcePage": "https://polyhaven.com/a/old_tyre",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/old_tyre_diff_2k.jpg"
+      ],
+      "bytes": 2557591,
+      "sha256": "fc84489da73f20898deb28c85a6a392e1d752a6f57be0f45be55edfa088b48c9",
+      "downloadSha256": "fc84489da73f20898deb28c85a6a392e1d752a6f57be0f45be55edfa088b48c9"
+    },
+    {
+      "path": "game/assets/polyhaven/models/old_tyre/textures/old_tyre_nor_gl_2k.jpg",
+      "asset": "old_tyre",
+      "sourcePage": "https://polyhaven.com/a/old_tyre",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/old_tyre_nor_gl_2k.jpg"
+      ],
+      "bytes": 2969610,
+      "sha256": "46b54580adcc86af76d80c1e524c268e36fa7a46dade269fafb1109bf56a6df1",
+      "downloadSha256": "46b54580adcc86af76d80c1e524c268e36fa7a46dade269fafb1109bf56a6df1"
+    },
+    {
+      "path": "game/assets/polyhaven/models/outdoor_table_chair_set_01/outdoor_table_chair_set_01.bin",
+      "asset": "outdoor_table_chair_set_01",
+      "sourcePage": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "outdoor_table_chair_set_01.bin"
+      ],
+      "bytes": 456856,
+      "sha256": "d62458c79c6c902d1195bff875e42bf7579c6b309c6b96f9cd7543af43170220",
+      "downloadSha256": "d62458c79c6c902d1195bff875e42bf7579c6b309c6b96f9cd7543af43170220"
+    },
+    {
+      "path": "game/assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_arm_2k.jpg",
+      "asset": "outdoor_table_chair_set_01",
+      "sourcePage": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/outdoor_table_chair_set_01_chair_arm_2k.jpg"
+      ],
+      "bytes": 583486,
+      "sha256": "646ed8503d7e1d1806506a38c3b2d31b616e0720538e7df054c3d982b9bfa5ae",
+      "downloadSha256": "646ed8503d7e1d1806506a38c3b2d31b616e0720538e7df054c3d982b9bfa5ae"
+    },
+    {
+      "path": "game/assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_diff_2k.jpg",
+      "asset": "outdoor_table_chair_set_01",
+      "sourcePage": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/outdoor_table_chair_set_01_chair_diff_2k.jpg"
+      ],
+      "bytes": 506077,
+      "sha256": "5f6ce1dcd8dbfc0293ae62f01f0cef0a8a07862bd6d744eefa459206e9206eb1",
+      "downloadSha256": "5f6ce1dcd8dbfc0293ae62f01f0cef0a8a07862bd6d744eefa459206e9206eb1"
+    },
+    {
+      "path": "game/assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg",
+      "asset": "outdoor_table_chair_set_01",
+      "sourcePage": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg"
+      ],
+      "bytes": 227267,
+      "sha256": "02723a5d2275e357d07e41a71a87dc46b89e11fec9711b84a7c1d082ada8144a",
+      "downloadSha256": "02723a5d2275e357d07e41a71a87dc46b89e11fec9711b84a7c1d082ada8144a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_arm_2k.jpg",
+      "asset": "outdoor_table_chair_set_01",
+      "sourcePage": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/outdoor_table_chair_set_01_table_arm_2k.jpg"
+      ],
+      "bytes": 695054,
+      "sha256": "64b584f6cf5993b9b78c7ec51ad471ad010a90455ee4bb45a3c9be1263db4d97",
+      "downloadSha256": "64b584f6cf5993b9b78c7ec51ad471ad010a90455ee4bb45a3c9be1263db4d97"
+    },
+    {
+      "path": "game/assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_diff_2k.jpg",
+      "asset": "outdoor_table_chair_set_01",
+      "sourcePage": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/outdoor_table_chair_set_01_table_diff_2k.jpg"
+      ],
+      "bytes": 520192,
+      "sha256": "8259d7200a753037516e153d0989bd5812d50874be7631c34794abdeb2796384",
+      "downloadSha256": "8259d7200a753037516e153d0989bd5812d50874be7631c34794abdeb2796384"
+    },
+    {
+      "path": "game/assets/polyhaven/models/outdoor_table_chair_set_01/textures/outdoor_table_chair_set_01_table_nor_gl_2k.jpg",
+      "asset": "outdoor_table_chair_set_01",
+      "sourcePage": "https://polyhaven.com/a/outdoor_table_chair_set_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/outdoor_table_chair_set_01_table_nor_gl_2k.jpg"
+      ],
+      "bytes": 205693,
+      "sha256": "8ab2e82a262da2912cb64b3439377f943dd29f344b8d4b8b25eb389efdceabc8",
+      "downloadSha256": "8ab2e82a262da2912cb64b3439377f943dd29f344b8d4b8b25eb389efdceabc8"
+    },
+    {
+      "path": "game/assets/polyhaven/models/planter_box_02/planter_box_02.bin",
+      "asset": "planter_box_02",
+      "sourcePage": "https://polyhaven.com/a/planter_box_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "planter_box_02.bin"
+      ],
+      "bytes": 359296,
+      "sha256": "eedaf12238996e02f5aa8e44515ec8746cc1bac19cb3480a5914a7b4ea20dcda",
+      "downloadSha256": "eedaf12238996e02f5aa8e44515ec8746cc1bac19cb3480a5914a7b4ea20dcda"
+    },
+    {
+      "path": "game/assets/polyhaven/models/planter_box_02/textures/planter_box_02_arm_2k.jpg",
+      "asset": "planter_box_02",
+      "sourcePage": "https://polyhaven.com/a/planter_box_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/planter_box_02_arm_2k.jpg"
+      ],
+      "bytes": 2577372,
+      "sha256": "a6cb9e6b3866a7591fcbe740d4cd40cef02fd85178545da8692a2a8c5ecf728e",
+      "downloadSha256": "a6cb9e6b3866a7591fcbe740d4cd40cef02fd85178545da8692a2a8c5ecf728e"
+    },
+    {
+      "path": "game/assets/polyhaven/models/planter_box_02/textures/planter_box_02_diff_2k.jpg",
+      "asset": "planter_box_02",
+      "sourcePage": "https://polyhaven.com/a/planter_box_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/planter_box_02_diff_2k.jpg"
+      ],
+      "bytes": 2264519,
+      "sha256": "2976b90094d6e0a3d36d2264d27326210be426fd56278899c781c1691711c041",
+      "downloadSha256": "2976b90094d6e0a3d36d2264d27326210be426fd56278899c781c1691711c041"
+    },
+    {
+      "path": "game/assets/polyhaven/models/planter_box_02/textures/planter_box_02_nor_gl_2k.jpg",
+      "asset": "planter_box_02",
+      "sourcePage": "https://polyhaven.com/a/planter_box_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/planter_box_02_nor_gl_2k.jpg"
+      ],
+      "bytes": 2846697,
+      "sha256": "6386b4f26df314a9222a06646c5a905e8d966774bc123ad476efa4e1b96c8306",
+      "downloadSha256": "6386b4f26df314a9222a06646c5a905e8d966774bc123ad476efa4e1b96c8306"
+    },
+    {
+      "path": "game/assets/polyhaven/models/plastic_crate_01/plastic_crate_01.bin",
+      "asset": "plastic_crate_01",
+      "sourcePage": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "plastic_crate_01.bin"
+      ],
+      "bytes": 789920,
+      "sha256": "59b307238a27f304739aeef0b1c9622d1e4efb31a96d805d2cfc0c461f9bb06d",
+      "downloadSha256": "59b307238a27f304739aeef0b1c9622d1e4efb31a96d805d2cfc0c461f9bb06d"
+    },
+    {
+      "path": "game/assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_arm_2k.jpg",
+      "asset": "plastic_crate_01",
+      "sourcePage": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/plastic_crate_01_arm_2k.jpg"
+      ],
+      "bytes": 3549816,
+      "sha256": "5eacb0a5d7facfc2dfd9ad4dda7f14f1bf314f3804c173d6790f6e0369a4b6be",
+      "downloadSha256": "5eacb0a5d7facfc2dfd9ad4dda7f14f1bf314f3804c173d6790f6e0369a4b6be"
+    },
+    {
+      "path": "game/assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_diff_2k.jpg",
+      "asset": "plastic_crate_01",
+      "sourcePage": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/plastic_crate_01_diff_2k.jpg"
+      ],
+      "bytes": 1941465,
+      "sha256": "3fa112fc8c4e0ca811330496bddab8825503b9eaccbcca5b2963fb9ff459b0ab",
+      "downloadSha256": "3fa112fc8c4e0ca811330496bddab8825503b9eaccbcca5b2963fb9ff459b0ab"
+    },
+    {
+      "path": "game/assets/polyhaven/models/plastic_crate_01/textures/plastic_crate_01_nor_gl_2k.jpg",
+      "asset": "plastic_crate_01",
+      "sourcePage": "https://polyhaven.com/a/plastic_crate_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/plastic_crate_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 2739010,
+      "sha256": "336070f8a5df854defcd5dee12e501af0d0d4320749db3e828bea05e352f5d90",
+      "downloadSha256": "336070f8a5df854defcd5dee12e501af0d0d4320749db3e828bea05e352f5d90"
+    },
+    {
+      "path": "game/assets/polyhaven/models/potted_plant_01/potted_plant_01.bin",
+      "asset": "potted_plant_01",
+      "sourcePage": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "potted_plant_01.bin"
+      ],
+      "bytes": 5345188,
+      "sha256": "a8dd1f7ce75f50dc25bbedc20809da02ee4193815c155b883a329925fa5548f7",
+      "downloadSha256": "a8dd1f7ce75f50dc25bbedc20809da02ee4193815c155b883a329925fa5548f7"
+    },
+    {
+      "path": "game/assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_diff_2k.jpg",
+      "asset": "potted_plant_01",
+      "sourcePage": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/potted_plant_01_leaves_diff_2k.jpg"
+      ],
+      "bytes": 400273,
+      "sha256": "6ff5a44117b77a0ad570a333aea71f04ee735ed9cab9668936f8775da1614c6b",
+      "downloadSha256": "6ff5a44117b77a0ad570a333aea71f04ee735ed9cab9668936f8775da1614c6b"
+    },
+    {
+      "path": "game/assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_nor_gl_2k.jpg",
+      "asset": "potted_plant_01",
+      "sourcePage": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/potted_plant_01_leaves_nor_gl_2k.jpg"
+      ],
+      "bytes": 764246,
+      "sha256": "8cde55f644e9092bcaa7976b005c6df1b452714f1e1c57ede8abb8b7c8bb4a1a",
+      "downloadSha256": "8cde55f644e9092bcaa7976b005c6df1b452714f1e1c57ede8abb8b7c8bb4a1a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_leaves_rough_2k.jpg",
+      "asset": "potted_plant_01",
+      "sourcePage": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/potted_plant_01_leaves_rough_2k.jpg"
+      ],
+      "bytes": 348164,
+      "sha256": "77c990375720dcdfd801592c9f0546bc5a2ec99a825879945225080ba291d694",
+      "downloadSha256": "77c990375720dcdfd801592c9f0546bc5a2ec99a825879945225080ba291d694"
+    },
+    {
+      "path": "game/assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_diff_2k.jpg",
+      "asset": "potted_plant_01",
+      "sourcePage": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/potted_plant_01_pot_diff_2k.jpg"
+      ],
+      "bytes": 745276,
+      "sha256": "5c85fa6020e1b5a84ea1e6da84261e4fb6f0a94bf48cd6d56fa603de234336fa",
+      "downloadSha256": "5c85fa6020e1b5a84ea1e6da84261e4fb6f0a94bf48cd6d56fa603de234336fa"
+    },
+    {
+      "path": "game/assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_nor_gl_2k.jpg",
+      "asset": "potted_plant_01",
+      "sourcePage": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/potted_plant_01_pot_nor_gl_2k.jpg"
+      ],
+      "bytes": 827724,
+      "sha256": "22792283d310a057553e7428739be073720a492c2a288440ab690124462de1e3",
+      "downloadSha256": "22792283d310a057553e7428739be073720a492c2a288440ab690124462de1e3"
+    },
+    {
+      "path": "game/assets/polyhaven/models/potted_plant_01/textures/potted_plant_01_pot_rough_2k.jpg",
+      "asset": "potted_plant_01",
+      "sourcePage": "https://polyhaven.com/a/potted_plant_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/potted_plant_01_pot_rough_2k.jpg"
+      ],
+      "bytes": 610864,
+      "sha256": "95154a5693f70802d36691cc284e378e173c56d416506c187725c08a96260503",
+      "downloadSha256": "95154a5693f70802d36691cc284e378e173c56d416506c187725c08a96260503"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_door/rollershutter_door.bin",
+      "asset": "rollershutter_door",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_door",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "rollershutter_door.bin"
+      ],
+      "bytes": 46192,
+      "sha256": "155cd44e199d4edd19769503c7ed22b0b4007869166d0193a7e2d5e3134dc38d",
+      "downloadSha256": "155cd44e199d4edd19769503c7ed22b0b4007869166d0193a7e2d5e3134dc38d"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_door/textures/rollershutter_door_arm_2k.jpg",
+      "asset": "rollershutter_door",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_door",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_door_arm_2k.jpg"
+      ],
+      "bytes": 2284955,
+      "sha256": "10bdbc409d48981b3acb6616303c0479d10243cedb1890ef8dbe8e1d36afde18",
+      "downloadSha256": "10bdbc409d48981b3acb6616303c0479d10243cedb1890ef8dbe8e1d36afde18"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_door/textures/rollershutter_door_diff_2k.jpg",
+      "asset": "rollershutter_door",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_door",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_door_diff_2k.jpg"
+      ],
+      "bytes": 2321049,
+      "sha256": "1e7c6f6caf3d3cdcdcb3c7ae589ee536cf015c2fc6acfa34a2a08d3f9902dda4",
+      "downloadSha256": "1e7c6f6caf3d3cdcdcb3c7ae589ee536cf015c2fc6acfa34a2a08d3f9902dda4"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_door/textures/rollershutter_door_graffiti_diff_2k.jpg",
+      "asset": "rollershutter_door",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_door",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_door_graffiti_diff_2k.jpg"
+      ],
+      "bytes": 2536479,
+      "sha256": "1639d5c3a620d8557195168900c4e5bdbcea80a047e2f637b4ca072c139b59d3",
+      "downloadSha256": "1639d5c3a620d8557195168900c4e5bdbcea80a047e2f637b4ca072c139b59d3"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_door/textures/rollershutter_door_nor_gl_2k.jpg",
+      "asset": "rollershutter_door",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_door",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_door_nor_gl_2k.jpg"
+      ],
+      "bytes": 1471465,
+      "sha256": "77ad1ba5b657f0d76422dd820eb32301059f00c27087d172d451338d3b6791bc",
+      "downloadSha256": "77ad1ba5b657f0d76422dd820eb32301059f00c27087d172d451338d3b6791bc"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_01/rollershutter_window_01.bin",
+      "asset": "rollershutter_window_01",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "rollershutter_window_01.bin"
+      ],
+      "bytes": 54432,
+      "sha256": "a866c874c77c0f7600cd79b0af502d5f6333257e6ee86a2f00c4752ef50e2fbb",
+      "downloadSha256": "a866c874c77c0f7600cd79b0af502d5f6333257e6ee86a2f00c4752ef50e2fbb"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_01/textures/rollershutter_window_01_arm_2k.jpg",
+      "asset": "rollershutter_window_01",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_01_arm_2k.jpg"
+      ],
+      "bytes": 2247637,
+      "sha256": "6596dc7f190e8720bbc65a598da09128837261c28aba77daf965368e32c0c8a1",
+      "downloadSha256": "6596dc7f190e8720bbc65a598da09128837261c28aba77daf965368e32c0c8a1"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_01/textures/rollershutter_window_01_diff_2k.jpg",
+      "asset": "rollershutter_window_01",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_01_diff_2k.jpg"
+      ],
+      "bytes": 2217772,
+      "sha256": "e233f50ed4687a0b245016261ae76f20240e4c7928598a4a0f9ca9e33db5f4e1",
+      "downloadSha256": "e233f50ed4687a0b245016261ae76f20240e4c7928598a4a0f9ca9e33db5f4e1"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_01/textures/rollershutter_window_01_graffiti_diff_2k.jpg",
+      "asset": "rollershutter_window_01",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_01_graffiti_diff_2k.jpg"
+      ],
+      "bytes": 2490054,
+      "sha256": "9e04dc701a7ea76ed2a2c19f679373bf248e3ae53641e45b2c231444639d42e2",
+      "downloadSha256": "9e04dc701a7ea76ed2a2c19f679373bf248e3ae53641e45b2c231444639d42e2"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_01/textures/rollershutter_window_01_nor_gl_2k.jpg",
+      "asset": "rollershutter_window_01",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 1413906,
+      "sha256": "9db824a282945e6367bd6e2669c5f46c0f07722d5eed9673cf81d23c8b7bd488",
+      "downloadSha256": "9db824a282945e6367bd6e2669c5f46c0f07722d5eed9673cf81d23c8b7bd488"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_02/rollershutter_window_02.bin",
+      "asset": "rollershutter_window_02",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "rollershutter_window_02.bin"
+      ],
+      "bytes": 49728,
+      "sha256": "3017fb66482855312d2c05e6cff488cae1e775b4809a5bb24a3efc39c04d30d1",
+      "downloadSha256": "3017fb66482855312d2c05e6cff488cae1e775b4809a5bb24a3efc39c04d30d1"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_02/textures/rollershutter_window_02_arm_2k.jpg",
+      "asset": "rollershutter_window_02",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_02_arm_2k.jpg"
+      ],
+      "bytes": 2258936,
+      "sha256": "29c96f558e11c015af203f592bfd27fd1be7203a308be5cf101295776a58d142",
+      "downloadSha256": "29c96f558e11c015af203f592bfd27fd1be7203a308be5cf101295776a58d142"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_02/textures/rollershutter_window_02_diff_2k.jpg",
+      "asset": "rollershutter_window_02",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_02_diff_2k.jpg"
+      ],
+      "bytes": 2031366,
+      "sha256": "cb137550ce3000425cb377d53be0d9c2aa28a969c7ad2a5ef6f756a052da2926",
+      "downloadSha256": "cb137550ce3000425cb377d53be0d9c2aa28a969c7ad2a5ef6f756a052da2926"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_02/textures/rollershutter_window_02_graffiti_diff_2k.jpg",
+      "asset": "rollershutter_window_02",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_02_graffiti_diff_2k.jpg"
+      ],
+      "bytes": 2180360,
+      "sha256": "a43fe7d422d526385c2b7e6d69a5445dfa1922936132d6f4dda9c4314d2d697a",
+      "downloadSha256": "a43fe7d422d526385c2b7e6d69a5445dfa1922936132d6f4dda9c4314d2d697a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/rollershutter_window_02/textures/rollershutter_window_02_nor_gl_2k.jpg",
+      "asset": "rollershutter_window_02",
+      "sourcePage": "https://polyhaven.com/a/rollershutter_window_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/rollershutter_window_02_nor_gl_2k.jpg"
+      ],
+      "bytes": 1448238,
+      "sha256": "d85db8328dfe03581d8284f1d03a384b9a98b95c10350755642113c3439e325c",
+      "downloadSha256": "d85db8328dfe03581d8284f1d03a384b9a98b95c10350755642113c3439e325c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/spray_paint_bottles/spray_paint_bottles.bin",
+      "asset": "spray_paint_bottles",
+      "sourcePage": "https://polyhaven.com/a/spray_paint_bottles",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "spray_paint_bottles.bin"
+      ],
+      "bytes": 116752,
+      "sha256": "7e267d179f627657cb7af8f1c37160933bf3294fc0374e7b2179729df1cfd26a",
+      "downloadSha256": "7e267d179f627657cb7af8f1c37160933bf3294fc0374e7b2179729df1cfd26a"
+    },
+    {
+      "path": "game/assets/polyhaven/models/spray_paint_bottles/textures/spray_paint_bottles_arm_2k.jpg",
+      "asset": "spray_paint_bottles",
+      "sourcePage": "https://polyhaven.com/a/spray_paint_bottles",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/spray_paint_bottles_arm_2k.jpg"
+      ],
+      "bytes": 1809688,
+      "sha256": "1320dd962e7e206b72302db7e925187d15ca38cc65b69acc3521efb614d9c9ae",
+      "downloadSha256": "1320dd962e7e206b72302db7e925187d15ca38cc65b69acc3521efb614d9c9ae"
+    },
+    {
+      "path": "game/assets/polyhaven/models/spray_paint_bottles/textures/spray_paint_bottles_diff_2k.jpg",
+      "asset": "spray_paint_bottles",
+      "sourcePage": "https://polyhaven.com/a/spray_paint_bottles",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/spray_paint_bottles_diff_2k.jpg"
+      ],
+      "bytes": 906718,
+      "sha256": "125d1118591ee6b72cd0b8a5b2d33ac3d62dd6a06e58921b435b28ef88198f28",
+      "downloadSha256": "125d1118591ee6b72cd0b8a5b2d33ac3d62dd6a06e58921b435b28ef88198f28"
+    },
+    {
+      "path": "game/assets/polyhaven/models/spray_paint_bottles/textures/spray_paint_bottles_dirty_arm_2k.jpg",
+      "asset": "spray_paint_bottles",
+      "sourcePage": "https://polyhaven.com/a/spray_paint_bottles",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/spray_paint_bottles_dirty_arm_2k.jpg"
+      ],
+      "bytes": 1841276,
+      "sha256": "9ef0b9e625c41931ff1bc3f0e7da5ba7429008f7ef75b8135328105cf926879e",
+      "downloadSha256": "9ef0b9e625c41931ff1bc3f0e7da5ba7429008f7ef75b8135328105cf926879e"
+    },
+    {
+      "path": "game/assets/polyhaven/models/spray_paint_bottles/textures/spray_paint_bottles_dirty_diff_2k.jpg",
+      "asset": "spray_paint_bottles",
+      "sourcePage": "https://polyhaven.com/a/spray_paint_bottles",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/spray_paint_bottles_dirty_diff_2k.jpg"
+      ],
+      "bytes": 1139872,
+      "sha256": "dad2f0ddd01405d337cf4533f17e9ee667a75156859b8b873f585f89cd787514",
+      "downloadSha256": "dad2f0ddd01405d337cf4533f17e9ee667a75156859b8b873f585f89cd787514"
+    },
+    {
+      "path": "game/assets/polyhaven/models/spray_paint_bottles/textures/spray_paint_bottles_dirty_nor_gl_2k.jpg",
+      "asset": "spray_paint_bottles",
+      "sourcePage": "https://polyhaven.com/a/spray_paint_bottles",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/spray_paint_bottles_dirty_nor_gl_2k.jpg"
+      ],
+      "bytes": 549461,
+      "sha256": "447ecc03a4c5061a9d75752c66c515b109da7e8463151f8d3590509414a3225c",
+      "downloadSha256": "447ecc03a4c5061a9d75752c66c515b109da7e8463151f8d3590509414a3225c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/spray_paint_bottles/textures/spray_paint_bottles_nor_gl_2k.jpg",
+      "asset": "spray_paint_bottles",
+      "sourcePage": "https://polyhaven.com/a/spray_paint_bottles",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/spray_paint_bottles_nor_gl_2k.jpg"
+      ],
+      "bytes": 482280,
+      "sha256": "245150ea6df84efadd9591f7c532228194e5e3396d767b3a3e82bbbbe83c3110",
+      "downloadSha256": "245150ea6df84efadd9591f7c532228194e5e3396d767b3a3e82bbbbe83c3110"
+    },
+    {
+      "path": "game/assets/polyhaven/models/street_lamp_01/street_lamp_01.bin",
+      "asset": "street_lamp_01",
+      "sourcePage": "https://polyhaven.com/a/street_lamp_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "street_lamp_01.bin"
+      ],
+      "bytes": 748908,
+      "sha256": "c283db9b6d95835d9e8fc1692829acadcb21a0623b2daaa7231cec1440488401",
+      "downloadSha256": "c283db9b6d95835d9e8fc1692829acadcb21a0623b2daaa7231cec1440488401"
+    },
+    {
+      "path": "game/assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_arm_2k.jpg",
+      "asset": "street_lamp_01",
+      "sourcePage": "https://polyhaven.com/a/street_lamp_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/street_lamp_01_arm_2k.jpg"
+      ],
+      "bytes": 2332682,
+      "sha256": "dadbbf2c75473587e6023d3555f81ea4fcb899976405c61aada539c6078e24e2",
+      "downloadSha256": "dadbbf2c75473587e6023d3555f81ea4fcb899976405c61aada539c6078e24e2"
+    },
+    {
+      "path": "game/assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_diff_2k.jpg",
+      "asset": "street_lamp_01",
+      "sourcePage": "https://polyhaven.com/a/street_lamp_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/street_lamp_01_diff_2k.jpg"
+      ],
+      "bytes": 993834,
+      "sha256": "c50a25bb68902c9e5909160924f615b4c58f31600e175c6aa976cc7b623ce41c",
+      "downloadSha256": "c50a25bb68902c9e5909160924f615b4c58f31600e175c6aa976cc7b623ce41c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/street_lamp_01/textures/street_lamp_01_nor_gl_2k.jpg",
+      "asset": "street_lamp_01",
+      "sourcePage": "https://polyhaven.com/a/street_lamp_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/street_lamp_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 1827395,
+      "sha256": "b63b40563939f3f1b2bb2bd45525f184c9d71d124020414d2f6dd0e8671e7611",
+      "downloadSha256": "b63b40563939f3f1b2bb2bd45525f184c9d71d124020414d2f6dd0e8671e7611"
+    },
+    {
+      "path": "game/assets/polyhaven/models/utility_box_01/textures/utility_box_01_arm_2k.jpg",
+      "asset": "utility_box_01",
+      "sourcePage": "https://polyhaven.com/a/utility_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/utility_box_01_arm_2k.jpg"
+      ],
+      "bytes": 2563064,
+      "sha256": "47631004401c1deb7927bf731d0e5eacead056e8fe1beb5906d21db10b1fb88b",
+      "downloadSha256": "47631004401c1deb7927bf731d0e5eacead056e8fe1beb5906d21db10b1fb88b"
+    },
+    {
+      "path": "game/assets/polyhaven/models/utility_box_01/textures/utility_box_01_diff_2k.jpg",
+      "asset": "utility_box_01",
+      "sourcePage": "https://polyhaven.com/a/utility_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/utility_box_01_diff_2k.jpg"
+      ],
+      "bytes": 1983621,
+      "sha256": "c0b5560ef0bc650139232edb5ae489012eb58bb1d0dfd4b1fde3ad737e11dc56",
+      "downloadSha256": "c0b5560ef0bc650139232edb5ae489012eb58bb1d0dfd4b1fde3ad737e11dc56"
+    },
+    {
+      "path": "game/assets/polyhaven/models/utility_box_01/textures/utility_box_01_nor_gl_2k.jpg",
+      "asset": "utility_box_01",
+      "sourcePage": "https://polyhaven.com/a/utility_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/utility_box_01_nor_gl_2k.jpg"
+      ],
+      "bytes": 2362673,
+      "sha256": "e97b9f34d7b00e697c9de9a47630a54fa089f68b1e0f1d2ef4b6c39f7f241bcd",
+      "downloadSha256": "e97b9f34d7b00e697c9de9a47630a54fa089f68b1e0f1d2ef4b6c39f7f241bcd"
+    },
+    {
+      "path": "game/assets/polyhaven/models/utility_box_01/utility_box_01.bin",
+      "asset": "utility_box_01",
+      "sourcePage": "https://polyhaven.com/a/utility_box_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "utility_box_01.bin"
+      ],
+      "bytes": 142552,
+      "sha256": "e4249eb754d7802154eed36bb12070dc24c90fc331f355d60ef7570d61fc0f5c",
+      "downloadSha256": "e4249eb754d7802154eed36bb12070dc24c90fc331f355d60ef7570d61fc0f5c"
+    },
+    {
+      "path": "game/assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_arm_2k.jpg",
+      "asset": "water_manhole_cover",
+      "sourcePage": "https://polyhaven.com/a/water_manhole_cover",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/water_manhole_cover_arm_2k.jpg"
+      ],
+      "bytes": 2167214,
+      "sha256": "e58a4c473f0233d6c41c71d5a0b7b5d616160432d5fe299f071a1351b3640a15",
+      "downloadSha256": "e58a4c473f0233d6c41c71d5a0b7b5d616160432d5fe299f071a1351b3640a15"
+    },
+    {
+      "path": "game/assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_diff_2k.jpg",
+      "asset": "water_manhole_cover",
+      "sourcePage": "https://polyhaven.com/a/water_manhole_cover",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/water_manhole_cover_diff_2k.jpg"
+      ],
+      "bytes": 1519932,
+      "sha256": "f3038b11493dd09626e7b1e34c8eb72a8f594d77d9084d06d67bef34a35a8371",
+      "downloadSha256": "f3038b11493dd09626e7b1e34c8eb72a8f594d77d9084d06d67bef34a35a8371"
+    },
+    {
+      "path": "game/assets/polyhaven/models/water_manhole_cover/textures/water_manhole_cover_nor_gl_2k.jpg",
+      "asset": "water_manhole_cover",
+      "sourcePage": "https://polyhaven.com/a/water_manhole_cover",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "textures/water_manhole_cover_nor_gl_2k.jpg"
+      ],
+      "bytes": 4062229,
+      "sha256": "abdfc1f149e31989b9a29dd7d812e4751ec7fe7593a71213db8774c12b65814b",
+      "downloadSha256": "abdfc1f149e31989b9a29dd7d812e4751ec7fe7593a71213db8774c12b65814b"
+    },
+    {
+      "path": "game/assets/polyhaven/models/water_manhole_cover/water_manhole_cover.bin",
+      "asset": "water_manhole_cover",
+      "sourcePage": "https://polyhaven.com/a/water_manhole_cover",
+      "license": "CC0-1.0",
+      "selector": [
+        "gltf",
+        "2k",
+        "gltf",
+        "include",
+        "water_manhole_cover.bin"
+      ],
+      "bytes": 202320,
+      "sha256": "ada713d1f6f879164d3475e2ee18d69b4c4ecc8f100126e3921b7b3ea42c9267",
+      "downloadSha256": "ada713d1f6f879164d3475e2ee18d69b4c4ecc8f100126e3921b7b3ea42c9267"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/beam_wall_01/beam_wall_01_arm_2k.jpg",
+      "asset": "beam_wall_01",
+      "sourcePage": "https://polyhaven.com/a/beam_wall_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 393337,
+      "sha256": "896ced779f3c45dd7ed4d6b688bb861f7707f7f22b55a74a4e34e79a66027abb",
+      "downloadSha256": "896ced779f3c45dd7ed4d6b688bb861f7707f7f22b55a74a4e34e79a66027abb"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/beam_wall_01/beam_wall_01_diff_2k.jpg",
+      "asset": "beam_wall_01",
+      "sourcePage": "https://polyhaven.com/a/beam_wall_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 858270,
+      "sha256": "ca14a426e17388aed0ee2132f0c8a15638aa1cdb815075df98cb42d60b4f4d10",
+      "downloadSha256": "ca14a426e17388aed0ee2132f0c8a15638aa1cdb815075df98cb42d60b4f4d10"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/beam_wall_01/beam_wall_01_nor_gl_2k.jpg",
+      "asset": "beam_wall_01",
+      "sourcePage": "https://polyhaven.com/a/beam_wall_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 487608,
+      "sha256": "41ecf4bc653f50bcb7432e9878dff5b3a48844fe9950a5dc2edabb8714b30bd5",
+      "downloadSha256": "41ecf4bc653f50bcb7432e9878dff5b3a48844fe9950a5dc2edabb8714b30bd5"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/beige_wall_001/beige_wall_001_arm_2k.jpg",
+      "asset": "beige_wall_001",
+      "sourcePage": "https://polyhaven.com/a/beige_wall_001",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 437640,
+      "sha256": "a86cfe132a80195833f7d1e5e330960c9690860ab5b752eeb5623081e71c3431",
+      "downloadSha256": "a86cfe132a80195833f7d1e5e330960c9690860ab5b752eeb5623081e71c3431"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/beige_wall_001/beige_wall_001_diff_2k.jpg",
+      "asset": "beige_wall_001",
+      "sourcePage": "https://polyhaven.com/a/beige_wall_001",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 235868,
+      "sha256": "222d4d2e7d5c425c97e5a66790852388cec7706714d773f769fba6bfe08cea4e",
+      "downloadSha256": "222d4d2e7d5c425c97e5a66790852388cec7706714d773f769fba6bfe08cea4e"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/beige_wall_001/beige_wall_001_nor_gl_2k.jpg",
+      "asset": "beige_wall_001",
+      "sourcePage": "https://polyhaven.com/a/beige_wall_001",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 815507,
+      "sha256": "7f5cbecd6766f44034f3b78b4addb1559e12bdd5a77501bd418a736609e7cedc",
+      "downloadSha256": "7f5cbecd6766f44034f3b78b4addb1559e12bdd5a77501bd418a736609e7cedc"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/clean_asphalt/clean_asphalt_arm_4k.jpg",
+      "asset": "clean_asphalt",
+      "sourcePage": "https://polyhaven.com/a/clean_asphalt",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 14872217,
+      "sha256": "38bfec244eae1c85649667b9c815149fe7173964ba61027b4417a13f08545dfb",
+      "downloadSha256": "38bfec244eae1c85649667b9c815149fe7173964ba61027b4417a13f08545dfb"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/clean_asphalt/clean_asphalt_diff_4k.jpg",
+      "asset": "clean_asphalt",
+      "sourcePage": "https://polyhaven.com/a/clean_asphalt",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 14073027,
+      "sha256": "f6fbda284c86947c16ba91dbaf7c57bc16ec8e5497a649cdc61ca1c9310d02af",
+      "downloadSha256": "f6fbda284c86947c16ba91dbaf7c57bc16ec8e5497a649cdc61ca1c9310d02af"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/clean_asphalt/clean_asphalt_nor_gl_4k.jpg",
+      "asset": "clean_asphalt",
+      "sourcePage": "https://polyhaven.com/a/clean_asphalt",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 17605037,
+      "sha256": "ab377e661855cae41a98f5a8ae80b9954c925efa120ab7f1683eb247a20bf9a5",
+      "downloadSha256": "ab377e661855cae41a98f5a8ae80b9954c925efa120ab7f1683eb247a20bf9a5"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/coast_sand_01/coast_sand_01_arm_2k.jpg",
+      "asset": "coast_sand_01",
+      "sourcePage": "https://polyhaven.com/a/coast_sand_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2698547,
+      "sha256": "0e1cc154bc6163f1f7f48aa4839876f6cae84b5b53f9ac3c2bf4c54057373e00",
+      "downloadSha256": "0e1cc154bc6163f1f7f48aa4839876f6cae84b5b53f9ac3c2bf4c54057373e00"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/coast_sand_01/coast_sand_01_diff_2k.jpg",
+      "asset": "coast_sand_01",
+      "sourcePage": "https://polyhaven.com/a/coast_sand_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3552676,
+      "sha256": "e1c37ea8b4282fda612b0584d864ca4eef2da28c2fa9f3930cad9209414eb979",
+      "downloadSha256": "e1c37ea8b4282fda612b0584d864ca4eef2da28c2fa9f3930cad9209414eb979"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/coast_sand_01/coast_sand_01_nor_gl_2k.jpg",
+      "asset": "coast_sand_01",
+      "sourcePage": "https://polyhaven.com/a/coast_sand_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4630126,
+      "sha256": "e5b1430c751727c8ab0332adfd8960c48342936146de258aa9b7736630cdbb62",
+      "downloadSha256": "e5b1430c751727c8ab0332adfd8960c48342936146de258aa9b7736630cdbb62"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_floor_painted/concrete_floor_painted_arm_4k.jpg",
+      "asset": "concrete_floor_painted",
+      "sourcePage": "https://polyhaven.com/a/concrete_floor_painted",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 4423286,
+      "sha256": "047842f094f5e6ec8d6555ec5120cfd689478d8e0d1aed88e271a11061140d0b",
+      "downloadSha256": "047842f094f5e6ec8d6555ec5120cfd689478d8e0d1aed88e271a11061140d0b"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_floor_painted/concrete_floor_painted_diff_4k.jpg",
+      "asset": "concrete_floor_painted",
+      "sourcePage": "https://polyhaven.com/a/concrete_floor_painted",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 8468600,
+      "sha256": "e21764425d865bc0f03039c0a4593e158c467ddae22336d76798311142c7432f",
+      "downloadSha256": "e21764425d865bc0f03039c0a4593e158c467ddae22336d76798311142c7432f"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_floor_painted/concrete_floor_painted_nor_gl_4k.jpg",
+      "asset": "concrete_floor_painted",
+      "sourcePage": "https://polyhaven.com/a/concrete_floor_painted",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 17886916,
+      "sha256": "1cdbab2de545d3e7b68fda572605277a915b04c6d742fcf9ba07f4c15bcf0ff9",
+      "downloadSha256": "1cdbab2de545d3e7b68fda572605277a915b04c6d742fcf9ba07f4c15bcf0ff9"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_arm_4k.jpg",
+      "asset": "concrete_floor_worn_001",
+      "sourcePage": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 2761221,
+      "sha256": "011a7162f855012242e2b9be49cd2d99d0f0aae82c25f1a81a5a243f9e88e229",
+      "downloadSha256": "011a7162f855012242e2b9be49cd2d99d0f0aae82c25f1a81a5a243f9e88e229"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_diff_4k.jpg",
+      "asset": "concrete_floor_worn_001",
+      "sourcePage": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 1916459,
+      "sha256": "73a4f3fe96a2c31d34dd7e7af5f1db440362eed770c38384ee2948e10419e4fb",
+      "downloadSha256": "73a4f3fe96a2c31d34dd7e7af5f1db440362eed770c38384ee2948e10419e4fb"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_4k.jpg",
+      "asset": "concrete_floor_worn_001",
+      "sourcePage": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 4812727,
+      "sha256": "fe952c1c5a6fc30cdc86aab61f63f0ba9300e8aab71e07eb60db7db489abb418",
+      "downloadSha256": "fe952c1c5a6fc30cdc86aab61f63f0ba9300e8aab71e07eb60db7db489abb418"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_arm_2k.jpg",
+      "asset": "concrete_wall_003",
+      "sourcePage": "https://polyhaven.com/a/concrete_wall_003",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 843865,
+      "sha256": "48ce60b9217019724b8f819e84c5b13ea0d3865920e388facf1842942e5ccf82",
+      "downloadSha256": "48ce60b9217019724b8f819e84c5b13ea0d3865920e388facf1842942e5ccf82"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_diff_2k.jpg",
+      "asset": "concrete_wall_003",
+      "sourcePage": "https://polyhaven.com/a/concrete_wall_003",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 1083378,
+      "sha256": "751ac658d1335d0903f198176253a2cbd06457bbb1f549dc2fa04e4b96f915c3",
+      "downloadSha256": "751ac658d1335d0903f198176253a2cbd06457bbb1f549dc2fa04e4b96f915c3"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/concrete_wall_003/concrete_wall_003_nor_gl_2k.jpg",
+      "asset": "concrete_wall_003",
+      "sourcePage": "https://polyhaven.com/a/concrete_wall_003",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 978992,
+      "sha256": "89c0d14f348510bcf6c33b13dda78e403ff5169c44dda48f8d38589b319c1f11",
+      "downloadSha256": "89c0d14f348510bcf6c33b13dda78e403ff5169c44dda48f8d38589b319c1f11"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/dark_rock_02/dark_rock_02_arm_2k.jpg",
+      "asset": "dark_rock_02",
+      "sourcePage": "https://polyhaven.com/a/dark_rock_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2575178,
+      "sha256": "e34aa572f0c578eadbf9d812ad514a22775880c7b19a6b98e979d99474fccbb5",
+      "downloadSha256": "e34aa572f0c578eadbf9d812ad514a22775880c7b19a6b98e979d99474fccbb5"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/dark_rock_02/dark_rock_02_diff_2k.jpg",
+      "asset": "dark_rock_02",
+      "sourcePage": "https://polyhaven.com/a/dark_rock_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2441558,
+      "sha256": "da78fb6dd90414ada98f6e1627aca6bc1acb480c8bce7aabfbde8e3beb666a71",
+      "downloadSha256": "da78fb6dd90414ada98f6e1627aca6bc1acb480c8bce7aabfbde8e3beb666a71"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/dark_rock_02/dark_rock_02_nor_gl_2k.jpg",
+      "asset": "dark_rock_02",
+      "sourcePage": "https://polyhaven.com/a/dark_rock_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3870014,
+      "sha256": "37710c782598f158e07310dcbd3a8a89247d31255e6f21136707f66c3653bdec",
+      "downloadSha256": "37710c782598f158e07310dcbd3a8a89247d31255e6f21136707f66c3653bdec"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_arm_4k.jpg",
+      "asset": "herringbone_brick_03",
+      "sourcePage": "https://polyhaven.com/a/herringbone_brick_03",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 11999353,
+      "sha256": "8d4ad14a47b417cc3665bfb3c0df0a9ba03315803c9452b3bb61d6876b281f80",
+      "downloadSha256": "8d4ad14a47b417cc3665bfb3c0df0a9ba03315803c9452b3bb61d6876b281f80"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_diff_4k.jpg",
+      "asset": "herringbone_brick_03",
+      "sourcePage": "https://polyhaven.com/a/herringbone_brick_03",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 17703523,
+      "sha256": "c2eb4c5f0ffd4a9dceb57557cd3efb12641fbc6498edd7fc9073ae74f2977093",
+      "downloadSha256": "c2eb4c5f0ffd4a9dceb57557cd3efb12641fbc6498edd7fc9073ae74f2977093"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/herringbone_brick_03/herringbone_brick_03_nor_gl_4k.jpg",
+      "asset": "herringbone_brick_03",
+      "sourcePage": "https://polyhaven.com/a/herringbone_brick_03",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 18637752,
+      "sha256": "cc29798720c55f5f842d022ca5933502c4f6b0422054b5c00171bc73abb11811",
+      "downloadSha256": "cc29798720c55f5f842d022ca5933502c4f6b0422054b5c00171bc73abb11811"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_arm_2k.jpg",
+      "asset": "knotted_pine_bark",
+      "sourcePage": "https://polyhaven.com/a/knotted_pine_bark",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3396911,
+      "sha256": "b2fc3a05d8811000d50a1027f800f16432fa7c45191ceecaf9970db3e28dbb31",
+      "downloadSha256": "b2fc3a05d8811000d50a1027f800f16432fa7c45191ceecaf9970db3e28dbb31"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_diff_2k.jpg",
+      "asset": "knotted_pine_bark",
+      "sourcePage": "https://polyhaven.com/a/knotted_pine_bark",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3243094,
+      "sha256": "ec059bbf8a1dfb00ac22161ace6f7839d9986f92fca025833db41619dc3f994e",
+      "downloadSha256": "ec059bbf8a1dfb00ac22161ace6f7839d9986f92fca025833db41619dc3f994e"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/knotted_pine_bark/knotted_pine_bark_nor_gl_2k.jpg",
+      "asset": "knotted_pine_bark",
+      "sourcePage": "https://polyhaven.com/a/knotted_pine_bark",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 5401498,
+      "sha256": "c3ec4658f31c7db09baaa75e309438296123731f3fd21a2d10ee1945251975a2",
+      "downloadSha256": "c3ec4658f31c7db09baaa75e309438296123731f3fd21a2d10ee1945251975a2"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_arm_4k.jpg",
+      "asset": "large_grey_tiles",
+      "sourcePage": "https://polyhaven.com/a/large_grey_tiles",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 3458540,
+      "sha256": "8c89863326d331ad5800f1d99192d7fa9a3f9124a9842119c5a5d2b6499209c8",
+      "downloadSha256": "8c89863326d331ad5800f1d99192d7fa9a3f9124a9842119c5a5d2b6499209c8"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_diff_4k.jpg",
+      "asset": "large_grey_tiles",
+      "sourcePage": "https://polyhaven.com/a/large_grey_tiles",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 7366022,
+      "sha256": "52ab7e590570afe497dc7a81272c5bb7faee8c939128c2a395dc51bf820bd05b",
+      "downloadSha256": "52ab7e590570afe497dc7a81272c5bb7faee8c939128c2a395dc51bf820bd05b"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/large_grey_tiles/large_grey_tiles_nor_gl_4k.jpg",
+      "asset": "large_grey_tiles",
+      "sourcePage": "https://polyhaven.com/a/large_grey_tiles",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 9037900,
+      "sha256": "d86a34f97b894e8b48257c98b15a9aed1c8c08031a345ae30f319edc79d4d3fe",
+      "downloadSha256": "d86a34f97b894e8b48257c98b15a9aed1c8c08031a345ae30f319edc79d4d3fe"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/leafy_grass/leafy_grass_arm_2k.jpg",
+      "asset": "leafy_grass",
+      "sourcePage": "https://polyhaven.com/a/leafy_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4116600,
+      "sha256": "70d61c669fe9d186a84f5bb50e8a337083014d7e46534306a89d47d48fd5eb0e",
+      "downloadSha256": "70d61c669fe9d186a84f5bb50e8a337083014d7e46534306a89d47d48fd5eb0e"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/leafy_grass/leafy_grass_diff_2k.jpg",
+      "asset": "leafy_grass",
+      "sourcePage": "https://polyhaven.com/a/leafy_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4766204,
+      "sha256": "8e1c6d21365d4b89bc5a35ab664da98a78dbc3ab9ba6100474881c8619a5b113",
+      "downloadSha256": "8e1c6d21365d4b89bc5a35ab664da98a78dbc3ab9ba6100474881c8619a5b113"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/leafy_grass/leafy_grass_nor_gl_2k.jpg",
+      "asset": "leafy_grass",
+      "sourcePage": "https://polyhaven.com/a/leafy_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 6047262,
+      "sha256": "df0cf0ce96e653f033e5b934d5b12995464bda027aa53bd12e329be889aa9f45",
+      "downloadSha256": "df0cf0ce96e653f033e5b934d5b12995464bda027aa53bd12e329be889aa9f45"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/metal_plate/metal_plate_arm_2k.jpg",
+      "asset": "metal_plate",
+      "sourcePage": "https://polyhaven.com/a/metal_plate",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3926194,
+      "sha256": "3b944444e12815f96c6850b385ba0e8f2f805338d8ad9e750907474b494f1ebe",
+      "downloadSha256": "3b944444e12815f96c6850b385ba0e8f2f805338d8ad9e750907474b494f1ebe"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/metal_plate/metal_plate_diff_2k.jpg",
+      "asset": "metal_plate",
+      "sourcePage": "https://polyhaven.com/a/metal_plate",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2670774,
+      "sha256": "864c9a653acd1f5034c9bbe7f955b18cc9687a81bbdfa805e7a2319939676910",
+      "downloadSha256": "864c9a653acd1f5034c9bbe7f955b18cc9687a81bbdfa805e7a2319939676910"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/metal_plate/metal_plate_nor_gl_2k.jpg",
+      "asset": "metal_plate",
+      "sourcePage": "https://polyhaven.com/a/metal_plate",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2516654,
+      "sha256": "146f8c00874a584bcc4a184643e72f160da2a7568d469198e02b26c9ff93cf43",
+      "downloadSha256": "146f8c00874a584bcc4a184643e72f160da2a7568d469198e02b26c9ff93cf43"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/painted_metal_shutter/painted_metal_shutter_arm_2k.jpg",
+      "asset": "painted_metal_shutter",
+      "sourcePage": "https://polyhaven.com/a/painted_metal_shutter",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2565660,
+      "sha256": "86f1b5e96df17d30114007b17ba272b7c8771fc212223257cb2621aa9ce39ce1",
+      "downloadSha256": "86f1b5e96df17d30114007b17ba272b7c8771fc212223257cb2621aa9ce39ce1"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/painted_metal_shutter/painted_metal_shutter_diff_2k.jpg",
+      "asset": "painted_metal_shutter",
+      "sourcePage": "https://polyhaven.com/a/painted_metal_shutter",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2474114,
+      "sha256": "0aa6835b7da52960dd371897f1777166210ca07386a2872eb162ab8398595997",
+      "downloadSha256": "0aa6835b7da52960dd371897f1777166210ca07386a2872eb162ab8398595997"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/painted_metal_shutter/painted_metal_shutter_nor_gl_2k.jpg",
+      "asset": "painted_metal_shutter",
+      "sourcePage": "https://polyhaven.com/a/painted_metal_shutter",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3097249,
+      "sha256": "2757f76146b522c9a0e5c057bd8fcac6600861def33a814c63b8b8e1f6a1d97f",
+      "downloadSha256": "2757f76146b522c9a0e5c057bd8fcac6600861def33a814c63b8b8e1f6a1d97f"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/painted_plaster_wall/painted_plaster_wall_arm_2k.jpg",
+      "asset": "painted_plaster_wall",
+      "sourcePage": "https://polyhaven.com/a/painted_plaster_wall",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2159906,
+      "sha256": "8d6a2e391e87130aabb1dc6fea23e6ebcc80aca6559a0aa82e57b75729055be5",
+      "downloadSha256": "8d6a2e391e87130aabb1dc6fea23e6ebcc80aca6559a0aa82e57b75729055be5"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/painted_plaster_wall/painted_plaster_wall_diff_2k.jpg",
+      "asset": "painted_plaster_wall",
+      "sourcePage": "https://polyhaven.com/a/painted_plaster_wall",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3132937,
+      "sha256": "6fd812ed8dd5be1873c29aeef38ce9bf1fb30a22c6d4b3a12db725e98c26a1be",
+      "downloadSha256": "6fd812ed8dd5be1873c29aeef38ce9bf1fb30a22c6d4b3a12db725e98c26a1be"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/painted_plaster_wall/painted_plaster_wall_nor_gl_2k.jpg",
+      "asset": "painted_plaster_wall",
+      "sourcePage": "https://polyhaven.com/a/painted_plaster_wall",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4048392,
+      "sha256": "2d601a46ed5ce2af866741c53cafa3cba472620c272e633b6484d4de16a80eb1",
+      "downloadSha256": "2d601a46ed5ce2af866741c53cafa3cba472620c272e633b6484d4de16a80eb1"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_arm_4k.jpg",
+      "asset": "patterned_concrete_pavers",
+      "sourcePage": "https://polyhaven.com/a/patterned_concrete_pavers",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 9653408,
+      "sha256": "21cfd3f620aadc800433c41a9f8fd345a393ddbc42f60fc19c90bd08f40c6a6f",
+      "downloadSha256": "21cfd3f620aadc800433c41a9f8fd345a393ddbc42f60fc19c90bd08f40c6a6f"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_diff_4k.jpg",
+      "asset": "patterned_concrete_pavers",
+      "sourcePage": "https://polyhaven.com/a/patterned_concrete_pavers",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 13229777,
+      "sha256": "7aa9217669140ba0df408bae02e05c429209e7030188f2d1de6b204440c83714",
+      "downloadSha256": "7aa9217669140ba0df408bae02e05c429209e7030188f2d1de6b204440c83714"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/patterned_concrete_pavers/patterned_concrete_pavers_nor_gl_4k.jpg",
+      "asset": "patterned_concrete_pavers",
+      "sourcePage": "https://polyhaven.com/a/patterned_concrete_pavers",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 12339809,
+      "sha256": "9cf506d0facd5902def21509c60fd3d20d9e1f3ce4e246809da323c05ce093c9",
+      "downloadSha256": "9cf506d0facd5902def21509c60fd3d20d9e1f3ce4e246809da323c05ce093c9"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/playground_sand/playground_sand_arm_2k.jpg",
+      "asset": "playground_sand",
+      "sourcePage": "https://polyhaven.com/a/playground_sand",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2624818,
+      "sha256": "2308f265413ef1f104b47205ad4cb45e10a348a772db459dbdc57ba62a988300",
+      "downloadSha256": "2308f265413ef1f104b47205ad4cb45e10a348a772db459dbdc57ba62a988300"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/playground_sand/playground_sand_diff_2k.jpg",
+      "asset": "playground_sand",
+      "sourcePage": "https://polyhaven.com/a/playground_sand",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3915839,
+      "sha256": "ac5491ac12728529038b4b9ebdadc189085b97f038af96757bad193393572bc5",
+      "downloadSha256": "ac5491ac12728529038b4b9ebdadc189085b97f038af96757bad193393572bc5"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/playground_sand/playground_sand_nor_gl_2k.jpg",
+      "asset": "playground_sand",
+      "sourcePage": "https://polyhaven.com/a/playground_sand",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 5492129,
+      "sha256": "e4581b5e42d754b2395924edd339378b40bbe50988865778fa5dabe4164d64bf",
+      "downloadSha256": "3d441431620fd0fe47a9c40799ac470c599296f2f8a5ae5b3edc9a2a3db98253",
+      "transform": "jpeg-processing-history-v1"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/plywood/plywood_arm_2k.jpg",
+      "asset": "plywood",
+      "sourcePage": "https://polyhaven.com/a/plywood",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4039721,
+      "sha256": "d3f2901628fd8532ad9580b87ed5218072826786ecc118610f79c0e1a42341da",
+      "downloadSha256": "d3f2901628fd8532ad9580b87ed5218072826786ecc118610f79c0e1a42341da"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/plywood/plywood_diff_2k.jpg",
+      "asset": "plywood",
+      "sourcePage": "https://polyhaven.com/a/plywood",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4009658,
+      "sha256": "050a15a796413b91c9cd5ca026dd3c4df83746bb1103ae14ae91503577dead8c",
+      "downloadSha256": "050a15a796413b91c9cd5ca026dd3c4df83746bb1103ae14ae91503577dead8c"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/plywood/plywood_nor_gl_2k.jpg",
+      "asset": "plywood",
+      "sourcePage": "https://polyhaven.com/a/plywood",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2836023,
+      "sha256": "2391dbe49aaecd6584d12731d4470bf91ba33b5c7f05c78ec5900fcae28f0310",
+      "downloadSha256": "2391dbe49aaecd6584d12731d4470bf91ba33b5c7f05c78ec5900fcae28f0310"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/red_brick/red_brick_arm_2k.jpg",
+      "asset": "red_brick",
+      "sourcePage": "https://polyhaven.com/a/red_brick",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2800082,
+      "sha256": "2e732048bffd98207d6f35d37390a84c06ca9a16d086d0cea3fd7bc7cb80ec28",
+      "downloadSha256": "2e732048bffd98207d6f35d37390a84c06ca9a16d086d0cea3fd7bc7cb80ec28"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/red_brick/red_brick_diff_2k.jpg",
+      "asset": "red_brick",
+      "sourcePage": "https://polyhaven.com/a/red_brick",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3169072,
+      "sha256": "a1ae5ba7e63026971ceaf68ebbcf8982d9c2dadde1c99996c49b8ac1160af995",
+      "downloadSha256": "a1ae5ba7e63026971ceaf68ebbcf8982d9c2dadde1c99996c49b8ac1160af995"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/red_brick/red_brick_nor_gl_2k.jpg",
+      "asset": "red_brick",
+      "sourcePage": "https://polyhaven.com/a/red_brick",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4327452,
+      "sha256": "dd2ce5b5c42f04f02fce555d53eae42503733a0a42e76ae9a18bfb9d0680da5b",
+      "downloadSha256": "dd2ce5b5c42f04f02fce555d53eae42503733a0a42e76ae9a18bfb9d0680da5b"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/snow_01/snow_01_arm_4k.jpg",
+      "asset": "snow_01",
+      "sourcePage": "https://polyhaven.com/a/snow_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 2539458,
+      "sha256": "4f51816aabad35c74806924fd92bfa363ac18096d30351e0fb19fbc8109976bd",
+      "downloadSha256": "4f51816aabad35c74806924fd92bfa363ac18096d30351e0fb19fbc8109976bd"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/snow_01/snow_01_diff_4k.jpg",
+      "asset": "snow_01",
+      "sourcePage": "https://polyhaven.com/a/snow_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 4654820,
+      "sha256": "ce10b63f8de26e996e661349e1969eec662a05689ae5f7d66677879efce89ce7",
+      "downloadSha256": "ce10b63f8de26e996e661349e1969eec662a05689ae5f7d66677879efce89ce7"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/snow_01/snow_01_nor_gl_4k.jpg",
+      "asset": "snow_01",
+      "sourcePage": "https://polyhaven.com/a/snow_01",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 19399698,
+      "sha256": "e9948f69d8f95a5e3d58afa6e50eabc80e60c0d8b07ca14ccdf1d23da7234b15",
+      "downloadSha256": "e9948f69d8f95a5e3d58afa6e50eabc80e60c0d8b07ca14ccdf1d23da7234b15"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/snow_02/snow_02_arm_4k.jpg",
+      "asset": "snow_02",
+      "sourcePage": "https://polyhaven.com/a/snow_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 1923587,
+      "sha256": "4542421d7c97411c31517c70a7ac2c283e7746137f5f48584b09efe6433f8886",
+      "downloadSha256": "4542421d7c97411c31517c70a7ac2c283e7746137f5f48584b09efe6433f8886"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/snow_02/snow_02_diff_4k.jpg",
+      "asset": "snow_02",
+      "sourcePage": "https://polyhaven.com/a/snow_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 4537020,
+      "sha256": "c4cc87be8833cb73ab154b32da60228e11ae20f91b5057f146d1ffe001b2edc4",
+      "downloadSha256": "c4cc87be8833cb73ab154b32da60228e11ae20f91b5057f146d1ffe001b2edc4"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/snow_02/snow_02_nor_gl_4k.jpg",
+      "asset": "snow_02",
+      "sourcePage": "https://polyhaven.com/a/snow_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "4k",
+        "jpg"
+      ],
+      "bytes": 17571435,
+      "sha256": "e3760b3a0b3e15663f587fab42b0ab0ae713cfa9e66abefc9651a6dcb882893d",
+      "downloadSha256": "e3760b3a0b3e15663f587fab42b0ab0ae713cfa9e66abefc9651a6dcb882893d"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/sparse_grass/sparse_grass_arm_2k.jpg",
+      "asset": "sparse_grass",
+      "sourcePage": "https://polyhaven.com/a/sparse_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3835537,
+      "sha256": "f498dcdbfd1c29b6c36232fc56e69d467be7d6d1d180d2a294138d9c725d6b66",
+      "downloadSha256": "f498dcdbfd1c29b6c36232fc56e69d467be7d6d1d180d2a294138d9c725d6b66"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/sparse_grass/sparse_grass_diff_2k.jpg",
+      "asset": "sparse_grass",
+      "sourcePage": "https://polyhaven.com/a/sparse_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3733797,
+      "sha256": "3b655de96161164bf2324e136b3409ad8417c9f94750bc008e9c93ee507c2fac",
+      "downloadSha256": "3b655de96161164bf2324e136b3409ad8417c9f94750bc008e9c93ee507c2fac"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/sparse_grass/sparse_grass_nor_gl_2k.jpg",
+      "asset": "sparse_grass",
+      "sourcePage": "https://polyhaven.com/a/sparse_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 5892473,
+      "sha256": "5539a5913653a106a4e8a699a1d288f0b41907775b5fb36156ef5be2e937718b",
+      "downloadSha256": "5539a5913653a106a4e8a699a1d288f0b41907775b5fb36156ef5be2e937718b"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/white_plaster_02/white_plaster_02_arm_2k.jpg",
+      "asset": "white_plaster_02",
+      "sourcePage": "https://polyhaven.com/a/white_plaster_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 894383,
+      "sha256": "acdb65bfabb3613812bdad9156021400e518bdf4998c011921ce43695a5e24d4",
+      "downloadSha256": "acdb65bfabb3613812bdad9156021400e518bdf4998c011921ce43695a5e24d4"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/white_plaster_02/white_plaster_02_diff_2k.jpg",
+      "asset": "white_plaster_02",
+      "sourcePage": "https://polyhaven.com/a/white_plaster_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 2568315,
+      "sha256": "0ca5245ba70777d3e41ff4566c9f8d363855461891802c55cb7dc0f6f85f084e",
+      "downloadSha256": "0ca5245ba70777d3e41ff4566c9f8d363855461891802c55cb7dc0f6f85f084e"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/white_plaster_02/white_plaster_02_nor_gl_2k.jpg",
+      "asset": "white_plaster_02",
+      "sourcePage": "https://polyhaven.com/a/white_plaster_02",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 3379814,
+      "sha256": "083579b03a8f31ec1886512e5972f3b893610bf26a2098f97910e0f46745cdc9",
+      "downloadSha256": "083579b03a8f31ec1886512e5972f3b893610bf26a2098f97910e0f46745cdc9"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/withered_grass/withered_grass_arm_2k.jpg",
+      "asset": "withered_grass",
+      "sourcePage": "https://polyhaven.com/a/withered_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "arm",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4802892,
+      "sha256": "0b4bfb6549a56c48f7239be7f520124b38e7842188b8d1d53b0a376686c40371",
+      "downloadSha256": "0b4bfb6549a56c48f7239be7f520124b38e7842188b8d1d53b0a376686c40371"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/withered_grass/withered_grass_diff_2k.jpg",
+      "asset": "withered_grass",
+      "sourcePage": "https://polyhaven.com/a/withered_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "Diffuse",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 4632786,
+      "sha256": "0cf0fca68cbf4277199a2b9b7b3a8013357e4087247b1367f86d4a53b4fafa7e",
+      "downloadSha256": "0cf0fca68cbf4277199a2b9b7b3a8013357e4087247b1367f86d4a53b4fafa7e"
+    },
+    {
+      "path": "game/assets/polyhaven/textures/withered_grass/withered_grass_nor_gl_2k.jpg",
+      "asset": "withered_grass",
+      "sourcePage": "https://polyhaven.com/a/withered_grass",
+      "license": "CC0-1.0",
+      "selector": [
+        "nor_gl",
+        "2k",
+        "jpg"
+      ],
+      "bytes": 6194953,
+      "sha256": "5fd42baf06224086cb9afcb2f7a3b9f26feddd719bf1f9aed65ec49c586e7ff9",
+      "downloadSha256": "5fd42baf06224086cb9afcb2f7a3b9f26feddd719bf1f9aed65ec49c586e7ff9"
+    }
+  ]
+}

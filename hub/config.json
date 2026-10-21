@@ -1,0 +1,15 @@
+{
+  "regina_axis_map": [
+    "y",
+    "z",
+    "x"
+  ],
+  "phone_axis_map": [
+    "x",
+    "z",
+    "-y"
+  ],
+  "regina_allow": [],
+  "regina_name_prefix": "Regina-",
+  "regina_screen_rotation": 3
+}

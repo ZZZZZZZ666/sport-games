@@ -1,0 +1,14 @@
+name: Feature request
+description: Propose a focused improvement or a new game feature.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Player problem or use case
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and scope
+      description: Explain the input, game flow and expected result. Include asset/license sources if relevant.

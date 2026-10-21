@@ -1,0 +1,62 @@
+# Poly Haven assets
+
+All CC0 (public domain), from https://polyhaven.com.
+
+- hdri `kloppenheim_06_puresky` (Kloppenheim 06 (Pure Sky)) by Greg Zaal, Jarod Guest: https://polyhaven.com/a/kloppenheim_06_puresky
+- texture `clean_asphalt` (Clean Asphalt) by Dimitrios Savva: https://polyhaven.com/a/clean_asphalt
+- texture `patterned_concrete_pavers` (Patterned Concrete Pavers) by Amal Kumar: https://polyhaven.com/a/patterned_concrete_pavers
+- texture `herringbone_brick_03` (Herringbone Brick 03) by Charlotte Baglioni: https://polyhaven.com/a/herringbone_brick_03
+- texture `large_grey_tiles` (Large Grey Tiles) by Rob Tuytel: https://polyhaven.com/a/large_grey_tiles
+- texture `concrete_floor_worn_001` (Concrete Floor Worn 001) by Dimitrios Savva, Rico Cilliers: https://polyhaven.com/a/concrete_floor_worn_001
+- texture `plywood` (Plywood) by Rob Tuytel: https://polyhaven.com/a/plywood
+- texture `painted_plaster_wall` (Painted Plaster Wall) by Amal Kumar: https://polyhaven.com/a/painted_plaster_wall
+- texture `beige_wall_001` (Beige Wall 001) by Dimitrios Savva, Rico Cilliers: https://polyhaven.com/a/beige_wall_001
+- texture `white_plaster_02` (White Plaster 02) by Rob Tuytel: https://polyhaven.com/a/white_plaster_02
+- texture `painted_metal_shutter` (Painted Metal Shutter) by Dario Barresi, Rico Cilliers, Charlotte Baglioni: https://polyhaven.com/a/painted_metal_shutter
+- texture `coast_sand_01` (Coast Sand 01) by Rob Tuytel: https://polyhaven.com/a/coast_sand_01
+- texture `metal_plate` (Metal Plate) by Rob Tuytel: https://polyhaven.com/a/metal_plate
+- texture `red_brick` (Red Brick) by Rob Tuytel: https://polyhaven.com/a/red_brick
+- texture `concrete_wall_003` (Concrete Wall 003) by Dimitrios Savva, Rico Cilliers: https://polyhaven.com/a/concrete_wall_003
+- model `street_lamp_01` (Street Lamp 01) by Josh Dean: https://polyhaven.com/a/street_lamp_01
+- model `fire_hydrant` (Fire Hydrant) by Gonçalo Felício: https://polyhaven.com/a/fire_hydrant
+- model `metal_trash_can` (Metal Trash Can) by GurJas Studios: https://polyhaven.com/a/metal_trash_can
+- model `modular_street_seating` (Modular Street Seating) by Stuart Attenborrow: https://polyhaven.com/a/modular_street_seating
+- model `concrete_road_barrier` (Concrete Road Barrier) by Amal Kumar: https://polyhaven.com/a/concrete_road_barrier
+- model `utility_box_01` (Utility Box 01) by James Ray Cock: https://polyhaven.com/a/utility_box_01
+- model `exterior_aircon_unit` (Exterior Aircon Unit) by Monsta3D: https://polyhaven.com/a/exterior_aircon_unit
+- model `rollershutter_door` (Rollershutter Door) by MP: https://polyhaven.com/a/rollershutter_door
+- model `rollershutter_window_01` (Rollershutter Window 01) by MP: https://polyhaven.com/a/rollershutter_window_01
+- model `rollershutter_window_02` (Rollershutter Window 02) by MP: https://polyhaven.com/a/rollershutter_window_02
+- model `potted_plant_01` (Potted Plant 01) by Rico Cilliers: https://polyhaven.com/a/potted_plant_01
+- model `planter_box_02` (Planter Box 02) by James Ray Cock: https://polyhaven.com/a/planter_box_02
+- model `lifebuoy` (Lifebuoy) by Hank Kaamura: https://polyhaven.com/a/lifebuoy
+- model `boulder_01` (Boulder 01) by Rico Cilliers: https://polyhaven.com/a/boulder_01
+- model `Barrel_01` (Barrel_01) by Jorge Camacho: https://polyhaven.com/a/Barrel_01
+- model `barrel_03` (Barrel 03) by Serhii Khromov: https://polyhaven.com/a/barrel_03
+- model `cardboard_box_01` (Cardboard Box 01) by Rahul Chaudhary: https://polyhaven.com/a/cardboard_box_01
+- model `outdoor_table_chair_set_01` (Outdoor Table Chair Set 01) by James Ray Cock: https://polyhaven.com/a/outdoor_table_chair_set_01
+- model `WetFloorSign_01` (Wet Floor Sign 01) by Fran Calvente: https://polyhaven.com/a/WetFloorSign_01
+- model `plastic_crate_01` (Plastic Crate 01) by PierreB3D: https://polyhaven.com/a/plastic_crate_01
+- model `water_manhole_cover` (Water Manhole Cover) by Raunox: https://polyhaven.com/a/water_manhole_cover
+- model `spray_paint_bottles` (Spray Paint Bottles) by James Ray Cock: https://polyhaven.com/a/spray_paint_bottles
+- model `old_tyre` (Old Tyre) by MP: https://polyhaven.com/a/old_tyre
+- model `bronze_whale_statue` (Bronze Whale Statue) by Tina: https://polyhaven.com/a/bronze_whale_statue
+- model `concrete_cat_statue` (Concrete Cat Statue) by Rico Cilliers, Riley Queen: https://polyhaven.com/a/concrete_cat_statue
+- texture `snow_02` (Snow 02) by Rob Tuytel: https://polyhaven.com/a/snow_02
+- texture `snow_01` (Snow 01) by Rob Tuytel: https://polyhaven.com/a/snow_01
+- texture `dark_rock_02` (Dark Rock 02) by Amal Kumar: https://polyhaven.com/a/dark_rock_02
+- texture `beam_wall_01` (Beam Wall 01) by Rob Tuytel: https://polyhaven.com/a/beam_wall_01
+- hdri `kloofendal_43d_clear_puresky` (Kloofendal 43d Clear (Pure Sky)) by Greg Zaal: https://polyhaven.com/a/kloofendal_43d_clear_puresky
+- hdri `belfast_sunset_puresky` (Belfast Sunset (Pure Sky)) by Greg Zaal, Dimitrios Savva, Jarod Guest: https://polyhaven.com/a/belfast_sunset_puresky
+- hdri `kloppenheim_02_puresky` (Kloppenheim 02 (Pure Sky)) by Greg Zaal, Jarod Guest: https://polyhaven.com/a/kloppenheim_02_puresky
+- hdri `snow_field_puresky` (Snow Field (Pure Sky)) by Jarod Guest, Sergej Majboroda: https://polyhaven.com/a/snow_field_puresky
+- texture `knotted_pine_bark` (Knotted Pine Bark) by Dimitrios Savva: https://polyhaven.com/a/knotted_pine_bark
+- hdri `sunset_jhbcentral` (Joburg Central Sunset) by Greg Zaal, Dimitrios Savva: https://polyhaven.com/a/sunset_jhbcentral
+- hdri `rooftop_night` (Rooftop Night) by Greg Zaal: https://polyhaven.com/a/rooftop_night
+- texture `concrete_floor_painted` (Concrete Floor Painted) by Rob Tuytel: https://polyhaven.com/a/concrete_floor_painted
+- model `boombox` (Boombox) by Thomas Paul Mouilleron: https://polyhaven.com/a/boombox
+- texture `leafy_grass` (Leafy Grass) by Charlotte Baglioni: https://polyhaven.com/a/leafy_grass
+- texture `sparse_grass` (Sparse Grass) by Amal Kumar: https://polyhaven.com/a/sparse_grass
+- texture `withered_grass` (Withered Grass) by Charlotte Baglioni: https://polyhaven.com/a/withered_grass
+- texture `playground_sand` (Playground Sand) by eye-candy.xyz: https://polyhaven.com/a/playground_sand
+- hdri `kloofendal_48d_partly_cloudy_puresky` (Kloofendal 48d Partly Cloudy (Pure Sky)) by Greg Zaal, Jarod Guest: https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky

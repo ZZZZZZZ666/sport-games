@@ -1,0 +1,276 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v3.3.32",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "blend_export",
+      "nodes": [
+        0,
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "spray_paint_bottles",
+      "translation": [
+        -0.046261370182037354,
+        0,
+        -0.00019100308418273926
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "spray_paint_bottles_dirty",
+      "translation": [
+        0.04626152664422989,
+        0,
+        -0.00019083917140960693
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "spray_paint_bottles",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "spray_paint_bottles_dirty",
+      "normalTexture": {
+        "index": 3
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicRoughnessTexture": {
+          "index": 5
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cylinder.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Cylinder.013",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 3,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "spray_paint_bottles_nor_gl",
+      "uri": "textures/spray_paint_bottles_nor_gl_2k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "spray_paint_bottles_diff",
+      "uri": "textures/spray_paint_bottles_diff_2k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "spray_paint_bottles_metal-spray_paint_bottles_rough",
+      "uri": "textures/spray_paint_bottles_arm_2k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "spray_paint_bottles_dirty_nor_gl",
+      "uri": "textures/spray_paint_bottles_dirty_nor_gl_2k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "spray_paint_bottles_dirty_diff",
+      "uri": "textures/spray_paint_bottles_dirty_diff_2k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "spray_paint_bottles_dirty_metal-spray_paint_bottles_dirty_rough",
+      "uri": "textures/spray_paint_bottles_dirty_arm_2k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1588,
+      "max": [
+        0.03282187879085541,
+        0.22863975167274475,
+        0.032821718603372574
+      ],
+      "min": [
+        -0.03282156214118004,
+        0,
+        -0.032821718603372574
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1588,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1588,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 7560,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1588,
+      "max": [
+        0.03282172232866287,
+        0.22863975167274475,
+        0.03282173350453377
+      ],
+      "min": [
+        -0.032821718603372574,
+        0,
+        -0.03282170370221138
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1588,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 1588,
+      "type": "VEC2"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 19056,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19056,
+      "byteOffset": 19056,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12704,
+      "byteOffset": 38112,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 15120,
+      "byteOffset": 50816,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19056,
+      "byteOffset": 65936,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19056,
+      "byteOffset": 84992,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12704,
+      "byteOffset": 104048,
+      "target": 34962
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 116752,
+      "uri": "spray_paint_bottles.bin"
+    }
+  ]
+}
