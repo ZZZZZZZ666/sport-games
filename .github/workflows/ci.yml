@@ -51,11 +51,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # Shell and procedural-game tests do not need the large art downloads.
+          # Keep the controller model preloaded by bowling; omit the large art tree.
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /*
-            !/game/assets/
+            !/game/assets/*
+            /game/assets/models/
+            !/game/assets/models/*
+            /game/assets/models/regina.glb
+            /game/assets/models/regina.glb.import
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
