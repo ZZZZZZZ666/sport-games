@@ -152,11 +152,18 @@ hub/.venv/Scripts/python tools/i18n_check.py
 
 ```sh
 python tools/test_game.py --godot /path/to/godot --party
-python tools/smoke_test.py --godot /path/to/godot --players 2
-python tools/smoke_test.py --godot /path/to/godot --players 4 --screenshots --language en
+python -m unittest discover -s tools/tests -p 'test_*.py'
+python tools/smoke_test.py --godot /path/to/godot --players 2 --all-maps --output audit-output/smoke-2
+python tools/smoke_test.py --godot /path/to/godot --players 4 --all-maps --output audit-output/smoke-4
+python tools/smoke_test.py --godot /path/to/godot --games ski --map 3 --players 4
+python tools/smoke_test.py --godot /path/to/godot --players 4 --screenshots --language en --output audit-output/captures-4
 ```
 
-测试会隔离用户数据，避免覆盖真实档案。冒烟测试输出在 `audit-output/smoke/`，每项必须真正进入结算才算通过；截图模式需要图形桌面。Windows 测试进程的原生崩溃会作为失败返回，避免弹出即时调试器。当前验证范围与后续建议见 [改进记录](docs/IMPROVEMENTS.md)。
+测试会隔离用户数据，避免覆盖真实档案。冒烟脚本从游戏大厅实际使用的地图列表发现用例；默认跑第 0 图，`--all-maps` 跑全部地图，`--map N` 选择从 0 开始的指定地图（不存在会报错）。每项必须真正进入结算，且项目、地图、玩家槽和有限数值成绩均正确才算通过。
+
+默认输出在 `audit-output/smoke/`：`run.json` 记录预期 / 完成数量和 RUNNING / PASS / FAIL，`summary.json` 与 `index.html` 汇总逐项结果，另存原始结算 JSON 和日志。中途失败或中断不会保留旧的通过汇总。截图模式需要图形桌面，验证 PNG 完整性及 1600×900 尺寸，并输出嵌入全部截图的 `contact-sheet.svg`，可单独复制查看，不需要安装额外 Python 图像库。建议给不同人数和语言使用不同输出目录。
+
+Windows 测试进程的原生崩溃会作为失败返回，避免弹出即时调试器。当前验证范围与后续建议见 [改进记录](docs/IMPROVEMENTS.md)。
 
 **手柄调试**：显示每个手柄的 3D 模型、状态卡片、手机二维码、角速度和线加速度曲线、挥动检测记录，还有手柄屏幕的实时预览。
 
