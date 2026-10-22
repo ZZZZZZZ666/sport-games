@@ -5,7 +5,10 @@
 
 ## 开始开发
 
-1. Fork 仓库并克隆，安装 Node.js 20+，执行 `node tools/sync_assets.mjs` 取得原站素材。
+先读 [AGENTS.md](AGENTS.md)（分区与硬性规则）、[架构](docs/ARCHITECTURE.md)、[编码规范](docs/CODING_STANDARDS.md) 和
+[审查清单](docs/REVIEW_CHECKLIST.md)。PR 按审查清单审查，带 ID 的规则由 `python tools/check_conventions.py` 检查。
+
+1. Fork 仓库并克隆，安装已修补的 Node.js（22.23.4+ 或 24.22.1+），执行 `node tools/sync_assets.mjs` 取得原站素材。
    生成成品随普通 Git 克隆；不使用 Git LFS。详见 [素材说明](docs/ASSETS.md)。
 2. 使用 Godot 4.7.2 打开 `game/project.godot`。Python 中枢的安装和固件依赖见
    [开发说明](docs/DEVELOPMENT.md)。
@@ -19,8 +22,9 @@
   涉及多人界面时检查 2 人和 4 人分屏。
   自动无界面检查可运行 `python tools/smoke_game.py <Godot可执行文件> --project game`，它不替代画面和手柄实测。
 - 体感修改：说明测试用手机还是 Regina；检查短挥动、长按、断线与重连。
+- 所有修改：执行 `python tools/check_conventions.py`。
 - 文案修改：执行 `python tools/i18n_check.py`，检查中英文。
-- 安装 Node.js 20+ 后可执行 `node tools/publication_audit.mjs --strict --write audit-output`；
+- 安装 Node.js 后可执行 `node tools/publication_audit.mjs --strict --write audit-output`；
   这是开发检查，不是游戏的运行依赖。也应执行 `node --test tools/tests/asset_sync.test.mjs`。
 - 不提交本机证书、密钥、设备地址、用户数据、录制、环境目录、构建结果和下载缓存。
   不要使用真实个人信息制作测试数据；用明确标注的示例值。
