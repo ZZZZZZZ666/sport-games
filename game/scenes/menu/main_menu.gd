@@ -38,10 +38,23 @@ var _side := 1.0
 
 
 func _ready() -> void:
+	var cli_game := "plane"
+	var cli_launch := false
 	for a: String in OS.get_cmdline_user_args():
-		if a.begins_with("--demo"):
-			get_tree().change_scene_to_file.call_deferred(GAMES[0]["scene"])
-			return
+		if a == "--demo" or a.begins_with("--demo="):
+			cli_launch = true
+		elif a.begins_with("--game="):
+			cli_game = a.trim_prefix("--game=")
+			cli_launch = true
+	if cli_launch:
+		for game: Dictionary in GAMES:
+			if game.has("id") and game["id"] == cli_game:
+				print("CLI game: %s" % cli_game)
+				get_tree().change_scene_to_file.call_deferred(game["scene"])
+				return
+		push_error("Unknown --game id")
+		get_tree().quit(2)
+		return
 	theme = RSUi.theme(20)
 	RSTournament.clear()
 	if "--static-menu" in OS.get_cmdline_user_args():

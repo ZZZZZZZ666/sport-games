@@ -18,22 +18,22 @@ static func _sample(c: RSController, q: Quaternion = Quaternion.IDENTITY, gyro: 
 	c.push_sample(c.sample_time + 0.02, q, gyro, Vector3.UP * 9.8, Vector3.UP * up)
 
 
-static func _button(lesson, c: RSController, button: int, down: bool) -> void:
+static func _button(lesson: RSTutorial, c: RSController, button: int, down: bool) -> void:
 	c.buttons = (c.buttons | button) if down else (c.buttons & ~button)
 	lesson.on_button(c, button, down)
 
 
-static func _demo(lesson, c: RSController) -> void:
+static func _demo(lesson: RSTutorial, c: RSController) -> void:
 	lesson.update(c, Tutorial.DEMO_SECONDS + 0.01)
 
 
-static func _right(lesson, c: RSController) -> void:
+static func _right(lesson: RSTutorial, c: RSController) -> void:
 	_demo(lesson, c)
 	_sample(c, Quaternion(Vector3.FORWARD, 0.5))
 	lesson.update(c, 0.31)
 
 
-static func _throw(lesson, c: RSController) -> void:
+static func _throw(lesson: RSTutorial, c: RSController) -> void:
 	_demo(lesson, c)
 	_button(lesson, c, RSController.BTN_B, true)
 	_sample(c, Quaternion.IDENTITY, Vector3(6, 0, 0))
@@ -166,7 +166,7 @@ static func integration(host: Node, check: Callable) -> void:
 	game.review_tutorials()
 	game.ui.update_lobby()
 	check.call(game.ui._tutorial_grid.get_child_count() == 4 and game.ui._tutorial_grid.columns == 2, "four-player tutorial cards")
-	var lesson = game.tutorial_for(player)
+	var lesson := game.tutorial_for(player)
 	_right(lesson, c)
 	_demo(lesson, c)
 	_sample(c, Quaternion(Vector3.RIGHT, -0.5))

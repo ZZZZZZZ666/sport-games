@@ -388,12 +388,12 @@ func can_record(p: Player) -> bool:
 	return not p.fake and p.c.kind != "replay" and demo == 0 and _shots.is_empty() and _records_enabled
 
 
-func tutorial_for(p: Player):
+func tutorial_for(p: Player) -> RSTutorial:
 	return _tutorials.get(p.c.id)
 
 
 func tutorials_active() -> bool:
-	for lesson in _tutorials.values():
+	for lesson: RSTutorial in _tutorials.values():
 		if lesson.started and not lesson.finished:
 			return true
 	return false
@@ -416,7 +416,7 @@ func _update_tutorials(delta: float) -> void:
 		if p == null:
 			_tutorials.erase(id)
 			continue
-		var lesson = _tutorials[id]
+		var lesson: RSTutorial = _tutorials[id]
 		lesson.update(p.c, delta)
 		if lesson.finished:
 			RSProfiles.complete_tutorial(p.c.player, game_id())

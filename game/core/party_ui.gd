@@ -59,7 +59,7 @@ func update_lobby() -> void:
 	var lines := PackedStringArray()
 	for p: RSPartyGame.Player in game.ordered():
 		var state := tr("[color=#22c55e]✓ 已准备[/color]") if p.ready else tr("[color=#9aa3b5]按 A 准备[/color]")
-		var lesson = game.tutorial_for(p)
+		var lesson := game.tutorial_for(p)
 		if lesson != null:
 			state = RSProfiles.bbcode(lesson.status())
 		lines.append("[color=#%s][b]P%d[/b][/color]   %s   %s" % [game.color_of(p).to_html(false), p.c.player, RSProfiles.bbcode(game.name_of(p)), state])
@@ -124,7 +124,7 @@ func _update_tutorials() -> void:
 			_tutorial_cards[p.c.id] = {"title": title, "cue": cue, "hint": hint}
 	for p: RSPartyGame.Player in game.ordered():
 		var card: Dictionary = _tutorial_cards[p.c.id]
-		var lesson = game.tutorial_for(p)
+		var lesson := game.tutorial_for(p)
 		card["title"].text = "P%d · %s" % [p.c.player, game.name_of(p)]
 		card["cue"].lesson = lesson
 		card["hint"].text = lesson.status() if lesson != null else tr("教学完成，回到舒适握姿后按 A 准备")
