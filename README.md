@@ -151,6 +151,7 @@ hub/.venv/Scripts/python tools/i18n_check.py
 游戏回归检查（需要先完成素材导入）：
 
 ```sh
+python tools/import_game.py --godot /path/to/godot
 python tools/test_game.py --godot /path/to/godot --party
 python -m unittest discover -s tools/tests -p 'test_*.py'
 python tools/smoke_test.py --godot /path/to/godot --players 2 --all-maps --output audit-output/smoke-2
@@ -163,7 +164,9 @@ python tools/smoke_test.py --godot /path/to/godot --players 4 --screenshots --la
 
 默认输出在 `audit-output/smoke/`：`run.json` 记录预期 / 完成数量和 RUNNING / PASS / FAIL，`summary.json` 与 `index.html` 汇总逐项结果，另存原始结算 JSON 和日志。中途失败或中断不会保留旧的通过汇总。截图模式需要图形桌面，验证 PNG 完整性及 1600×900 尺寸，并输出嵌入全部截图的 `contact-sheet.svg`，可单独复制查看，不需要安装额外 Python 图像库。建议给不同人数和语言使用不同输出目录。
 
-Windows 测试进程的原生崩溃会作为失败返回，避免弹出即时调试器。当前验证范围与后续建议见 [改进记录](docs/IMPROVEMENTS.md)。
+导入脚本先检查 glTF 的外部依赖；素材缺失时先运行 `node tools/sync_assets.mjs`。Godot 4.7.2 的无头渲染器存在并发 RID 分配缺陷，项目暂时关闭并行素材导入，代价是首次导入稍慢；升级到包含上游 [#121958](https://github.com/godotengine/godot/pull/121958) 的版本后再评估恢复。
+
+导入和测试共用进程管理：同一项目的自动化命令不能同时运行；Windows 在引擎执行前将它加入 Job Object，退出、超时或中断时清理整棵子进程树。原生异常保留失败退出码和日志，避免反复拉起即时调试器，无需改系统调试器配置。手动打开的编辑器不受自动化锁管理，执行导入前应先关闭该项目编辑器。当前验证范围与后续建议见 [改进记录](docs/IMPROVEMENTS.md)。
 
 **手柄调试**：显示每个手柄的 3D 模型、状态卡片、手机二维码、角速度和线加速度曲线、挥动检测记录，还有手柄屏幕的实时预览。
 
